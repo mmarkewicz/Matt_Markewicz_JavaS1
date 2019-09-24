@@ -1,6 +1,5 @@
 package com.company;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class AverageThree {
