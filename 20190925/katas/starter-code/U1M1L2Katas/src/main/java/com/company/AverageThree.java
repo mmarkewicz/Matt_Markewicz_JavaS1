@@ -9,13 +9,13 @@ public class AverageThree {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Number One: ");
-        float num1 = scanner.nextFloat();
+        double num1 = scanner.nextDouble();
         System.out.println("Number Two: ");
-        float num2 = scanner.nextFloat();
+        double num2 = scanner.nextDouble();
         System.out.println("Number Three: ");
-        float num3 = scanner.nextFloat();
+        double num3 = scanner.nextDouble();
 
-        float result = (num1 + num2 + num3) / 3.00f;
+        double result = (num1 + num2 + num3) / 3.00;
         System.out.println("Result: " + result);
     }
 }
