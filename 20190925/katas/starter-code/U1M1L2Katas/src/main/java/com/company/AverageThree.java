@@ -8,7 +8,6 @@ public class AverageThree {
     // find the avg of three numbers inputted by the user
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        DecimalFormat df = new DecimalFormat("#.##");
 
         System.out.println("Number One: ");
         double num1 = scanner.nextDouble();
