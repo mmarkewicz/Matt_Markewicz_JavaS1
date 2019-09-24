@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/20190925.iml" filepath="$PROJECT_DIR$/.idea/20190925.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-registration-form/starter-code/CommandLineGram/CommandLineGram.iml" filepath="$PROJECT_DIR$/02-registration-form/starter-code/CommandLineGram/CommandLineGram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-luxury-tax-calculator/starter-code/LuxuryTaxCalculator/LuxuryTaxCalculator.iml" filepath="$PROJECT_DIR$/03-luxury-tax-calculator/starter-code/LuxuryTaxCalculator/LuxuryTaxCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-rectangular-paving-company/starter-code/RectPavingCompany/RectPavingCompany.iml" filepath="$PROJECT_DIR$/01-rectangular-paving-company/starter-code/RectPavingCompany/RectPavingCompany.iml" />
       <module fileurl="file://$PROJECT_DIR$/katas/starter-code/U1M1L2Katas/U1M1L2Katas.iml" filepath="$PROJECT_DIR$/katas/starter-code/U1M1L2Katas/U1M1L2Katas.iml" />
     </modules>

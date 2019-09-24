@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="RectPavingCompany" />
+        <module name="CommandLineGram" />
         <module name="U1M1L2Katas" />
+        <module name="LuxuryTaxCalculator" />
+        <module name="RectPavingCompany" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CommandLineGram" target="1.8" />
+      <module name="LuxuryTaxCalculator" target="1.8" />
       <module name="RectPavingCompany" target="1.8" />
       <module name="U1M1L2Katas" target="1.8" />
     </bytecodeTargetLevel>
