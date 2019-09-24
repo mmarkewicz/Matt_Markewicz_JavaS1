@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="RectPavingCompany" />
         <module name="U1M1L2Katas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="RectPavingCompany" target="1.8" />
       <module name="U1M1L2Katas" target="1.8" />
     </bytecodeTargetLevel>
   </component>
