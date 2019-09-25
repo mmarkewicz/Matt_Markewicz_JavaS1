@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="U1M1L3Katas" />
         <module name="RectPavingCompany" />
+        <module name="PrimeFinder" />
         <module name="FizzBuzz" />
         <module name="HiLo (1)" />
         <module name="LoanCalculator" />
@@ -19,6 +20,7 @@
       <module name="HiLo" target="1.8" />
       <module name="HiLo (1)" target="1.8" />
       <module name="LoanCalculator" target="1.8" />
+      <module name="PrimeFinder" target="1.8" />
       <module name="RectPavingCompany" target="1.8" />
       <module name="U1M1L3Katas" target="1.8" />
     </bytecodeTargetLevel>
