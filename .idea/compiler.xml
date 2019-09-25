@@ -6,10 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="FizzBuzz" />
+        <module name="HiLo" />
         <module name="RectPavingCompany" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="FizzBuzz" target="1.8" />
+      <module name="HiLo" target="1.8" />
       <module name="RectPavingCompany" target="1.8" />
     </bytecodeTargetLevel>
   </component>
