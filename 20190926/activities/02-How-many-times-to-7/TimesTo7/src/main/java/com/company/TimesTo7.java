@@ -8,7 +8,7 @@ public class TimesTo7 {
         int timesRolled = 0;
         int numberOf7sRolled = 0;
 
-        while (timesRolled < 100) {
+        while (timesRolled <= 100) {
             Random rand = new Random();
             int low = 1;
             int high = 7;
@@ -26,7 +26,7 @@ public class TimesTo7 {
                 timesRolled++;
             }
 
-            if (timesRolled == 99) {
+            if (timesRolled == 100) {
                 System.out.println("Total number of 7's rolled: " + numberOf7sRolled);
             }
         }
