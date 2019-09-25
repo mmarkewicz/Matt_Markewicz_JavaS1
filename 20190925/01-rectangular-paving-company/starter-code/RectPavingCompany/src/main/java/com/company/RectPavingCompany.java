@@ -19,8 +19,15 @@ public class RectPavingCompany {
         int drivewayPerimeter = drivewayLength * 2 + drivewayWidth * 2;
         System.out.println("Perimeter of Driveway is " + drivewayPerimeter);
 
-        float costCement = 12.50f * drivewayArea;
-        float framingCost = 8.25f * drivewayPerimeter;
+        System.out.println("What is the cost of the cement?");
+        float userCementInput = scanner.nextFloat();
+
+        System.out.println("What is the cost of the framing?");
+        float userFramingInput = scanner.nextFloat();
+        // v1 --- float costCement = 12.50f * drivewayArea;
+
+        float costCement = userCementInput * drivewayArea;
+        float framingCost = userFramingInput * drivewayPerimeter;
         float totalCost = costCement + framingCost;
 
         String formattedCostCement = String.format("%.2f", costCement);
