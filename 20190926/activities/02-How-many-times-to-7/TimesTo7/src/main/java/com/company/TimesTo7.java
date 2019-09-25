@@ -29,9 +29,6 @@ public class TimesTo7 {
             if (timesRolled == 99) {
                 System.out.println("Total number of 7's rolled: " + numberOf7sRolled);
             }
-
-
-
         }
 
     }
