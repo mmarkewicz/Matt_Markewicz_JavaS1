@@ -21,10 +21,11 @@ public class LoanCalculator {
         // P = Fixed Monthly Payment, L = Total Dollars, n = number of months, c = monthly interest rate
         float onePlusC = 1.00f + c;
 
-        float numeratorExp = (float) Math.pow((c * onePlusC), n);
+        float numeratorExp = (float) Math.pow(onePlusC, n);
+        float numeratorExpTimesC = numeratorExp * c;
+        float numerator = L * numeratorExpTimesC;
         float denominatorExp = (float) Math.pow((onePlusC), n);
         float denominator = denominatorExp - 1;
-        float numerator = L * numeratorExp;
         float total = numerator / denominator;
 
         System.out.println("Calculated Monthly Payment: " + total);
