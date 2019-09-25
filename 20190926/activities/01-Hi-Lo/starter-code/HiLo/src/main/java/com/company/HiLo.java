@@ -21,7 +21,7 @@ public class HiLo {
         System.out.println("OK, " + username + ", here are the rules:");
 
         boolean isUserCorrect = false;
-        int numGuesses = 1;
+        int numGuesses = 0;
 
         while(!isUserCorrect) {
             System.out.println("Pick a number between 1 and 100");
@@ -29,12 +29,15 @@ public class HiLo {
 
             if (userSelection == result) {
                 System.out.println("Congratulations, " + username + "! You win!");
+                numGuesses++;
                 System.out.println("It took you " + numGuesses + " guesses to find my number!");
                 isUserCorrect = true;
             } else if (userSelection > result) {
                 System.out.println("Too high");
+                numGuesses++;
             } else if (userSelection < result) {
                 System.out.println("Too low");
+                numGuesses++;
             }
         }
 

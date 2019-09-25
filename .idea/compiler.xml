@@ -7,14 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="FizzBuzz" />
+        <module name="U1M1L3Katas" />
         <module name="HiLo" />
+        <module name="LoanCalculator" />
         <module name="RectPavingCompany" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="FizzBuzz" target="1.8" />
       <module name="HiLo" target="1.8" />
+      <module name="LoanCalculator" target="1.8" />
       <module name="RectPavingCompany" target="1.8" />
+      <module name="U1M1L3Katas" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
