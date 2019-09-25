@@ -23,7 +23,7 @@ public class HiLo {
         boolean isUserCorrect = false;
         int numGuesses = 1;
 
-        while(isUserCorrect == false) {
+        while(!isUserCorrect) {
             System.out.println("Pick a number between 1 and 100");
             int userSelection = scanner.nextInt();
 
@@ -31,7 +31,6 @@ public class HiLo {
                 System.out.println("Congratulations, " + username + "! You win!");
                 System.out.println("It took you " + numGuesses + " guesses to find my number!");
                 isUserCorrect = true;
-                break;
             } else if (userSelection > result) {
                 System.out.println("Too high");
             } else if (userSelection < result) {
