@@ -26,10 +26,10 @@ public class LuxuryTaxCalculator {
         int totalSalary = playerOneSal + playerTwoSal + playerThreeSal;
         System.out.println("Total Salary: " + totalSalary);
 
-        if (totalSalary > 45000000) {
-            int taxableTotal = totalSalary - 45000000;
+        if (totalSalary > 40000000) {
+            int taxableTotal = totalSalary - 40000000;
             System.out.println("Taxable Total: " + taxableTotal);
-            float totalTax = 0.24f * taxableTotal;
+            float totalTax = 0.18f * taxableTotal;
             System.out.println("Total Tax Owed: " + totalTax);
         } else {
             System.out.println("There is no luxury tax");
