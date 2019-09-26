@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class RectPavingCompany {
 
+    // CHANGES ON LINES 24, 27, AND 33 ... Inline comments describe changes made
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
