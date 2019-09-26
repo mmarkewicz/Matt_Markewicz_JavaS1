@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="U1M1L3Katas" />
+        <module name="U1-M1-L5-katas" />
         <module name="RectPavingCompany" />
         <module name="PrimeFinder" />
         <module name="FizzBuzz" />
@@ -22,6 +23,7 @@
       <module name="LoanCalculator" target="1.8" />
       <module name="PrimeFinder" target="1.8" />
       <module name="RectPavingCompany" target="1.8" />
+      <module name="U1-M1-L5-katas" target="1.8" />
       <module name="U1M1L3Katas" target="1.8" />
     </bytecodeTargetLevel>
   </component>

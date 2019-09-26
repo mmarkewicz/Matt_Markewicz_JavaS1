@@ -13,8 +13,7 @@ public class App {
         int result = a - b;
         if (result > 0) {
             return result;
-        }
-        else {
+        } else {
             return 0;
         }
     }
@@ -24,11 +23,9 @@ public class App {
         int highest;
         if (a > b && a > c) {
             highest = a;
-        }
-        else if (b > a && b > c) {
+        } else if (b > a && b > c) {
             highest = b;
-        }
-        else {
+        } else {
             highest = c;
         }
         return highest;
