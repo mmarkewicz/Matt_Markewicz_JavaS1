@@ -160,5 +160,41 @@ public class App {
     Create two new arrays, one holding the values of the even indices and the other the values of the odd.
     Return a two-dimensional array, with the even-indices array first.
     Your code should work for an array of any size. */
+    public static String[][] evensAndOdds(String[] array) {
 
+        int evensArrayLength = 0;
+        int oddsArrayLength = 0;
+
+        // track how many entries must go into each array
+        for (int i = 0; i < array.length; i++) {
+            // if i is even ...
+            if (i == 0 || i % 2 == 0) {
+                evensArrayLength++;
+            } else {
+                oddsArrayLength++;
+            }
+        }
+
+        // create new arrays with calculated lengths
+        String[] evensArray = new String[evensArrayLength];
+        String[] oddsArray = new String[oddsArrayLength];
+
+        // track indices
+        int evensArrayIndex = 0;
+        int oddsArrayIndex = 0;
+
+        // populate arrays with proper values
+        for (int i = 0; i < array.length; i++) {
+            if (i == 0 || i % 2 == 0) {
+                evensArray[evensArrayIndex] = array[i];
+                evensArrayIndex++;
+            } else {
+                oddsArray[oddsArrayIndex] = array[i];
+                oddsArrayIndex++;
+            }
+        }
+
+        String[][] outputArrays = {evensArray, oddsArray};
+        return outputArrays;
+    }
 }
