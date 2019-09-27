@@ -134,19 +134,19 @@ public class AppTest {
         assertArrayEquals(failMessage, output4, App.lessThanFive(intTest4));
     }
 //
-//    @Test
-//    public void shouldReturnArrayOfIntsLessThanFiveAndArrayOfIntsGreaterThanOrEqualToFiveWhenGivenArrayOfInts() {
-//        int[][] output1 = new int[][] { {0, 1, 2, 3, 4}, {5, 6, 7} };
-//        int[][] output2 = new int[][] { {-3, -17}, {} };
-//        int[][] output3 = new int[][] { {}, {55, 2323, 102, 7} };
-//        int[][] output4 = new int[][] { {2, 4, 3, 1, 3}, {5, 7, 6, 9, 10, 13, 56, 43, 17, 89, 24, 37, 12, 101, 112} };
-//
-//        String failMessage = "Expected method to return an array with values less than 5";
-//        assertArrayEquals(failMessage, output1, App.splitAtFive(intTest1));
-//        assertArrayEquals(failMessage, output2, App.splitAtFive(intTest2));
-//        assertArrayEquals(failMessage, output3, App.splitAtFive(intTest3));
-//        assertArrayEquals(failMessage, output4, App.splitAtFive(intTest4));
-//    }
+    @Test
+    public void shouldReturnArrayOfIntsLessThanFiveAndArrayOfIntsGreaterThanOrEqualToFiveWhenGivenArrayOfInts() {
+        int[][] output1 = new int[][] { {0, 1, 2, 3, 4}, {5, 6, 7} };
+        int[][] output2 = new int[][] { {-3, -17}, {} };
+        int[][] output3 = new int[][] { {}, {55, 2323, 102, 7} };
+        int[][] output4 = new int[][] { {2, 4, 3, 1, 3}, {5, 7, 6, 9, 10, 13, 56, 43, 17, 89, 24, 37, 12, 101, 112} };
+
+        String failMessage = "Expected method to return an array with values less than 5";
+        assertArrayEquals(failMessage, output1, App.splitAtFive(intTest1));
+        assertArrayEquals(failMessage, output2, App.splitAtFive(intTest2));
+        assertArrayEquals(failMessage, output3, App.splitAtFive(intTest3));
+        assertArrayEquals(failMessage, output4, App.splitAtFive(intTest4));
+    }
 //
 //    @Test
 //    public void shouldReturnSplitArrayByEvenAndOddIndicesWhenGivenArray() {

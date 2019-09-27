@@ -114,13 +114,51 @@ public class App {
     }
 
     // -------------------- Challenge --------------------
-//     1: splitAtFive
-//     Create a method called splitAtFive which takes in an array of ints. This method should split the array into two new arrays, one holding the values less than 5 and the other holding the values equal to or greater than 5. Return a two-dimensional array, with the small-value array first. Your code should work for an array of any size.
+//  1: splitAtFive
+/*  Create a method called splitAtFive which takes in an array of ints.
+    This method should split the array into two new arrays, one holding the values less than 5 and the other holding the values equal to or greater than 5.
+    Return a two-dimensional array, with the small-value array first.
+    Your code should work for an array of any size. */
+    public static int[][] splitAtFive(int[] array) {
+        int lessThan5 = 0;
+        int greaterThanOrEqualTo5 = 0;
 
-//    2: evensAndOdds
-//    Create a method called evensAndOdds which takes in an array of Strings. Create two new arrays, one holding the values of the even indices and the other the values of the odd. Return a two-dimensional array, with the even-indices array first. Your code should work for an array of any size.
+        // find how many numbers satisfy the criteria
+        for (int element : array) {
+            if (element < 5) {
+                lessThan5++;
+            } else {
+                greaterThanOrEqualTo5++;
+            }
+        }
+
+        // build arrays with the results and initialize indices
+        int[] lessThan5Array = new int[lessThan5];
+        int[] greaterThanOrEqualToArray = new int[greaterThanOrEqualTo5];
+        int lessThan5Index = 0;
+        int greaterThanOrEqualToIndex = 0;
+
+        // populate arrays
+        for (int element : array) {
+            if (element < 5) {
+                lessThan5Array[lessThan5Index] = element;
+                lessThan5Index++;
+            } else {
+                greaterThanOrEqualToArray[greaterThanOrEqualToIndex] = element;
+                greaterThanOrEqualToIndex++;
+            }
+        }
+
+        // populate multidimensional array with calculated arrays
+        int[][] outputArrays = {lessThan5Array, greaterThanOrEqualToArray};
+        return outputArrays;
+    }
 
 
-
+//  2: evensAndOdds
+/*  Create a method called evensAndOdds which takes in an array of Strings.
+    Create two new arrays, one holding the values of the even indices and the other the values of the odd.
+    Return a two-dimensional array, with the even-indices array first.
+    Your code should work for an array of any size. */
 
 }
