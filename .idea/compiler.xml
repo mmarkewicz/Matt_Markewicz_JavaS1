@@ -7,16 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="U1M1L3Katas" />
-        <module name="LoanCalculator" />
+        <module name="pbd" />
+        <module name="FizzBuzz" />
         <module name="U1-M1-L5-katas" />
         <module name="minmaxavg" />
-        <module name="RectPavingCompany (1)" />
+        <module name="RectPavingCompany" />
         <module name="PrimeFinder" />
         <module name="U1-M1-Summative-Markewicz-Matthew" />
-        <module name="FizzBuzz" />
+        <module name="RectPavingCompany (1)" />
         <module name="HiLo (1)" />
         <module name="U1-M1-L6-Katas" />
-        <module name="RectPavingCompany" />
+        <module name="LoanCalculator" />
         <module name="HiLo" />
       </profile>
     </annotationProcessing>
@@ -26,6 +27,7 @@
       <module name="HiLo (1)" target="1.8" />
       <module name="LoanCalculator" target="1.8" />
       <module name="minmaxavg" target="1.8" />
+      <module name="pbd" target="1.8" />
       <module name="PrimeFinder" target="1.8" />
       <module name="RectPavingCompany" target="1.8" />
       <module name="RectPavingCompany (1)" target="1.8" />
