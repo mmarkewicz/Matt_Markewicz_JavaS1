@@ -4,7 +4,7 @@ public class IfStatements28 {
         int repeats = 5;
         int steps_per_second = 10;
 
-        for ( int i=0; i<repeats*11 ; i++ )
+        for ( int i=0; i<repeats*40 ; i++ )
         {
             if ( i%11 == 0 )
                 System.out.print(" .***..... \r");
@@ -31,6 +31,8 @@ public class IfStatements28 {
 
             Thread.sleep(1000/steps_per_second);
         }
+
+        System.out.println("Mr. Mitchell is cool");
 
     }
 }
