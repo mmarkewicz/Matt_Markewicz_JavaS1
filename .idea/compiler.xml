@@ -18,12 +18,14 @@
         <module name="U1M2L3Katas" />
         <module name="HiLo (1)" />
         <module name="RectPavingCompany (1)" />
+        <module name="Calculator" />
         <module name="RectPavingCompany" />
         <module name="U1-M1-Summative-Markewicz-Matthew" />
         <module name="U1M1L3Katas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Calculator" target="1.8" />
       <module name="ClassesPractice" target="1.8" />
       <module name="FizzBuzz" target="1.8" />
       <module name="HiLo" target="1.8" />
