@@ -19,8 +19,12 @@
         <option value="$PROJECT_DIR$/20190931/U1M2L1PBD/pom.xml" />
         <option value="$PROJECT_DIR$/20190931/pbd/U1M2L1PBD/pom.xml" />
         <option value="$PROJECT_DIR$/20191001/pbd/U1M2L1PBD/pom.xml" />
+        <option value="$PROJECT_DIR$/201910012/U1M2L2Katas/pom.xml" />
       </list>
     </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/201910012/U1M2L2Katas/pom.xml" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

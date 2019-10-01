@@ -6,22 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="U1M1L3Katas" />
-        <module name="pbd" />
-        <module name="FizzBuzz" />
-        <module name="U1-M1-L5-katas" />
-        <module name="minmaxavg" />
-        <module name="RectPavingCompany" />
         <module name="PrimeFinder" />
-        <module name="U1-M1-Summative-Markewicz-Matthew" />
-        <module name="RectPavingCompany (1)" />
-        <module name="HiLo (1)" />
         <module name="U1-M1-L6-Katas" />
         <module name="LoanCalculator" />
+        <module name="pbd" />
+        <module name="minmaxavg" />
+        <module name="FizzBuzz" />
         <module name="HiLo" />
+        <module name="HiLo (1)" />
+        <module name="RectPavingCompany (1)" />
+        <module name="U1-M1-L5-katas" />
+        <module name="RectPavingCompany" />
+        <module name="U1-M1-Summative-Markewicz-Matthew" />
+        <module name="ClassesPractice" />
+        <module name="U1M1L3Katas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ClassesPractice" target="1.8" />
       <module name="FizzBuzz" target="1.8" />
       <module name="HiLo" target="1.8" />
       <module name="HiLo (1)" target="1.8" />
