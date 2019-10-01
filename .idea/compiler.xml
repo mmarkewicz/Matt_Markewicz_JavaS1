@@ -8,17 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PrimeFinder" />
         <module name="U1-M1-L6-Katas" />
-        <module name="LoanCalculator" />
+        <module name="U1-M1-L5-katas" />
         <module name="pbd" />
         <module name="minmaxavg" />
-        <module name="FizzBuzz" />
         <module name="HiLo" />
+        <module name="LoanCalculator" />
+        <module name="FizzBuzz" />
+        <module name="ClassesPractice" />
+        <module name="U1M2L3Katas" />
         <module name="HiLo (1)" />
         <module name="RectPavingCompany (1)" />
-        <module name="U1-M1-L5-katas" />
         <module name="RectPavingCompany" />
         <module name="U1-M1-Summative-Markewicz-Matthew" />
-        <module name="ClassesPractice" />
         <module name="U1M1L3Katas" />
       </profile>
     </annotationProcessing>
@@ -37,6 +38,7 @@
       <module name="U1-M1-L6-Katas" target="1.8" />
       <module name="U1-M1-Summative-Markewicz-Matthew" target="1.8" />
       <module name="U1M1L3Katas" target="1.8" />
+      <module name="U1M2L3Katas" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
