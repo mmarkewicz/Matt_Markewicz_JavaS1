@@ -27,6 +27,7 @@ public class WhileLoops54 {
                 System.out.println("That is incorrect, try again.");
                 System.out.println("Guess #" + numGuesses);
             } else {
+                isUserCorrect = true;
                 System.out.println("You are out of guesses. You lose.");
             };
         }
