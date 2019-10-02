@@ -17,6 +17,7 @@
         <module name="U1M2L3Katas" />
         <module name="HiLo (1)" />
         <module name="RectPavingCompany (1)" />
+        <module name="UserIO" />
         <module name="Calculator" />
         <module name="RectPavingCompany" />
         <module name="U1-M1-Summative-Markewicz-Matthew" />
@@ -45,6 +46,7 @@
       <module name="U1M1L3Katas" target="1.8" />
       <module name="U1M2L3Katas" target="1.8" />
       <module name="U1M2L5Katas" target="1.8" />
+      <module name="UserIO" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
