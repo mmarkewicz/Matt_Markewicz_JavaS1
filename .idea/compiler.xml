@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PrimeFinder" />
         <module name="U1-M1-L6-Katas" />
+        <module name="U1M2L5PBD" />
         <module name="U1-M1-L5-katas" />
         <module name="pbd" />
         <module name="minmaxavg" />
@@ -46,6 +47,7 @@
       <module name="U1M1L3Katas" target="1.8" />
       <module name="U1M2L3Katas" target="1.8" />
       <module name="U1M2L5Katas" target="1.8" />
+      <module name="U1M2L5PBD" target="1.8" />
       <module name="UserIO" target="1.8" />
     </bytecodeTargetLevel>
   </component>
