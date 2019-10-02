@@ -24,8 +24,16 @@
         <option value="$PROJECT_DIR$/20191002/lesson3/simple-calculator/starter-code/Calculator/pom.xml" />
         <option value="$PROJECT_DIR$/20191002/lesson2/pom.xml" />
         <option value="$PROJECT_DIR$/20191002/lesson4/CalculatorRefactored/starter-code/Calculator/pom.xml" />
+        <option value="$PROJECT_DIR$/20191003/katas/U1M2L5Katas/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="U1M2L5Katas" />
+      </set>
+    </option>
+  </component>
 </project>

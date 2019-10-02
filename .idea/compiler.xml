@@ -21,6 +21,7 @@
         <module name="RectPavingCompany" />
         <module name="U1-M1-Summative-Markewicz-Matthew" />
         <module name="ClassesPractice" />
+        <module name="U1M2L5Katas" />
         <module name="Calculator (1)" />
         <module name="U1M1L3Katas" />
       </profile>
@@ -43,6 +44,7 @@
       <module name="U1-M1-Summative-Markewicz-Matthew" target="1.8" />
       <module name="U1M1L3Katas" target="1.8" />
       <module name="U1M2L3Katas" target="1.8" />
+      <module name="U1M2L5Katas" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
