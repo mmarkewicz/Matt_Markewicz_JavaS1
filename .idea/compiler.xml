@@ -10,6 +10,7 @@
         <module name="U1-M1-L6-Katas" />
         <module name="U1M2L5PBD" />
         <module name="U1-M1-L5-katas" />
+        <module name="U1M2L7Katas" />
         <module name="pbd" />
         <module name="minmaxavg" />
         <module name="LoanCalculator" />
@@ -18,6 +19,7 @@
         <module name="U1M2L3Katas" />
         <module name="HiLo (1)" />
         <module name="RectPavingCompany (1)" />
+        <module name="ShapesPerimeters" />
         <module name="UserIO" />
         <module name="Calculator" />
         <module name="RectPavingCompany" />
@@ -41,6 +43,7 @@
       <module name="PrimeFinder" target="1.8" />
       <module name="RectPavingCompany" target="1.8" />
       <module name="RectPavingCompany (1)" target="1.8" />
+      <module name="ShapesPerimeters" target="1.8" />
       <module name="U1-M1-L5-katas" target="1.8" />
       <module name="U1-M1-L6-Katas" target="1.8" />
       <module name="U1-M1-Summative-Markewicz-Matthew" target="1.8" />
@@ -48,6 +51,7 @@
       <module name="U1M2L3Katas" target="1.8" />
       <module name="U1M2L5Katas" target="1.8" />
       <module name="U1M2L5PBD" target="1.8" />
+      <module name="U1M2L7Katas" target="1.8" />
       <module name="UserIO" target="1.8" />
     </bytecodeTargetLevel>
   </component>
