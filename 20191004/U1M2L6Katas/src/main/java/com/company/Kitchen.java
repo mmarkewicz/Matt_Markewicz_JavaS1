@@ -6,7 +6,6 @@ public class Kitchen {
     private float width;
     private float length;
     private String flooringType;
-    private boolean hasFridge;
     private boolean hasStove;
 
     public float getSquareFootage() {
@@ -39,14 +38,6 @@ public class Kitchen {
 
     public void setFlooringType(String flooringType) {
         this.flooringType = flooringType;
-    }
-
-    public boolean isHasFridge() {
-        return hasFridge;
-    }
-
-    public void setHasFridge(boolean hasFridge) {
-        this.hasFridge = hasFridge;
     }
 
     public boolean isHasStove() {
