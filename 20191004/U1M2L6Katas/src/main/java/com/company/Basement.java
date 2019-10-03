@@ -2,31 +2,49 @@ package com.company;
 
 public class Basement {
 
-    private String flooringType;
-    private boolean isFurnished;
-    private Dimensions dimensions = new Dimensions();
+    private float squareFootage;
+    private float width;
+    private float length;
+    private Bathroom basementBathroom;
+    private Room basementBedroom;
 
-    public String getFlooringType() {
-        return flooringType;
+    public float getSquareFootage() {
+        return squareFootage;
     }
 
-    public void setFlooringType(String flooringType) {
-        this.flooringType = flooringType;
+    public void setSquareFootage(float squareFootage) {
+        this.squareFootage = squareFootage;
     }
 
-    public boolean isFurnished() {
-        return isFurnished;
+    public float getWidth() {
+        return width;
     }
 
-    public void setFurnished(boolean furnished) {
-        isFurnished = furnished;
+    public void setWidth(float width) {
+        this.width = width;
     }
 
-    public Dimensions getDimensions() {
-        return dimensions;
+    public float getLength() {
+        return length;
     }
 
-    public void setDimensions(Dimensions dimensions) {
-        this.dimensions = dimensions;
+    public void setLength(float length) {
+        this.length = length;
+    }
+
+    public Bathroom getBasementBathroom() {
+        return basementBathroom;
+    }
+
+    public void setBasementBathroom(Bathroom basementBathroom) {
+        this.basementBathroom = basementBathroom;
+    }
+
+    public Room getBasementBedroom() {
+        return basementBedroom;
+    }
+
+    public void setBasementBedroom(Room basementBedroom) {
+        this.basementBedroom = basementBedroom;
     }
 }

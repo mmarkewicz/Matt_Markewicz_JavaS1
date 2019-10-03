@@ -1,11 +1,14 @@
 package com.company;
 
-public class Patio {
+public class Room {
     private float squareFootage;
     private float length;
     private float width;
     private String flooringType;
-    private boolean hasGrill;
+
+    public float calculateArea(float length, float width) {
+        return length * width;
+    }
 
     public float getSquareFootage() {
         return squareFootage;
@@ -38,13 +41,4 @@ public class Patio {
     public void setFlooringType(String flooringType) {
         this.flooringType = flooringType;
     }
-
-    public boolean isHasGrill() {
-        return hasGrill;
-    }
-
-    public void setHasGrill(boolean hasGrill) {
-        this.hasGrill = hasGrill;
-    }
 }
-

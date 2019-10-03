@@ -1,11 +1,37 @@
 package com.company;
 
 public class Kitchen {
+
+    private float squareFootage;
+    private float width;
+    private float length;
     private String flooringType;
     private boolean hasFridge;
-    private boolean hasDishwasher;
-    private boolean hasOven;
-    private Dimensions dimensions = new Dimensions();
+    private boolean hasStove;
+
+    public float getSquareFootage() {
+        return squareFootage;
+    }
+
+    public void setSquareFootage(float squareFootage) {
+        this.squareFootage = squareFootage;
+    }
+
+    public float getWidth() {
+        return width;
+    }
+
+    public void setWidth(float width) {
+        this.width = width;
+    }
+
+    public float getLength() {
+        return length;
+    }
+
+    public void setLength(float length) {
+        this.length = length;
+    }
 
     public String getFlooringType() {
         return flooringType;
@@ -23,27 +49,11 @@ public class Kitchen {
         this.hasFridge = hasFridge;
     }
 
-    public boolean isHasDishwasher() {
-        return hasDishwasher;
+    public boolean isHasStove() {
+        return hasStove;
     }
 
-    public void setHasDishwasher(boolean hasDishwasher) {
-        this.hasDishwasher = hasDishwasher;
-    }
-
-    public boolean isHasOven() {
-        return hasOven;
-    }
-
-    public void setHasOven(boolean hasOven) {
-        this.hasOven = hasOven;
-    }
-
-    public Dimensions getDimensions() {
-        return dimensions;
-    }
-
-    public void setDimensions(Dimensions dimensions) {
-        this.dimensions = dimensions;
+    public void setHasStove(boolean hasStove) {
+        this.hasStove = hasStove;
     }
 }

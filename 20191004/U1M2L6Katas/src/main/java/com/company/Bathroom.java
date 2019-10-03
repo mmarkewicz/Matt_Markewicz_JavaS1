@@ -4,7 +4,7 @@ public class Bathroom {
     private String flooringType;
     private boolean hasToilet;
     private boolean hasShower;
-    private Dimensions dimensions = new Dimensions();
+
 
     public String getFlooringType() {
         return flooringType;
@@ -30,11 +30,4 @@ public class Bathroom {
         this.hasShower = hasShower;
     }
 
-    public Dimensions getDimensions() {
-        return dimensions;
-    }
-
-    public void setDimensions(Dimensions dimensions) {
-        this.dimensions = dimensions;
-    }
 }
