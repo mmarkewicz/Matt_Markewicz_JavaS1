@@ -24,7 +24,7 @@ public class DoWhileLoops61 {
             } else if (currentSide == 2) {
                 System.out.println("Side 2: ");
                 int userInput = scanner.nextInt();
-                if (userInput > sideOne) {
+                if (userInput >= sideOne) {
                     sideTwo = userInput;
                     currentSide++;
                 } else {
@@ -33,7 +33,7 @@ public class DoWhileLoops61 {
             } else if (currentSide == 3) {
                 System.out.println("Side 3: ");
                 int userInput = scanner.nextInt();
-                if (userInput > sideTwo) {
+                if (userInput >= sideTwo) {
                     sideThree = userInput;
                     currentSide++;
                 } else {
@@ -49,6 +49,6 @@ public class DoWhileLoops61 {
                 }
             }
         } while(!isComplete);
-    }
+}
 
 }

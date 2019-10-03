@@ -6,7 +6,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        UserIO userInput = new BetterInput();
+        UserIO userInput = new BetterInput(); // create new instance of BetterInput for error handling
 
         int userInt = userInput.readInt("Enter an integer");
 
