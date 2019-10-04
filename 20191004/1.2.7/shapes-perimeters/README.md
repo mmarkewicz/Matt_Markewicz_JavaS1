@@ -1,7 +1,7 @@
 ### Concrete, Abstract and Interface Class Implementations
 
 #### Concrete Approach
-The concrete approach does not allows for multiple inheritance. You can only `extend` one parent per class. By definition, a concrete class cannot have any unimplemented methods. This method is much less flexible than an interface implementation. In the concrete approach, the parent class can be instantiated as it's own standalone object, since it is just a standard class.
+The concrete approach does not allows for multiple inheritance. You can only `extend` one parent per class. Extending a concrete class does not act like a contract, there is no binding functionality required by the child class. This method is much less flexible/functional than abstract classes or interface implementation. In the concrete approach, the parent class can be instantiated as it's own standalone object, since it is just a standard class.
 
 #### Abstract Approach
 The abstract approach, much like a concrete approach, does not allow for multiple inheritance. Therefore, you cannot `extend` more than one abstract class. When implementing abstract classes, you must override all methods defined in the superclass. Non-abstract methods of the superclass are inherited just as they are defined. Abstract classes also cannot be instantiated on their own. 
