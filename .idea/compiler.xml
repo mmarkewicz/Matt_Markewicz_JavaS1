@@ -13,15 +13,16 @@
         <module name="U1M2L7Katas" />
         <module name="pbd" />
         <module name="minmaxavg" />
-        <module name="ConverterInterface" />
         <module name="LoanCalculator" />
         <module name="FizzBuzz" />
         <module name="HiLo" />
+        <module name="IceCreamClassDesign" />
         <module name="U1M2L3Katas" />
+        <module name="UserIO" />
         <module name="HiLo (1)" />
         <module name="RectPavingCompany (1)" />
+        <module name="ConverterInterface" />
         <module name="ShapesPerimeters" />
-        <module name="UserIO" />
         <module name="Calculator" />
         <module name="RectPavingCompany" />
         <module name="U1-M1-Summative-Markewicz-Matthew" />
@@ -39,6 +40,7 @@
       <module name="FizzBuzz" target="1.8" />
       <module name="HiLo" target="1.8" />
       <module name="HiLo (1)" target="1.8" />
+      <module name="IceCreamClassDesign" target="1.8" />
       <module name="LoanCalculator" target="1.8" />
       <module name="minmaxavg" target="1.8" />
       <module name="pbd" target="1.8" />
