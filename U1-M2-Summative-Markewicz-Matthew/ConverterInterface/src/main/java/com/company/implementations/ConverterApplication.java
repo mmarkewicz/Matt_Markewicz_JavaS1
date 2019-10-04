@@ -5,6 +5,6 @@ public class ConverterApplication {
         ConverterIf converterIf = new ConverterIf();
         String month = converterIf.convertMonth(5);
         String day = converterIf.convertDay(15);
-        System.out.println(month + day);
+        System.out.println(month + " " + day);
     }
 }
