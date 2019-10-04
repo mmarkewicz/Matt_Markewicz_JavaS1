@@ -33,7 +33,6 @@ public class ConverterIf implements Converter {
             System.out.println("Error: That is not a valid month.");
             return null;
         }
-
     }
 
     public String convertDay(int dayNumber) {
