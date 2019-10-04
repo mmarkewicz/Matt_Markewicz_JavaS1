@@ -13,6 +13,7 @@
         <module name="U1M2L7Katas" />
         <module name="pbd" />
         <module name="minmaxavg" />
+        <module name="ConverterInterface" />
         <module name="LoanCalculator" />
         <module name="FizzBuzz" />
         <module name="HiLo" />
@@ -34,6 +35,7 @@
       <module name="Calculator" target="1.8" />
       <module name="Calculator (1)" target="1.8" />
       <module name="ClassesPractice" target="1.8" />
+      <module name="ConverterInterface" target="1.8" />
       <module name="FizzBuzz" target="1.8" />
       <module name="HiLo" target="1.8" />
       <module name="HiLo (1)" target="1.8" />
