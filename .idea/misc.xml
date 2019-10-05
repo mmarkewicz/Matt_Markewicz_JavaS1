@@ -31,8 +31,14 @@
         <option value="$PROJECT_DIR$/20191004/1.2.7/shapes-perimeters/starter-code/ShapesPerimeters/pom.xml" />
         <option value="$PROJECT_DIR$/U1-M2-Summative-Markewicz-Matthew/ConverterInterface/pom.xml" />
         <option value="$PROJECT_DIR$/U1-M2-Summative-Markewicz-Matthew/IceCreamClassDesign/pom.xml" />
+        <option value="$PROJECT_DIR$/U1-M2-Summative-Markewicz-Matthew/RPGInheritance/pom.xml" />
+        <option value="$PROJECT_DIR$/20191007/pbd/MatthewMarkewiczU1M2L8PBD/pom.xml" />
+        <option value="$PROJECT_DIR$/U1-M2-Summative-Markewicz-Matthew/CustomerComposition/pom.xml" />
       </list>
     </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/U1-M2-Summative-Markewicz-Matthew/RPGInheritance/pom.xml" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
   <component name="SuppressABINotification">
