@@ -17,6 +17,7 @@
         <module name="RPGInheritance" />
         <module name="LoanCalculator" />
         <module name="FizzBuzz" />
+        <module name="CalculateObject" />
         <module name="HiLo" />
         <module name="U1M2L3Katas" />
         <module name="HiLo (1)" />
@@ -36,6 +37,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CalculateObject" target="1.8" />
       <module name="Calculator" target="1.8" />
       <module name="Calculator (1)" target="1.8" />
       <module name="ClassesPractice" target="1.8" />
