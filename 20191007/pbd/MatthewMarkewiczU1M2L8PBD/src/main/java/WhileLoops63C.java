@@ -18,11 +18,13 @@ public class WhileLoops63C {
 
         while(!isGameOver) {
             if (turn == 0 || turn % 2 == 0) {
+                System.out.println("A: " + a);
+                System.out.println("B: " + b);
+                System.out.println("C: " + c);
                 System.out.println(playerOneName + ", choose a pile");
                 String userOnePile = scanner.next().toUpperCase();
                 System.out.println("How many to remove from pile " + userOnePile);
                 int userOneQty = Integer.parseInt(scanner.next());
-
                 switch(userOnePile) {
                     case "A":
                         a -= userOneQty;
@@ -40,17 +42,18 @@ public class WhileLoops63C {
                         System.out.println("That is not a valid input");
                         break;
                 }
-
                 if (a <= 0 && b <= 0 && c <= 0) {
                     isGameOver = true;
+                    System.out.println("Sorry, " + playerOneName + " you lose!");
                 }
-
             } else {
+                System.out.println("A: " + a);
+                System.out.println("B: " + b);
+                System.out.println("C: " + c);
                 System.out.println(playerTwoName + ", choose a pile");
                 String userTwoPile = scanner.next().toUpperCase();
                 System.out.println("How many to remove from pile " + userTwoPile);
                 int userTwoQty = scanner.nextInt();
-
                 switch(userTwoPile) {
                     case "A":
                         a -= userTwoQty;
@@ -68,14 +71,12 @@ public class WhileLoops63C {
                         System.out.println("That is not a valid input");
                         break;
                 }
-
                 if (a <= 0 && b <= 0 && c <= 0) {
                     isGameOver = true;
+                    System.out.println("Sorry, " + playerTwoName + " you lose!");
                 }
             }
         }
-
-
     }
 }
 
