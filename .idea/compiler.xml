@@ -8,34 +8,35 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PrimeFinder" />
         <module name="Calculator" />
-        <module name="ConverterInterface" />
         <module name="U1M1L3Katas" />
         <module name="minmaxavg" />
         <module name="RectPavingCompany (1)" />
         <module name="ClassesPractice" />
-        <module name="HiLo (1)" />
+        <module name="ConverterInterface" />
         <module name="HiLo" />
         <module name="Calculator (1)" />
         <module name="ShapesPerimeters" />
         <module name="LoanCalculator" />
+        <module name="U1-M1-L6-Katas" />
         <module name="CustomerComposition" />
-        <module name="U1-M1-L5-katas" />
+        <module name="HiLo (1)" />
         <module name="U1M2L5Katas" />
         <module name="RectPavingCompany" />
         <module name="U1-M1-Summative-Markewicz-Matthew" />
-        <module name="U1M2L3Katas" />
         <module name="U1M2L8PBD" />
         <module name="U1M3L1Katas" />
         <module name="katas" />
         <module name="CalculateObject" />
+        <module name="U1M3L2Katas" />
         <module name="U1M2L7Katas" />
         <module name="IceCreamClassDesign" />
         <module name="UserIO" />
         <module name="FizzBuzz" />
         <module name="pbd" />
+        <module name="U1-M1-L5-katas" />
         <module name="RPGInheritance" />
         <module name="U1M2L5PBD" />
-        <module name="U1-M1-L6-Katas" />
+        <module name="U1M2L3Katas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -68,6 +69,7 @@
       <module name="U1M2L7Katas" target="1.8" />
       <module name="U1M2L8PBD" target="1.8" />
       <module name="U1M3L1Katas" target="1.8" />
+      <module name="U1M3L2Katas" target="1.8" />
       <module name="UserIO" target="1.8" />
     </bytecodeTargetLevel>
   </component>
