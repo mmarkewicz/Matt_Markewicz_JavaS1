@@ -1,9 +1,11 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class App {
 
+    // complete
     public static int total (List<Integer> numbers) {
 
         int sum = 0;
@@ -14,6 +16,7 @@ public class App {
         return sum;
     }
 
+    // complete
     public static int totalEven (List<Integer> numbers) {
 
         int sum = 0;
@@ -24,26 +27,26 @@ public class App {
         return sum;
     }
 
-    // FIX
-//    public static List<String> swapFirstAndLast(List<String> strings) {
-//
-//        String temp = strings.get(0);
-//        strings.add(0, strings.get( strings.size() - 1 ));
-//        strings.add(strings.size() - 1, temp);
-//
-//        return strings;
-//    }
+    // complete
+    public static List<String> swapFirstAndLast(List<String> strings) {
 
-    public static int[] reverse(int[] numbers) {
+        String temp = strings.get(0);
+        strings.remove(0);
+        strings.add(0, strings.get(strings.size() -1 ));
+        strings.add(strings.size() - 1, temp);
+        strings.remove(strings.size() -1 );
 
-        int[] reversed = new int[numbers.length];
+        return strings;
+    }
 
-        for(int i = 0; i < numbers.length; i++) {
+    // complete
+    public static List<Integer> reverse(List<Integer> numbers) {
 
-            // length - (i + 1) is the n-th to last element
-            // so when i = 0, it would be the last element
-            // when i = 3, it would be the fourth to last element since i=3 is the 4th element, etc
-            reversed[i] = numbers[ numbers.length - (i + 1) ];
+        List<Integer> reversed = new ArrayList<>();
+        int numbersArrIndex = numbers.size() - 1;
+        for(int i = 0; i < numbers.size(); i++) {
+            reversed.add(i, numbers.get(numbersArrIndex));
+            numbersArrIndex--;
         }
 
         return reversed;

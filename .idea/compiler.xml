@@ -7,34 +7,35 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PrimeFinder" />
-        <module name="U1-M1-L6-Katas" />
-        <module name="U1M2L5PBD" />
-        <module name="katas" />
-        <module name="U1-M1-L5-katas" />
-        <module name="U1M2L7Katas" />
-        <module name="pbd" />
+        <module name="Calculator" />
+        <module name="ConverterInterface" />
+        <module name="U1M1L3Katas" />
         <module name="minmaxavg" />
+        <module name="RectPavingCompany (1)" />
+        <module name="ClassesPractice" />
+        <module name="HiLo (1)" />
         <module name="HiLo" />
-        <module name="RPGInheritance" />
+        <module name="Calculator (1)" />
+        <module name="ShapesPerimeters" />
         <module name="LoanCalculator" />
-        <module name="FizzBuzz" />
-        <module name="CalculateObject" />
+        <module name="CustomerComposition" />
+        <module name="U1-M1-L5-katas" />
+        <module name="U1M2L5Katas" />
+        <module name="RectPavingCompany" />
+        <module name="U1-M1-Summative-Markewicz-Matthew" />
         <module name="U1M2L3Katas" />
         <module name="U1M2L8PBD" />
-        <module name="RectPavingCompany (1)" />
-        <module name="ConverterInterface" />
-        <module name="UserIO" />
-        <module name="ShapesPerimeters" />
-        <module name="Calculator" />
-        <module name="RectPavingCompany" />
-        <module name="CustomerComposition" />
-        <module name="U1-M1-Summative-Markewicz-Matthew" />
-        <module name="ClassesPractice" />
+        <module name="U1M3L1Katas" />
+        <module name="katas" />
+        <module name="CalculateObject" />
+        <module name="U1M2L7Katas" />
         <module name="IceCreamClassDesign" />
-        <module name="HiLo (1)" />
-        <module name="U1M2L5Katas" />
-        <module name="U1M1L3Katas" />
-        <module name="Calculator (1)" />
+        <module name="UserIO" />
+        <module name="FizzBuzz" />
+        <module name="pbd" />
+        <module name="RPGInheritance" />
+        <module name="U1M2L5PBD" />
+        <module name="U1-M1-L6-Katas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -66,6 +67,7 @@
       <module name="U1M2L5PBD" target="1.8" />
       <module name="U1M2L7Katas" target="1.8" />
       <module name="U1M2L8PBD" target="1.8" />
+      <module name="U1M3L1Katas" target="1.8" />
       <module name="UserIO" target="1.8" />
     </bytecodeTargetLevel>
   </component>
