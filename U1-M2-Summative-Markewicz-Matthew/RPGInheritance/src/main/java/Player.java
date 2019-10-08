@@ -1,19 +1,14 @@
 public abstract class Player {
     private String name;
     private int strength;
-    private int health;
+    private int health = 100;
     private int stamina;
     private int speed;
     private int attackPower;
 
-    public Player(String name, int strength, int health, int stamina, int speed, int attackPower) {
+    public Player(String name) {
         System.out.println("Constructing the Player ... ");
         this.name = name;
-        this.strength = strength;
-        this.health = health;
-        this.stamina = stamina;
-        this.speed = speed;
-        this.attackPower = attackPower;
     }
 
     public void run() {
@@ -30,15 +25,15 @@ public abstract class Player {
     }
 
     public void decreaseHealth() {
-
+        this.health -= 10;
     }
 
     public void increaseStamina() {
-
+        this.stamina += 10;
     }
 
     public void decreaseStamina() {
-
+        this.stamina -= 10;
     }
 
     public String getName() {
