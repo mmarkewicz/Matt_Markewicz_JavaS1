@@ -9,18 +9,18 @@
         <module name="PrimeFinder" />
         <module name="U1-M1-L6-Katas" />
         <module name="U1M2L5PBD" />
-        <module name="U1M2L8PBD" />
+        <module name="katas" />
         <module name="U1-M1-L5-katas" />
         <module name="U1M2L7Katas" />
         <module name="pbd" />
         <module name="minmaxavg" />
+        <module name="HiLo" />
         <module name="RPGInheritance" />
         <module name="LoanCalculator" />
         <module name="FizzBuzz" />
         <module name="CalculateObject" />
-        <module name="HiLo" />
         <module name="U1M2L3Katas" />
-        <module name="HiLo (1)" />
+        <module name="U1M2L8PBD" />
         <module name="RectPavingCompany (1)" />
         <module name="ConverterInterface" />
         <module name="UserIO" />
@@ -31,9 +31,10 @@
         <module name="U1-M1-Summative-Markewicz-Matthew" />
         <module name="ClassesPractice" />
         <module name="IceCreamClassDesign" />
-        <module name="Calculator (1)" />
+        <module name="HiLo (1)" />
         <module name="U1M2L5Katas" />
         <module name="U1M1L3Katas" />
+        <module name="Calculator (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -47,6 +48,7 @@
       <module name="HiLo" target="1.8" />
       <module name="HiLo (1)" target="1.8" />
       <module name="IceCreamClassDesign" target="1.8" />
+      <module name="katas" target="1.8" />
       <module name="LoanCalculator" target="1.8" />
       <module name="minmaxavg" target="1.8" />
       <module name="pbd" target="1.8" />
