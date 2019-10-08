@@ -5,6 +5,7 @@ public class IceCreamFactory {
     private String flavor;
     private double quantity;
     private String expirationDate;
+    private boolean isLowFat;
 
     // factory specific attributes
     private double costOfProduction;
