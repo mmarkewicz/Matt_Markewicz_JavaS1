@@ -8,38 +8,40 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PrimeFinder" />
         <module name="Calculator" />
+        <module name="ConverterInterface" />
         <module name="U1M3L2Katas" />
         <module name="minmaxavg" />
         <module name="RectPavingCompany (1)" />
         <module name="ClassesPractice" />
-        <module name="ConverterInterface" />
+        <module name="HiLo (1)" />
         <module name="HiLo" />
         <module name="U1M1L3Katas" />
         <module name="Calculator (1)" />
         <module name="ShapesPerimeters" />
         <module name="LoanCalculator" />
+        <module name="U1-M1-L6-Katas" />
         <module name="CustomerComposition" />
-        <module name="HiLo (1)" />
-        <module name="U1M2L5Katas" />
+        <module name="LargestCities" />
+        <module name="U1M3L5Katas" />
         <module name="RectPavingCompany" />
+        <module name="MatthewMarkewiczU1M3L5PBD" />
         <module name="U1-M1-Summative-Markewicz-Matthew" />
-        <module name="U1M2L3Katas" />
+        <module name="ProjectOne" />
         <module name="U1M2L8PBD" />
         <module name="U1M3L1Katas" />
-        <module name="U1M3L5Katas" />
         <module name="katas" />
         <module name="CalculateObject" />
         <module name="U1M2L7Katas" />
         <module name="IceCreamClassDesign" />
         <module name="UserIO" />
         <module name="FizzBuzz" />
-        <module name="LargestCities" />
         <module name="pbd" />
+        <module name="U1M2L5Katas" />
         <module name="U1-M1-L5-katas" />
         <module name="RPGInheritance" />
         <module name="U1M2L5PBD" />
         <module name="U1M3L3Katas" />
-        <module name="U1-M1-L6-Katas" />
+        <module name="U1M2L3Katas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -56,9 +58,11 @@
       <module name="katas" target="1.8" />
       <module name="LargestCities" target="1.8" />
       <module name="LoanCalculator" target="1.8" />
+      <module name="MatthewMarkewiczU1M3L5PBD" target="1.8" />
       <module name="minmaxavg" target="1.8" />
       <module name="pbd" target="1.8" />
       <module name="PrimeFinder" target="1.8" />
+      <module name="ProjectOne" target="1.8" />
       <module name="RectPavingCompany" target="1.8" />
       <module name="RectPavingCompany (1)" target="1.8" />
       <module name="RPGInheritance" target="1.8" />
