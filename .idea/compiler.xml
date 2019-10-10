@@ -18,14 +18,15 @@
         <module name="Calculator (1)" />
         <module name="ShapesPerimeters" />
         <module name="LoanCalculator" />
-        <module name="U1-M1-L6-Katas" />
         <module name="CustomerComposition" />
         <module name="HiLo (1)" />
         <module name="U1M2L5Katas" />
         <module name="RectPavingCompany" />
         <module name="U1-M1-Summative-Markewicz-Matthew" />
+        <module name="U1M2L3Katas" />
         <module name="U1M2L8PBD" />
         <module name="U1M3L1Katas" />
+        <module name="U1M3L5Katas" />
         <module name="katas" />
         <module name="CalculateObject" />
         <module name="U1M2L7Katas" />
@@ -38,7 +39,7 @@
         <module name="RPGInheritance" />
         <module name="U1M2L5PBD" />
         <module name="U1M3L3Katas" />
-        <module name="U1M2L3Katas" />
+        <module name="U1-M1-L6-Katas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -74,6 +75,7 @@
       <module name="U1M3L1Katas" target="1.8" />
       <module name="U1M3L2Katas" target="1.8" />
       <module name="U1M3L3Katas" target="1.8" />
+      <module name="U1M3L5Katas" target="1.8" />
       <module name="UserIO" target="1.8" />
     </bytecodeTargetLevel>
   </component>
