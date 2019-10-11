@@ -6,8 +6,7 @@ public class Application {
         Constable constable = new Constable("John", "Jurisdiction 1");
         Warrior warrior = new Warrior("Rob");
 
-        // method testing
-
+        // METHOD TESTING
         // farmer methods
         // -------------------------------------------
         farmer.run();
@@ -22,6 +21,7 @@ public class Application {
         System.out.println(farmer.getStamina()); // expected output: 85
         farmer.decreaseStamina();
         System.out.println(farmer.getStamina()); // expected output: 75
+
         // -------------------------------------------
 
         // constable methods
