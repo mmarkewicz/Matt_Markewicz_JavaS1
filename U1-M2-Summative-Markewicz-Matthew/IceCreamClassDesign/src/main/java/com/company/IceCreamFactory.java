@@ -1,6 +1,6 @@
 package com.company;
 
-public class IceCreamFactory extends IceCream {
+public class IceCreamFactory {
     // attributes of all ice cream
     private String flavor;
     private double quantity;
