@@ -1,36 +1,35 @@
 package com.company;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class App {
 
     static Scanner scanner = new Scanner(System.in);
 
-    public static void initialPrompt(Inventory inventory, String userMenuSelection) {
+    public static void initialPrompt(Inventory inventory) {
+        String userMenuSelection = scanner.nextLine().toLowerCase();
         switch (userMenuSelection) {
-            case "A":
             case "a":
             case "1":
                 displayAddPrompt(inventory);
                 break;
-            case "R":
             case "r":
             case "2":
                 displayRemovePrompt(inventory);
                 break;
-            case "D":
-            case "d":
+            case "s":
             case "3":
                 inventory.showAll();
                 break;
-            case "S":
-            case "s":
+            case "d":
             case "4":
                 displaySearchPrompt(inventory);
                 break;
             default:
                 System.out.println("Please enter a valid input");
-                break;
+                initialPrompt(inventory);
         }
     }
 
@@ -63,7 +62,7 @@ public class App {
         System.out.println("What category would you like to search by?");
         System.out.println("Options: make, model, year, miles, color");
         String userCategory = scanner.next().toLowerCase();
-        switch(userCategory) {
+        switch (userCategory) {
             case "make":
                 System.out.println("Enter the make of the car: ");
                 String make = scanner.next();
@@ -98,25 +97,22 @@ public class App {
     // MAIN -----------------------------------------------------------------------------------------------------------
     public static void main(String[] args) {
 
+        Inventory inventory = new Inventory();
+
         Car carOne = new Car("Toyota", "Camry", 1999, "Black", 100000);
         Car carTwo = new Car("Honda", "Accord", 2010, "Tan", 50000);
         Car carThree = new Car("Toyota", "Highlander", 1999, "Black", 100000);
 
-        Inventory inventory = new Inventory();
-        inventory.add(carOne);
-        inventory.add(carTwo);
-        inventory.add(carThree);
-        inventory.showAll();
+        inventory.initialCars(carOne, carTwo, carThree);
 
-        System.out.println("Welcome to the Vehicle Inventory");
+        System.out.println("Welcome to the Vehicle Inventory!");
+        System.out.println(" ");
         System.out.println("Choose one of the following services:");
         System.out.println("1. [A]dd a car to the inventory");
         System.out.println("2. [R]emove a car from the inventory");
         System.out.println("3. [D]isplay all cars in the inventory");
         System.out.println("4. [S]earch for a specific car");
 
-        String userMenuSelection = scanner.next();
-
-        initialPrompt(inventory, userMenuSelection);
+        initialPrompt(inventory);
     }
 }

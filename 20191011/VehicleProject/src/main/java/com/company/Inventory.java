@@ -6,13 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Inventory {
-    // initialize new list
-    private List<Car> inventoryList = new ArrayList<>();
 
+    // initialize new list
+    private ArrayList<Car> inventoryList = new ArrayList<>();
+
+    public void initialCars(Car carOne, Car carTwo, Car carThree) {
+        inventoryList.add(carOne);
+        inventoryList.add(carTwo);
+        inventoryList.add(carThree);
+    }
 
     public void add(Car car) {
         inventoryList.add(car);
-        System.out.println("Successfully added a car to the inventory");
     }
 
     public void delete(int index) {
