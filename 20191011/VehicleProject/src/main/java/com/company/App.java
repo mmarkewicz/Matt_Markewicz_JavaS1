@@ -1,6 +1,10 @@
 package com.company;
 
+import com.opencsv.exceptions.CsvDataTypeMismatchException;
+import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
+
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -96,15 +100,20 @@ public class App {
     }
 
     // MAIN -----------------------------------------------------------------------------------------------------------
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, CsvRequiredFieldEmptyException, CsvDataTypeMismatchException {
+
+        List<Car> csvList = CarFileIO.getCars("src/cars.csv");
+        System.out.println(csvList.get(0).getMake());
 
         Inventory inventory = new Inventory();
 
         Car carOne = new Car("Toyota", "Camry", 1999, "Black", 100000);
         Car carTwo = new Car("Honda", "Accord", 2010, "Tan", 50000);
         Car carThree = new Car("Toyota", "Highlander", 1999, "Black", 100000);
-
         inventory.initialCars(carOne, carTwo, carThree);
+
+        CarFileIO.writeCars(inventory.getInventoryList(), "src/cars.csv");
+
 
         System.out.println("Welcome to the Vehicle Inventory!");
         System.out.println(" ");

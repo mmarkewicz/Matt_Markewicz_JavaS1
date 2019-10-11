@@ -1,3 +1,4 @@
-make,model,year,color,miles
-Dodge,Charger,2018,Black,100000
-Lamborghini,Urus,2019,Black,0
+"color","make","miles","model","year"
+"Black","Toyota","100000","Camry","1999"
+"Tan","Honda","50000","Accord","2010"
+"Black","Toyota","100000","Highlander","1999"

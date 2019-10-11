@@ -7,6 +7,10 @@ public class Car {
     private String color;
     private int miles;
 
+    public Car() {
+
+    };
+
     public Car(String make, String model, int year, String color, int miles) {
         this.make = make;
         this.model = model;
@@ -14,6 +18,7 @@ public class Car {
         this.color = color;
         this.miles = miles;
     }
+
 
     public String getMake() {
         return make;
@@ -33,5 +38,25 @@ public class Car {
 
     public int getMiles() {
         return miles;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setMiles(int miles) {
+        this.miles = miles;
     }
 }
