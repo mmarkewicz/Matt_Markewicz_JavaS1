@@ -1,7 +1,7 @@
 package com.company;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
@@ -89,7 +89,8 @@ public class App {
                 inventory.searchMiles(miles);
                 break;
             default:
-                System.out.println("Error");
+                System.out.println("Please choose a valid input");
+                displaySearchPrompt(inventory);
                 break;
         }
     }
