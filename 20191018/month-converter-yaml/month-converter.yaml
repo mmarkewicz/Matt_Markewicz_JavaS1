@@ -1,0 +1,34 @@
+openapi: 3.0.0
+info:
+  title: Month Converter
+  description: A simple service that returns the name of a month based upon the number passed in the URI
+  version: 0.0.1
+  
+servers: 
+  - url: http://localhost:8008
+    description: Local Development Server
+    
+paths: 
+  /day/{monthNumber}:
+    get:
+      summary: Returns a month based on number
+      parameters: 
+        - name: monthNumber
+          in: path
+          required: true
+          description: The numerical value of the month you want returned.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 12
+      responses:
+        '200':
+          description: The value you sent to the service.
+          content:
+            application/json:
+              schema:
+                type: integer
+        '422':
+          description: The value must be between 1 and 12.
+            
