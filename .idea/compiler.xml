@@ -23,9 +23,10 @@
         <module name="CustomerComposition" />
         <module name="LargestCities" />
         <module name="U1M3L5Katas" />
+        <module name="month-converter" />
         <module name="RectPavingCompany" />
+        <module name="pbd" />
         <module name="MatthewMarkewiczU1M3L5PBD" />
-        <module name="U1-M1-Summative-Markewicz-Matthew" />
         <module name="ProjectOne" />
         <module name="U1M2L8PBD" />
         <module name="U1M3L1Katas" />
@@ -35,7 +36,8 @@
         <module name="IceCreamClassDesign" />
         <module name="UserIO" />
         <module name="FizzBuzz" />
-        <module name="pbd" />
+        <module name="city-list" />
+        <module name="U1-M1-Summative-Markewicz-Matthew" />
         <module name="U1M2L5Katas" />
         <module name="U1-M1-L5-katas" />
         <module name="RPGInheritance" />
@@ -48,6 +50,7 @@
       <module name="CalculateObject" target="1.8" />
       <module name="Calculator" target="1.8" />
       <module name="Calculator (1)" target="1.8" />
+      <module name="city-list" target="1.8" />
       <module name="ClassesPractice" target="1.8" />
       <module name="ConverterInterface" target="1.8" />
       <module name="CustomerComposition" target="1.8" />
@@ -60,6 +63,7 @@
       <module name="LoanCalculator" target="1.8" />
       <module name="MatthewMarkewiczU1M3L5PBD" target="1.8" />
       <module name="minmaxavg" target="1.8" />
+      <module name="month-converter" target="1.8" />
       <module name="pbd" target="1.8" />
       <module name="PrimeFinder" target="1.8" />
       <module name="ProjectOne" target="1.8" />
@@ -82,5 +86,10 @@
       <module name="U1M3L5Katas" target="1.8" />
       <module name="UserIO" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="month-converter" options="-parameters" />
+    </option>
   </component>
 </project>
