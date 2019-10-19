@@ -1,0 +1,90 @@
+openapi: 3.0.0
+info:
+  title: App for City Info
+  description: >-
+    A simple service that allows to get and create cities
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /city:
+    get:
+      summary: Returns all cities
+      
+      responses:
+        '200':
+          description: All cities in the app
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/City'
+    post:
+      summary: adds city
+      requestBody:
+        description: attributes of the city to add
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/City'
+      responses:
+        '201':
+          description: city added
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/City'     
+
+  /city/{name}:
+    get:
+      summary: Returns city by name
+      parameters:
+        - name: name
+          in: path
+          required: true
+          description: name of city
+          schema:
+            $ref: '#/components/schemas/City'
+      responses:
+        '200':
+          description: The name of a month
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/City'
+        '404':
+          description: Input not found
+          
+    delete:
+      summary: Deletes city by name
+      parameters:
+        - name: name
+          in: path
+          required: true
+          description: name of the city to be deleted
+          schema:
+            $ref: '#/components/schemas/City'
+      responses:
+        '204':
+          description: successful deletion
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/City'
+          
+components:
+  schemas:
+    City:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        state:
+          type: string
+        population:
+          type: integer
+        isCapital:
+          type: boolean
