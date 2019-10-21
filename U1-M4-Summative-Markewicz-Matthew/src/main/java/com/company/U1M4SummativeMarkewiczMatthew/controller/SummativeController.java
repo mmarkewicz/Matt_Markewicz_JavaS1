@@ -4,10 +4,7 @@ import com.company.U1M4SummativeMarkewiczMatthew.models.Answer;
 import com.company.U1M4SummativeMarkewiczMatthew.models.Quote;
 import com.company.U1M4SummativeMarkewiczMatthew.models.Word;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,16 +38,25 @@ public class SummativeController {
     Word wordNine = new Word("obbligato", "a part of the score that must be performed without change or omission");
     Word wordTen = new Word("satrap", "a governor of a province in ancient Persia");
 
-    Answer answerOne = new Answer("Will people on the train ever start acting normal?", "My sources say no.");
-    Answer answerTwo = new Answer("Will Brad ever be satisfied with his grade on a quiz?", "Very doubtful.");
-    Answer answerThree = new Answer("Is the winter going to be very cold?", "It is certain.");
-    Answer answerFour = new Answer("Is pizza for dinner?", "Cannot predict that now.");
-    Answer answerFive = new Answer("Does Cognizant have moles in our class?", "Without a doubt.");
-    Answer answerSix = new Answer("Will Lance buy cupcakes with icing after the next test?", "Reply hazy, try again.");
+//    Answer answerOne = new Answer("Will people on the train ever start acting normal?", "My sources say no.");
+//    Answer answerTwo = new Answer("Will Brad ever be satisfied with his grade on a quiz?", "Very doubtful.");
+//    Answer answerThree = new Answer("Is the winter going to be very cold?", "It is certain.");
+//    Answer answerFour = new Answer("Is pizza for dinner?", "Cannot predict that now.");
+//    Answer answerFive = new Answer("Does Cognizant have moles in our class?", "Without a doubt.");
+//    Answer answerSix = new Answer("Will Lance buy cupcakes with icing after the next test?", "Reply hazy, try again.");
+
+    String answerOne = "My sources say no.";
+    String answerTwo = "Very doubtful.";
+    String answerThree = "It is certain.";
+    String answerFour = "Cannot predict that now.";
+    String answerFive = "Without a doubt.";
+    String answerSix = "Reply hazy, try again.";
 
     List<Quote> quoteList = new ArrayList<>();
     List<Word> wordList = new ArrayList<>();
-    List<Answer> answerList = new ArrayList<>();
+    List<String> answerList = new ArrayList<>();
+    List<Answer> answerObjectList = new ArrayList<>();
+
 
     // constructor to populate lists
     public SummativeController() {
@@ -96,6 +102,16 @@ public class SummativeController {
     public Word getRandomWord() {
         int randomInt = rand.nextInt(10);
         return wordList.get(randomInt);
+    }
+
+    @RequestMapping(path = "/magic", method = RequestMethod.POST)
+    @ResponseStatus(HttpStatus.OK)
+    public String getRandomAnswer(@RequestBody String question) {
+        int randomInt = rand.nextInt(6);
+        String randomAns = answerList.get(randomInt);
+        Answer answerToBePosted = new Answer(question, randomAns);
+        answerObjectList.add(answerToBePosted);
+        return randomAns;
     }
 
 }
