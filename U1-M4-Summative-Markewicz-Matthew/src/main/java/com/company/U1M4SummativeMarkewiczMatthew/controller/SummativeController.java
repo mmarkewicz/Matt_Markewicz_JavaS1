@@ -3,10 +3,20 @@ package com.company.U1M4SummativeMarkewiczMatthew.controller;
 import com.company.U1M4SummativeMarkewiczMatthew.models.Answer;
 import com.company.U1M4SummativeMarkewiczMatthew.models.Quote;
 import com.company.U1M4SummativeMarkewiczMatthew.models.Word;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 @RestController
 public class SummativeController {
+
+    Random rand = new Random();
 
     // initialize objects
     Quote quoteOne = new Quote("Baron Harkonnen", "The Spice must flow!");
@@ -14,7 +24,7 @@ public class SummativeController {
     Quote quoteThree = new Quote("Duke Leto Atreides", "Here I am, here I remain!");
     Quote quoteFour = new Quote("Gurney Halleck", "The slow blade penetrates the shield.");
     Quote quoteFive = new Quote("Piter De Vries", "It is by will alone I set my mind in motion.");
-    Quote quoteSix = new Quote("Reverend Mother", "The willow submits to the wind and prospers until one day it is many willows-a wall against the wind. This is the willow's purpose.");
+    Quote quoteSix = new Quote("Reverend Mother", "The willow submits to the wind and prospers until one day it is many willows - a wall against the wind. This is the willow's purpose.");
     Quote quoteSeven = new Quote("Bewt", "The action had taken, also, a knowledge of personal power. Water was, indeed, power here.");
     Quote quoteEight = new Quote("Baron Harkonnen", "The way to control a Mentat is through is information. False information - false results.");
     Quote quoteNine = new Quote("Baron Harkonnen", "Observe the plans within plans within plans.");
@@ -31,11 +41,61 @@ public class SummativeController {
     Word wordNine = new Word("obbligato", "a part of the score that must be performed without change or omission");
     Word wordTen = new Word("satrap", "a governor of a province in ancient Persia");
 
-    Answer answerOne = new Answer();
-    Answer answerTwo = new Answer();
-    Answer answerThree = new Answer();
-    Answer answerFour = new Answer();
-    Answer answerFive = new Answer();
-    Answer answerSix = new Answer();
+    Answer answerOne = new Answer("Will people on the train ever start acting normal?", "My sources say no.");
+    Answer answerTwo = new Answer("Will Brad ever be satisfied with his grade on a quiz?", "Very doubtful.");
+    Answer answerThree = new Answer("Is the winter going to be very cold?", "It is certain.");
+    Answer answerFour = new Answer("Is pizza for dinner?", "Cannot predict that now.");
+    Answer answerFive = new Answer("Does Cognizant have moles in our class?", "Without a doubt.");
+    Answer answerSix = new Answer("Will Lance buy cupcakes with icing after the next test?", "Reply hazy, try again.");
+
+    List<Quote> quoteList = new ArrayList<>();
+    List<Word> wordList = new ArrayList<>();
+    List<Answer> answerList = new ArrayList<>();
+
+    // constructor to populate lists
+    public SummativeController() {
+        quoteList.add(quoteOne);
+        quoteList.add(quoteTwo);
+        quoteList.add(quoteThree);
+        quoteList.add(quoteFour);
+        quoteList.add(quoteFive);
+        quoteList.add(quoteSix);
+        quoteList.add(quoteSeven);
+        quoteList.add(quoteEight);
+        quoteList.add(quoteNine);
+        quoteList.add(quoteTen);
+
+        wordList.add(wordOne);
+        wordList.add(wordTwo);
+        wordList.add(wordThree);
+        wordList.add(wordFour);
+        wordList.add(wordFive);
+        wordList.add(wordSix);
+        wordList.add(wordSeven);
+        wordList.add(wordEight);
+        wordList.add(wordNine);
+        wordList.add(wordTen);
+
+        answerList.add(answerOne);
+        answerList.add(answerTwo);
+        answerList.add(answerThree);
+        answerList.add(answerFour);
+        answerList.add(answerFive);
+        answerList.add(answerSix);
+    }
+
+    @RequestMapping(path = "/quote", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public Quote getRandomQuote() {
+        int randomInt = rand.nextInt(10);
+        return quoteList.get(randomInt);
+    }
+
+    @RequestMapping(path = "/word", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public Word getRandomWord() {
+        int randomInt = rand.nextInt(10);
+        return wordList.get(randomInt);
+    }
 
 }
