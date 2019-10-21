@@ -1,4 +1,4 @@
-#Assessment Answers
+# Assessment Answers
 
 #### Why is it important to have a good understanding of the underlying business when creating a data model?
  Data will be analyzed by the business in order to make important decisions, so that data must be organized in a way that provides valuable insight into business processes. 
