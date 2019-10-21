@@ -13,50 +13,42 @@ import java.util.Random;
 @RestController
 public class SummativeController {
 
-    Random rand = new Random();
+    private Random rand = new Random();
 
     // initialize objects
-    Quote quoteOne = new Quote("Baron Harkonnen", "The Spice must flow!");
-    Quote quoteTwo = new Quote("Paul Atreides", "He who can destroy a thing, controls a thing.");
-    Quote quoteThree = new Quote("Duke Leto Atreides", "Here I am, here I remain!");
-    Quote quoteFour = new Quote("Gurney Halleck", "The slow blade penetrates the shield.");
-    Quote quoteFive = new Quote("Piter De Vries", "It is by will alone I set my mind in motion.");
-    Quote quoteSix = new Quote("Reverend Mother", "The willow submits to the wind and prospers until one day it is many willows - a wall against the wind. This is the willow's purpose.");
-    Quote quoteSeven = new Quote("Bewt", "The action had taken, also, a knowledge of personal power. Water was, indeed, power here.");
-    Quote quoteEight = new Quote("Baron Harkonnen", "The way to control a Mentat is through is information. False information - false results.");
-    Quote quoteNine = new Quote("Baron Harkonnen", "Observe the plans within plans within plans.");
-    Quote quoteTen = new Quote("Duke Leto Atreides", "Power and fear ... The tools of statecraft.");
+    private Quote quoteOne = new Quote("Baron Harkonnen", "The Spice must flow!");
+    private Quote quoteTwo = new Quote("Paul Atreides", "He who can destroy a thing, controls a thing.");
+    private Quote quoteThree = new Quote("Duke Leto Atreides", "Here I am, here I remain!");
+    private Quote quoteFour = new Quote("Gurney Halleck", "The slow blade penetrates the shield.");
+    private Quote quoteFive = new Quote("Piter De Vries", "It is by will alone I set my mind in motion.");
+    private Quote quoteSix = new Quote("Reverend Mother", "The willow submits to the wind and prospers until one day it is many willows - a wall against the wind. This is the willow's purpose.");
+    private Quote quoteSeven = new Quote("Bewt", "The action had taken, also, a knowledge of personal power. Water was, indeed, power here.");
+    private Quote quoteEight = new Quote("Baron Harkonnen", "The way to control a Mentat is through is information. False information - false results.");
+    private Quote quoteNine = new Quote("Baron Harkonnen", "Observe the plans within plans within plans.");
+    private Quote quoteTen = new Quote("Duke Leto Atreides", "Power and fear ... The tools of statecraft.");
 
-    Word wordOne = new Word("pelter", "a thrower of missiles");
-    Word wordTwo = new Word("concretize", "make something concrete");
-    Word wordThree = new Word("canvass", "get opinions by asking specific questions");
-    Word wordFour = new Word("lubberly", "clumsy and unskilled");
-    Word wordFive = new Word("cordial", "politely warm and friendly");
-    Word wordSix = new Word("jocular", "characterized by jokes and good humor");
-    Word wordSeven = new Word("tamp", "press down tightly");
-    Word wordEight = new Word("subnormality", "the state of being less than normal");
-    Word wordNine = new Word("obbligato", "a part of the score that must be performed without change or omission");
-    Word wordTen = new Word("satrap", "a governor of a province in ancient Persia");
+    private Word wordOne = new Word("pelter", "a thrower of missiles");
+    private Word wordTwo = new Word("concretize", "make something concrete");
+    private Word wordThree = new Word("canvass", "get opinions by asking specific questions");
+    private Word wordFour = new Word("lubberly", "clumsy and unskilled");
+    private Word wordFive = new Word("cordial", "politely warm and friendly");
+    private Word wordSix = new Word("jocular", "characterized by jokes and good humor");
+    private Word wordSeven = new Word("tamp", "press down tightly");
+    private Word wordEight = new Word("subnormality", "the state of being less than normal");
+    private Word wordNine = new Word("obbligato", "a part of the score that must be performed without change or omission");
+    private Word wordTen = new Word("satrap", "a governor of a province in ancient Persia");
 
-//    Answer answerOne = new Answer("Will people on the train ever start acting normal?", "My sources say no.");
-//    Answer answerTwo = new Answer("Will Brad ever be satisfied with his grade on a quiz?", "Very doubtful.");
-//    Answer answerThree = new Answer("Is the winter going to be very cold?", "It is certain.");
-//    Answer answerFour = new Answer("Is pizza for dinner?", "Cannot predict that now.");
-//    Answer answerFive = new Answer("Does Cognizant have moles in our class?", "Without a doubt.");
-//    Answer answerSix = new Answer("Will Lance buy cupcakes with icing after the next test?", "Reply hazy, try again.");
+    private String answerOne = "My sources say no.";
+    private String answerTwo = "Very doubtful.";
+    private String answerThree = "It is certain.";
+    private String answerFour = "Cannot predict that now.";
+    private String answerFive = "Without a doubt.";
+    private String answerSix = "Reply hazy, try again.";
 
-    String answerOne = "My sources say no.";
-    String answerTwo = "Very doubtful.";
-    String answerThree = "It is certain.";
-    String answerFour = "Cannot predict that now.";
-    String answerFive = "Without a doubt.";
-    String answerSix = "Reply hazy, try again.";
-
-    List<Quote> quoteList = new ArrayList<>();
-    List<Word> wordList = new ArrayList<>();
-    List<String> answerList = new ArrayList<>();
-    List<Answer> answerObjectList = new ArrayList<>();
-
+    private List<Quote> quoteList = new ArrayList<>();
+    private List<Word> wordList = new ArrayList<>();
+    private List<String> answerList = new ArrayList<>();
+    private List<Answer> answerObjectList = new ArrayList<>();
 
     // constructor to populate lists
     public SummativeController() {
