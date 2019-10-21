@@ -1,8 +1,8 @@
 package com.company.U1M4SummativeMarkewiczMatthew.controller;
 
-import com.company.U1M4SummativeMarkewiczMatthew.models.Answer;
-import com.company.U1M4SummativeMarkewiczMatthew.models.Quote;
-import com.company.U1M4SummativeMarkewiczMatthew.models.Word;
+import com.company.U1M4SummativeMarkewiczMatthew.model.Answer;
+import com.company.U1M4SummativeMarkewiczMatthew.model.Quote;
+import com.company.U1M4SummativeMarkewiczMatthew.model.Word;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

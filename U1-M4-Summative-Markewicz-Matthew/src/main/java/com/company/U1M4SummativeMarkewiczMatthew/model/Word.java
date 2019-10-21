@@ -1,4 +1,4 @@
-package com.company.U1M4SummativeMarkewiczMatthew.models;
+package com.company.U1M4SummativeMarkewiczMatthew.model;
 
 public class Word {
     private String word;
