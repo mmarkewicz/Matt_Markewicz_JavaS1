@@ -15,7 +15,6 @@ public class SummativeController {
 
     private Random rand = new Random();
 
-    // initialize objects
     private Quote quoteOne = new Quote("Baron Harkonnen", "The Spice must flow!");
     private Quote quoteTwo = new Quote("Paul Atreides", "He who can destroy a thing, controls a thing.");
     private Quote quoteThree = new Quote("Duke Leto Atreides", "Here I am, here I remain!");
@@ -50,7 +49,6 @@ public class SummativeController {
     private List<String> answerList = new ArrayList<>();
     private List<Answer> answerObjectList = new ArrayList<>();
 
-    // constructor to populate lists
     public SummativeController() {
         quoteList.add(quoteOne);
         quoteList.add(quoteTwo);
