@@ -8,42 +8,43 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PrimeFinder" />
         <module name="Calculator" />
-        <module name="ConverterInterface" />
+        <module name="U1M2L3Katas" />
         <module name="U1M3L2Katas" />
         <module name="minmaxavg" />
         <module name="RectPavingCompany (1)" />
         <module name="ClassesPractice" />
-        <module name="HiLo (1)" />
+        <module name="ConverterInterface" />
         <module name="HiLo" />
         <module name="U1M1L3Katas" />
         <module name="Calculator (1)" />
         <module name="ShapesPerimeters" />
         <module name="LoanCalculator" />
-        <module name="U1-M1-L6-Katas" />
         <module name="CustomerComposition" />
-        <module name="LargestCities" />
+        <module name="HiLo (1)" />
         <module name="U1M3L5Katas" />
         <module name="month-converter" />
         <module name="RectPavingCompany" />
-        <module name="pbd" />
         <module name="MatthewMarkewiczU1M3L5PBD" />
+        <module name="U1-M1-Summative-Markewicz-Matthew" />
         <module name="ProjectOne" />
         <module name="U1M2L8PBD" />
         <module name="U1M3L1Katas" />
         <module name="katas" />
         <module name="CalculateObject" />
+        <module name="U1-M4-Summative-Markewicz-Matthew" />
         <module name="U1M2L7Katas" />
         <module name="IceCreamClassDesign" />
         <module name="UserIO" />
         <module name="FizzBuzz" />
-        <module name="city-list" />
-        <module name="U1-M1-Summative-Markewicz-Matthew" />
+        <module name="LargestCities" />
+        <module name="pbd" />
         <module name="U1M2L5Katas" />
         <module name="U1-M1-L5-katas" />
         <module name="RPGInheritance" />
+        <module name="city-list" />
         <module name="U1M2L5PBD" />
         <module name="U1M3L3Katas" />
-        <module name="U1M2L3Katas" />
+        <module name="U1-M1-L6-Katas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -74,6 +75,7 @@
       <module name="U1-M1-L5-katas" target="1.8" />
       <module name="U1-M1-L6-Katas" target="1.8" />
       <module name="U1-M1-Summative-Markewicz-Matthew" target="1.8" />
+      <module name="U1-M4-Summative-Markewicz-Matthew" target="1.8" />
       <module name="U1M1L3Katas" target="1.8" />
       <module name="U1M2L3Katas" target="1.8" />
       <module name="U1M2L5Katas" target="1.8" />
@@ -89,6 +91,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="U1-M4-Summative-Markewicz-Matthew" options="-parameters" />
       <module name="month-converter" options="-parameters" />
     </option>
   </component>
