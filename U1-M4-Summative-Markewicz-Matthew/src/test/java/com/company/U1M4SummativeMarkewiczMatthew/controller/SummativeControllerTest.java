@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @RunWith(SpringRunner.class)
@@ -95,6 +97,20 @@ public class SummativeControllerTest {
     public void shouldReturnOneQuoteFromQuoteList() throws Exception {
 
         mockMvc.perform(get("/quote"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void shouldReturnOneWordFromWordList() throws Exception {
+
+        mockMvc.perform(get("/word"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void shouldReturnAnAnswer() throws Exception {
+
+        mockMvc.perform(post("/magic").content("Am I going to ask a question?").contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
 
