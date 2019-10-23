@@ -1,0 +1,67 @@
+openapi: 3.0.0
+info:
+  title: U1M4Summative
+  description: >-
+    API endpoints for U1-M4-Summative
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /quote:
+    get:
+      summary: Returns a random quote and author
+      
+      responses:
+        '200':
+          description: Successfully returned random quote
+          content:
+            application/json:
+              schema:
+                Quote:
+                  type: object
+                  properties: 
+                    authoer:
+                      type: string 
+                    quote:
+                      type: string
+
+  /word:
+    get:
+      summary: Returns a random word and definition
+      responses:
+        '200':
+          description: Successfully returned a random word
+          content:
+            application/json:
+              schema:
+                Word:
+                  type: object
+                  properties: 
+                    word:
+                      type: string 
+                    definition:
+                      type: string
+          
+  /magic:
+    post:
+      summary: Send a question to the magic eight ball, and receive a random response
+      responses:
+        '200':
+          description: Successfully returned a random response, and add the questions/answer pair to a List
+                  
+components:
+  schemas:
+    City:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        state:
+          type: string
+        population:
+          type: integer
+        isCapital:
+          type: boolean
