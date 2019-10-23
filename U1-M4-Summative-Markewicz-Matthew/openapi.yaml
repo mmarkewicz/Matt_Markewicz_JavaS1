@@ -11,7 +11,6 @@ paths:
   /quote:
     get:
       summary: Returns a random quote and author
-      
       responses:
         '200':
           description: Successfully returned random quote
@@ -25,7 +24,6 @@ paths:
                       type: string 
                     quote:
                       type: string
-
   /word:
     get:
       summary: Returns a random word and definition
@@ -49,19 +47,3 @@ paths:
       responses:
         '200':
           description: Successfully returned a random response, and add the questions/answer pair to a List
-                  
-components:
-  schemas:
-    City:
-      type: object
-      properties:
-        id:
-          type: integer
-        name:
-          type: string
-        state:
-          type: string
-        population:
-          type: integer
-        isCapital:
-          type: boolean
