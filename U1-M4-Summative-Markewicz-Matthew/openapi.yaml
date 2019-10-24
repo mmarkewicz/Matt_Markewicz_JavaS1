@@ -44,6 +44,19 @@ paths:
   /magic:
     post:
       summary: Send a question to the magic eight ball, and receive a random response
+      requestBody:
+        description: Send a question to the server
+        required: true
+        content:
+          application/json:
+            schema:
+              Answer:
+                type: object
+                properties:
+                  question:
+                    type: string
+                  answer:
+                    type: string
       responses:
         '200':
           description: Successfully returned a random response, and add the questions/answer pair to a List

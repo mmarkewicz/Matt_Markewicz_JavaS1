@@ -14,6 +14,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -95,21 +96,20 @@ public class SummativeControllerTest {
 
     @Test
     public void shouldReturnOneQuoteFromQuoteList() throws Exception {
-
         mockMvc.perform(get("/quote"))
-                .andExpect(status().isOk());
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.*", hasSize(2)));
     }
 
     @Test
     public void shouldReturnOneWordFromWordList() throws Exception {
-
         mockMvc.perform(get("/word"))
-                .andExpect(status().isOk());
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.*", hasSize(2)));
     }
 
     @Test
     public void shouldReturnAnAnswer() throws Exception {
-
         mockMvc.perform(post("/magic").content("Am I going to ask a question?").contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }

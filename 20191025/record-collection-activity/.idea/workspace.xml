@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f7cb6f2-d749-4e0a-a838-58c481513219" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/AddFive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/AddFive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/AddFiveAndDouble.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/AddFiveAndDouble.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/AddThirteen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/AddThirteen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/AverageThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/AverageThree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/DoubleAndAddFive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/DoubleAndAddFive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/MultiplyThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/MultiplyThree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/SubtractTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/classes/com/company/SubtractTwo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/AddFiveAndDoubleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/AddFiveAndDoubleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/AddFiveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/AddFiveTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/AddThirteenTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/AddThirteenTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/AllKatasTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/AllKatasTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/AverageThreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/AverageThreeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/DoubleAndAddFiveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/DoubleAndAddFiveTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/MultiplyThreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/MultiplyThreeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/SubtractTwoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../01-module/02-lesson/activities/katas/solutions/U1M1L2Katas/target/test-classes/com/company/SubtractTwoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../03-module/05-lesson-lambdas-streams/code/lambdas-streams/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-module/05-lesson-lambdas-streams/code/lambdas-streams/target/classes/com/company/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../03-module/05-lesson-lambdas-streams/code/lambdas-streams/target/classes/com/company/MotoFileIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-module/05-lesson-lambdas-streams/code/lambdas-streams/target/classes/com/company/MotoFileIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../03-module/05-lesson-lambdas-streams/code/lambdas-streams/target/classes/com/company/Motorcycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-module/05-lesson-lambdas-streams/code/lambdas-streams/target/classes/com/company/Motorcycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../moto-inventory-jdbctemplate-dao/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../moto-inventory-jdbctemplate-dao/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../moto-inventory-jdbctemplate-dao/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../moto-inventory-jdbctemplate-dao/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/main/java/com/company/reccolldao/dao/AlbumDaoJdbcTemplateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/main/java/com/company/reccolldao/dao/AlbumDaoJdbcTemplateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/main/java/com/company/reccolldao/dao/ArtistDaoJdbcTemplateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/main/java/com/company/reccolldao/dao/ArtistDaoJdbcTemplateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/main/java/com/company/reccolldao/dao/LabelDaoJdbcTemplateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/main/java/com/company/reccolldao/dao/LabelDaoJdbcTemplateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/main/java/com/company/reccolldao/dao/TrackDaoJdbcTemplateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/main/java/com/company/reccolldao/dao/TrackDaoJdbcTemplateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/test/java/com/company/reccolldao/dao/AlbumDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/test/java/com/company/reccolldao/dao/AlbumDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/starter-code/rec-coll-jdbctemplate-dao/src/test/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="ProjectId" id="1Sez21BDaN1s1X9c3PlAVMwDvGf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AlbumDaoTest.getAllAlbums">
+    <configuration name="AlbumDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rec-coll-jdbctemplate-dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.reccolldao.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.reccolldao.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.company.reccolldao.dao.AlbumDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlbumDaoTest.getAllAlbums" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rec-coll-jdbctemplate-dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.reccolldao.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.reccolldao.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.company.reccolldao.dao.AlbumDaoTest" />
+      <option name="METHOD_NAME" value="getAllAlbums" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AlbumDaoTest.getAllAlbums" />
+        <item itemvalue="JUnit.AlbumDaoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f7cb6f2-d749-4e0a-a838-58c481513219" name="Default Changelist" comment="" />
+      <created>1571938638257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571938638257</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
