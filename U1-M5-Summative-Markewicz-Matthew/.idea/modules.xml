@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/MatthewMarkewiczU1M5Summative.iml" filepath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/MatthewMarkewiczU1M5Summative.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa/MatthewMarkewiczU1M5Summative/MatthewMarkewiczU1M5Summative (1).iml" filepath="$PROJECT_DIR$/jpa/MatthewMarkewiczU1M5Summative/MatthewMarkewiczU1M5Summative (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/U1-M5-Summative-Markewicz-Matthew.iml" filepath="$PROJECT_DIR$/.idea/U1-M5-Summative-Markewicz-Matthew.iml" />
+    </modules>
+  </component>
+</project>
