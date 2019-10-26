@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a29ffafd-79f1-4b0e-84cd-dce7741dcc4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/controller/CarLotController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/dao/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/dto/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/controller/CarLotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/controller/CarLotController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/dao/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/dao/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/dto/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/dto/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +40,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MatthewMarkewiczCarLotJpaRepositoryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.MatthewMarkewiczCarLotJPARepository.MatthewMarkewiczCarLotJpaRepositoryApplication" />
+      <module name="MatthewMarkewiczCarLotJPARepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.MatthewMarkewiczCarLotJPARepository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MatthewMarkewiczCarLotJpaRepositoryApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
