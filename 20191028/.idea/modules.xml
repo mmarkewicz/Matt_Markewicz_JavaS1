@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/20191028.iml" filepath="$PROJECT_DIR$/.idea/20191028.iml" />
       <module fileurl="file://$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/MatthewMarkewiczCarLotJPARepository.iml" filepath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/MatthewMarkewiczCarLotJPARepository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MatthewMarkewiczCoffeeInventoryJPARepository/MatthewMarkewiczCoffeeInventoryJPARepository.iml" filepath="$PROJECT_DIR$/MatthewMarkewiczCoffeeInventoryJPARepository/MatthewMarkewiczCoffeeInventoryJPARepository.iml" />
     </modules>
   </component>
 </project>
