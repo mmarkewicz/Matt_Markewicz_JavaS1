@@ -44,4 +44,10 @@ public class CarLotController {
     public List<Car> getAllCars() {
         return carRepository.findAll();
     }
+
+    @RequestMapping(value = "/getByMakeAndColor/{make}/{color}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public List<Car> getAllCarrs() {
+        return carRepository.findAll();
+    }
 }
