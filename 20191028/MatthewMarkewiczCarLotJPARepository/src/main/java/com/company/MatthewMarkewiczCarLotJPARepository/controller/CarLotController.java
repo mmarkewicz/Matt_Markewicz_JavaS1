@@ -38,16 +38,5 @@ public class CarLotController {
     public List<Car> getCarByMakeAndColor(@PathVariable String make, @PathVariable String color) {
         return carRepository.findByMakeAndColor(make, color);
     }
-
-    @RequestMapping(value = "/getAll", method = RequestMethod.GET)
-    @ResponseStatus(HttpStatus.OK)
-    public List<Car> getAllCars() {
-        return carRepository.findAll();
-    }
-
-    @RequestMapping(value = "/getByMakeAndColor/{make}/{color}", method = RequestMethod.GET)
-    @ResponseStatus(HttpStatus.OK)
-    public List<Car> getAllCarrs() {
-        return carRepository.findAll();
-    }
+    
 }
