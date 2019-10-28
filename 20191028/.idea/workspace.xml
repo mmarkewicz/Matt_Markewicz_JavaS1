@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a29ffafd-79f1-4b0e-84cd-dce7741dcc4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/test/java/com/company/MatthewMarkewiczCarLotJPARepository/dao/CarRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCoffeeInventoryJPARepository/src/main/java/com/company/MatthewMarkewiczCoffeeInventoryJPARepository/controller/CoffeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCoffeeInventoryJPARepository/src/main/java/com/company/MatthewMarkewiczCoffeeInventoryJPARepository/controller/RoasterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCoffeeInventoryJPARepository/src/main/java/com/company/MatthewMarkewiczCoffeeInventoryJPARepository/dao/CoffeeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCoffeeInventoryJPARepository/src/main/java/com/company/MatthewMarkewiczCoffeeInventoryJPARepository/dao/RoasterDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCoffeeInventoryJPARepository/src/main/java/com/company/MatthewMarkewiczCoffeeInventoryJPARepository/dto/Coffee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatthewMarkewiczCoffeeInventoryJPARepository/src/main/java/com/company/MatthewMarkewiczCoffeeInventoryJPARepository/dto/Roaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/controller/CarLotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MatthewMarkewiczCarLotJPARepository/src/main/java/com/company/MatthewMarkewiczCarLotJPARepository/controller/CarLotController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatthewMarkewiczCoffeeInventoryJPARepository/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MatthewMarkewiczCoffeeInventoryJPARepository/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +35,7 @@
   <component name="ProjectId" id="1SkOfLWnhUTaOkGIQ6cLytI8qY1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>

@@ -38,5 +38,5 @@ public class CarLotController {
     public List<Car> getCarByMakeAndColor(@PathVariable String make, @PathVariable String color) {
         return carRepository.findByMakeAndColor(make, color);
     }
-    
+
 }
