@@ -32,6 +32,12 @@ public class BookDaoImplTest {
         List<Book> bookList = bookDao.getAllBooks();
         bookList.stream()
                 .forEach(book -> bookDao.deleteBook(book.getBook_id()));
+        List<Author> authorList = authorDao.getAllAuthors();
+        authorList.stream()
+                .forEach(author -> authorDao.deleteAuthor(author.getAuthor_id()));
+        List<Publisher> publisherList = publisherDao.getAllPublishers();
+        publisherList.stream()
+                .forEach(publisher -> publisherDao.deletePublisher(publisher.getPublisher_id()));
     }
 
     @After
