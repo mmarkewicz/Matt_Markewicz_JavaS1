@@ -34,9 +34,8 @@ public class BookDaoImplTest {
 
     @Test
     public void addGetDeleteBook() {
-
         // must add author and publisher to db since they are foreign keys
-        
+
         Book book = new Book();
         book.setTitle("Great Expectations");
         book.setPublish_id(1);
