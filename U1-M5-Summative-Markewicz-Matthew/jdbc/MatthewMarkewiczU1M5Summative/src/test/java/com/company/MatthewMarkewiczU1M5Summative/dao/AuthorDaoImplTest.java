@@ -22,9 +22,9 @@ public class AuthorDaoImplTest {
 
     @Before
     public void setUp() throws Exception {
-        List<Author> authorList = authorDao.getAllAuthors();
-        authorList.stream()
-                .forEach(author -> authorDao.deleteAuthor(author.getAuthor_id()));
+//        List<Author> authorList = authorDao.getAllAuthors();
+//        authorList.stream()
+//                .forEach(author -> authorDao.deleteAuthor(author.getAuthor_id()));
     }
 
     @After
@@ -49,9 +49,10 @@ public class AuthorDaoImplTest {
         assertEquals(author, author2);
     }
 
-    // TODO
     @Test
     public void getAllAuthors() {
+        int intitialSize = authorDao.getAllAuthors().size();
+
         // author 1
         Author author = new Author();
         author.setFirst_name("Charles");
@@ -76,11 +77,30 @@ public class AuthorDaoImplTest {
         author2.setEmail("test@email.com");
         author2 = authorDao.addAuthor(author2);
 
-        assertEquals(authorDao.getAllAuthors().size(), 2);
+        // compare new size to initial size + the two authors we just added
+        assertEquals(authorDao.getAllAuthors().size(), intitialSize + 2);
     }
 
-    // TODO
+    @Test
     public void updateAuthor() {
-        // body
+        // author 1
+        Author author = new Author();
+        author.setFirst_name("Charles");
+        author.setLast_name("Dickens");
+        author.setStreet("Main Street");
+        author.setCity("New York");
+        author.setState("NY");
+        author.setPostal_code("00000");
+        author.setPhone("(555) 555-5555");
+        author.setEmail("test@email.com");
+        author = authorDao.addAuthor(author); // add new author to db
+
+        author.setFirst_name("TESTING");
+        authorDao.updateAuthor(author); // update author id in db
+
+        author = authorDao.getAuthor(author.getAuthor_id()); // reassign value of author to read newly added author
+
+        // assert that the last author in the table's first name is UPDATE, not "Charles"
+        assertEquals(author.getFirst_name(), "TESTING");
     }
 }
