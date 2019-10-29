@@ -14,7 +14,7 @@ public class PublisherDaoImpl implements PublisherDao {
 
     // prepared statements
     private static final String INSERT_PUBLISHER_SQL =
-            "INSERT INTO publisher (name, street, city, state, postal_code, phone, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            "INSERT INTO publisher (name, street, city, state, postal_code, phone, email) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
     private static final String SELECT_PUBLISHER_SQL =
             "SELECT * FROM publisher WHERE publisher_id = ?";
