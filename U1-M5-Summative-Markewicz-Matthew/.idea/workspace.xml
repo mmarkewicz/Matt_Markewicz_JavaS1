@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcb6a88e-4ae2-4b93-95f0-d6e7ba5a4f25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/AuthorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/AuthorDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/AuthorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/AuthorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
