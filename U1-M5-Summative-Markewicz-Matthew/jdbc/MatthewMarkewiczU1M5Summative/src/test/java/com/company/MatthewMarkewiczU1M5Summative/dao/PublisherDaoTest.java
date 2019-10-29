@@ -22,9 +22,9 @@ public class PublisherDaoTest {
 
     @Before
     public void setUp() throws Exception {
-        List<Publisher> publisherList = publisherDao.getAllPublishers();
-        publisherList.stream()
-                .forEach(publisher -> publisherDao.deletePublisher(publisher.getPublisher_id()));
+//        List<Publisher> publisherList = publisherDao.getAllPublishers();
+//        publisherList.stream()
+//                .forEach(publisher -> publisherDao.deletePublisher(publisher.getPublisher_id()));
     }
 
     @After
@@ -48,15 +48,49 @@ public class PublisherDaoTest {
         assertEquals(publisher, publisher2);
     }
 
-    // TODO
     @Test
     public void updatePublisher() {
+        Publisher publisher = new Publisher();
+        publisher.setName("Test Pub");
+        publisher.setStreet("Test St");
+        publisher.setCity("Jersey City");
+        publisher.setState("NJ");
+        publisher.setPostal_code("11111");
+        publisher.setPhone("555-555-5555");
+        publisher.setEmail("test@test.com");
+        publisher = publisherDao.addPublisher(publisher);
 
+        publisher.setName("TESTING TESTING");
+        publisherDao.updatePublisher(publisher);
+
+        assertEquals(publisherDao.getPublisher(publisher.getPublisher_id()).getName(), "TESTING TESTING");
     }
 
-    // TODO
     @Test
     public void getAllPublishers() {
 
+        List<Publisher> initialPublisherList = publisherDao.getAllPublishers();
+
+        Publisher publisher = new Publisher();
+        publisher.setName("Test Pub");
+        publisher.setStreet("Test St");
+        publisher.setCity("Jersey City");
+        publisher.setState("NJ");
+        publisher.setPostal_code("11111");
+        publisher.setPhone("555-555-5555");
+        publisher.setEmail("test@test.com");
+
+        Publisher publisher2 = new Publisher();
+        publisher2.setName("Test Pub");
+        publisher2.setStreet("Test St");
+        publisher2.setCity("Jersey City");
+        publisher2.setState("NJ");
+        publisher2.setPostal_code("11111");
+        publisher2.setPhone("555-555-5555");
+        publisher2.setEmail("test@test.com");
+
+        List<Publisher> publisherList = publisherDao.getAllPublishers();
+
+        assertEquals(publisherList.size(), initialPublisherList.size() + 2);
     }
 }

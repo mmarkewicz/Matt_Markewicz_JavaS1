@@ -25,7 +25,7 @@ public class PublisherDaoImpl implements PublisherDao {
             "SELECT * FROM publisher";
 
     private static final String UPDATE_PUBLISHER_SQL =
-            "UPDATE publisher SET name, street, city, state, postal_code, phone, email WHERE publisher_id = ?";
+            "UPDATE publisher SET name = ?, street = ?, city = ?, state = ?, postal_code = ?, phone = ?, email = ? WHERE publisher_id = ?";
 
     private static final String DELETE_PUBLISHER_SQL =
             "DELETE FROM publisher WHERE publisher_id = ?";
@@ -65,7 +65,7 @@ public class PublisherDaoImpl implements PublisherDao {
 
     @Override
     public void updatePublisher(Publisher publisher) {
-        jdbcTemplate.update(INSERT_PUBLISHER_SQL,
+        jdbcTemplate.update(UPDATE_PUBLISHER_SQL,
                 publisher.getName(),
                 publisher.getStreet(),
                 publisher.getCity(),
