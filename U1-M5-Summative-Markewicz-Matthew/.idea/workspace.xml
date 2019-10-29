@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dcb6a88e-4ae2-4b93-95f0-d6e7ba5a4f25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/test/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/test/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/test/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/test/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImplTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PublisherDaoTest.getAllPublishers">
+  <component name="RunManager" selected="JUnit.BookDaoImplTest.getBooksByAuthor">
     <configuration name="AuthorDaoImplTest.getAllAuthors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MatthewMarkewiczU1M5Summative" />
       <extension name="coverage">
@@ -74,7 +74,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookDaoImplTest.updateBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookDaoImplTest.getBooksByAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MatthewMarkewiczU1M5Summative" />
       <extension name="coverage">
         <pattern>
@@ -84,7 +84,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao" />
       <option name="MAIN_CLASS_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao.BookDaoImplTest" />
-      <option name="METHOD_NAME" value="updateBooks" />
+      <option name="METHOD_NAME" value="getBooksByAuthor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookDaoImplTest.getBooksByAuthor" />
         <item itemvalue="JUnit.PublisherDaoTest.getAllPublishers" />
         <item itemvalue="JUnit.PublisherDaoTest.updatePublisher" />
         <item itemvalue="JUnit.AuthorDaoImplTest.updateAuthor" />
         <item itemvalue="JUnit.AuthorDaoImplTest.getAllAuthors" />
-        <item itemvalue="JUnit.BookDaoImplTest.updateBooks" />
       </list>
     </recent_temporary>
   </component>

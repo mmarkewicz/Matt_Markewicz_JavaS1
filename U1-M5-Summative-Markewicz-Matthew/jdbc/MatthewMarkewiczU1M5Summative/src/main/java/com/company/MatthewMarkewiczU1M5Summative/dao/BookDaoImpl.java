@@ -25,6 +25,8 @@ public class BookDaoImpl implements BookDao {
             "DELETE FROM book WHERE book_id = ?";
     private static final String UPDATE_BOOK_SQL =
             "UPDATE book SET isbn = ?, publish_date = ?, author_id = ?, title = ?, publisher_id = ?, price = ? WHERE book_id = ?";
+    private static final String SELECT_ALL_BOOKS_BY_AUTHOR =
+            "SELECT * FROM book WHERE author_id = ?";
 
     private JdbcTemplate jdbcTemplate;
 
@@ -78,7 +80,7 @@ public class BookDaoImpl implements BookDao {
 
     @Override
     public List<Book> getBooksByAuthor(int author_id) {
-        return null;
+        return jdbcTemplate.query(SELECT_ALL_BOOKS_BY_AUTHOR, this::mapRowToBook, author_id);
     }
 
     private Book mapRowToBook(ResultSet rs, int rowNum) throws SQLException {
