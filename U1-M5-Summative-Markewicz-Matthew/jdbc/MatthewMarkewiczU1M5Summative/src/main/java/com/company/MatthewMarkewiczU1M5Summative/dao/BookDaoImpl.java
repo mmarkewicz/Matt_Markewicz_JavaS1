@@ -26,7 +26,6 @@ public class BookDaoImpl implements BookDao {
 
     private JdbcTemplate jdbcTemplate;
 
-    @Autowired
     public BookDaoImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }

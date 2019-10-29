@@ -66,7 +66,6 @@ public class AuthorDaoImpl implements AuthorDao {
     @Override
     public void updateAuthor(Author author) {
         jdbcTemplate.update(INSERT_AUTHOR_SQL,
-                author.getAuthor_id(),
                 author.getFirst_name(),
                 author.getLast_name(),
                 author.getStreet(),
@@ -74,7 +73,8 @@ public class AuthorDaoImpl implements AuthorDao {
                 author.getState(),
                 author.getPostal_code(),
                 author.getPhone(),
-                author.getEmail()
+                author.getEmail(),
+                author.getAuthor_id()
         );
     }
 
