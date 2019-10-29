@@ -3,6 +3,7 @@ package com.company.MatthewMarkewiczU1M5Summative.dao;
 import com.company.MatthewMarkewiczU1M5Summative.models.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
@@ -10,6 +11,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Repository
+@Component
 public class BookDaoImpl implements BookDao {
 
     // prepared statements
@@ -86,7 +88,7 @@ public class BookDaoImpl implements BookDao {
         book.setAuthor_id(rs.getInt("author_id"));
         book.setPrice(rs.getDouble("price"));
         book.setPublish_date(rs.getDate("publish_date"));
-        book.setPublish_id(rs.getInt("publish_id"));
+        book.setPublish_id(rs.getInt("publisher_id"));
         book.setTitle(rs.getString("title"));
         return book;
     }

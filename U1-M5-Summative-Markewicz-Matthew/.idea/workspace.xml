@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcb6a88e-4ae2-4b93-95f0-d6e7ba5a4f25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/test/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/AuthorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/AuthorDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/test/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/test/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImplTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PublisherDaoTest.getAddDeletePublisher">
+  <component name="RunManager" selected="JUnit.BookDaoImplTest">
     <configuration name="AuthorDaoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MatthewMarkewiczU1M5Summative" />
       <extension name="coverage">
@@ -122,10 +125,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PublisherDaoTest.getAddDeletePublisher" />
-        <item itemvalue="JUnit.BookDaoImplTest.addGetDeleteBook" />
         <item itemvalue="JUnit.BookDaoImplTest" />
+        <item itemvalue="JUnit.BookDaoImplTest.addGetDeleteBook" />
         <item itemvalue="JUnit.AuthorDaoImplTest" />
+        <item itemvalue="JUnit.PublisherDaoTest.getAddDeletePublisher" />
         <item itemvalue="JUnit.AuthorDaoImplTest.addGetDeleteAuthor" />
       </list>
     </recent_temporary>
@@ -155,21 +158,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/test/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImplTest.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/test/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImplTest.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

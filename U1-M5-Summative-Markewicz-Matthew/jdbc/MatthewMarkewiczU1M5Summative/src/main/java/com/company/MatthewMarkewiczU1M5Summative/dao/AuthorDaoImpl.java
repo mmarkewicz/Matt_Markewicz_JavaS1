@@ -2,6 +2,7 @@ package com.company.MatthewMarkewiczU1M5Summative.dao;
 
 import com.company.MatthewMarkewiczU1M5Summative.models.Author;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -10,6 +11,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Repository
+@Component
 public class AuthorDaoImpl implements AuthorDao {
 
     // prepared statements
