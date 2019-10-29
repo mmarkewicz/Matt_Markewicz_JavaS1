@@ -47,4 +47,16 @@ public class PublisherDaoTest {
 
         assertEquals(publisher, publisher2);
     }
+
+    // TODO
+    @Test
+    public void updatePublisher() {
+
+    }
+
+    // TODO
+    @Test
+    public void getAllPublishers() {
+
+    }
 }
