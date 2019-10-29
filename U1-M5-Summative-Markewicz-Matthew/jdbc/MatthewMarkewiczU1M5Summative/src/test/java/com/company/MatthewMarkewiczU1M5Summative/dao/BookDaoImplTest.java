@@ -85,4 +85,101 @@ public class BookDaoImplTest {
 
         assertEquals(book.toString(), book2.toString());
     }
+
+    @Test
+    public void getAllBooks() {
+        // author
+        Author author = new Author();
+        author.setFirst_name("Charles");
+        author.setLast_name("Dickens");
+        author.setStreet("Main Street");
+        author.setCity("New York");
+        author.setState("NY");
+        author.setPostal_code("00000");
+        author.setPhone("(555) 555-5555");
+        author.setEmail("test@email.com");
+        author = authorDao.addAuthor(author);
+
+        // publisher
+        Publisher publisher = new Publisher();
+        publisher.setName("Pub1");
+        publisher.setStreet("First St");
+        publisher.setCity("Jersey City");
+        publisher.setState("NJ");
+        publisher.setPostal_code("10101");
+        publisher.setPhone("(555) 123-4567");
+        publisher.setEmail("testingtesting@email.com");
+        publisher = publisherDao.addPublisher(publisher);
+
+        // construct books list
+        // book 1
+        Book book = new Book();
+        book.setTitle("Great Expectations");
+        book.setPublish_id(publisher.getPublisher_id());
+        book.setPublish_date(new Date());
+        book.setPrice(15.00);
+        book.setIsbn("11111");
+        book.setAuthor_id(author.getAuthor_id());
+        bookDao.addBook(book);
+
+        // book 2
+        Book book2 = new Book();
+        book2.setTitle("Silence of the Lambs");
+        book2.setPublish_id(publisher.getPublisher_id());
+        book2.setPublish_date(new Date());
+        book2.setPrice(15.00);
+        book2.setIsbn("11111");
+        book2.setAuthor_id(author.getAuthor_id());
+        bookDao.addBook(book2);
+
+        List<Book> bookList = bookDao.getAllBooks();
+
+        assertEquals(bookList.size(), 2);
+    }
+
+    @Test
+    public void updateBooks() {
+        // author
+        Author author = new Author();
+        author.setFirst_name("Charles");
+        author.setLast_name("Dickens");
+        author.setStreet("Main Street");
+        author.setCity("New York");
+        author.setState("NY");
+        author.setPostal_code("00000");
+        author.setPhone("(555) 555-5555");
+        author.setEmail("test@email.com");
+        author = authorDao.addAuthor(author);
+
+        // publisher
+        Publisher publisher = new Publisher();
+        publisher.setName("Pub1");
+        publisher.setStreet("First St");
+        publisher.setCity("Jersey City");
+        publisher.setState("NJ");
+        publisher.setPostal_code("10101");
+        publisher.setPhone("(555) 123-4567");
+        publisher.setEmail("testingtesting@email.com");
+        publisher = publisherDao.addPublisher(publisher);
+
+        // book 1
+        Book book = new Book();
+        book.setTitle("Great Expectations");
+        book.setPublish_id(publisher.getPublisher_id());
+        book.setPublish_date(new Date());
+        book.setPrice(15.00);
+        book.setIsbn("11111");
+        book.setAuthor_id(author.getAuthor_id());
+        book = bookDao.addBook(book);
+
+        book.setTitle("UPDATED"); // change title
+
+        bookDao.updateBook(book);
+        List<Book> allBooksFromDB = bookDao.getAllBooks();
+
+        Book testBook = allBooksFromDB.get(0); // first book in db
+
+        // assert that title of book in db is
+        assertEquals(testBook.getTitle(), "UPDATED");
+    }
 }

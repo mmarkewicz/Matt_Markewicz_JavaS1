@@ -40,7 +40,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookDaoImplTest.addGetDeleteBook">
+  <component name="RunManager" selected="JUnit.BookDaoImplTest.updateBooks">
     <configuration name="AuthorDaoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MatthewMarkewiczU1M5Summative" />
       <extension name="coverage">
@@ -52,22 +52,6 @@
       <option name="PACKAGE_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao" />
       <option name="MAIN_CLASS_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao.AuthorDaoImplTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthorDaoImplTest.addGetDeleteAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MatthewMarkewiczU1M5Summative" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.MatthewMarkewiczU1M5Summative.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao.AuthorDaoImplTest" />
-      <option name="METHOD_NAME" value="addGetDeleteAuthor" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PublisherDaoTest.getAddDeletePublisher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookDaoImplTest.getAllBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MatthewMarkewiczU1M5Summative" />
       <extension name="coverage">
         <pattern>
@@ -112,8 +96,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao.PublisherDaoTest" />
-      <option name="METHOD_NAME" value="getAddDeletePublisher" />
+      <option name="MAIN_CLASS_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao.BookDaoImplTest" />
+      <option name="METHOD_NAME" value="getAllBooks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookDaoImplTest.updateBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatthewMarkewiczU1M5Summative" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.MatthewMarkewiczU1M5Summative.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.company.MatthewMarkewiczU1M5Summative.dao.BookDaoImplTest" />
+      <option name="METHOD_NAME" value="updateBooks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookDaoImplTest.updateBooks" />
+        <item itemvalue="JUnit.BookDaoImplTest.getAllBooks" />
         <item itemvalue="JUnit.BookDaoImplTest.addGetDeleteBook" />
         <item itemvalue="JUnit.BookDaoImplTest" />
         <item itemvalue="JUnit.AuthorDaoImplTest" />
-        <item itemvalue="JUnit.PublisherDaoTest.getAddDeletePublisher" />
-        <item itemvalue="JUnit.AuthorDaoImplTest.addGetDeleteAuthor" />
       </list>
     </recent_temporary>
   </component>
