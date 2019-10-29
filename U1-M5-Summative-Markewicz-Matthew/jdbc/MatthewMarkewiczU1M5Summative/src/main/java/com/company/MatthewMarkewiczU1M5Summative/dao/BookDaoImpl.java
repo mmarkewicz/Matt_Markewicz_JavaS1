@@ -14,7 +14,7 @@ public class BookDaoImpl implements BookDao {
 
     // prepared statements
     private static final String INSERT_BOOK_SQL =
-            "INSERT INTO book (isbn, publish_date, author_id, title, publish_id, price) VALUES (?, ?, ?, ?, ?, ?)";
+            "INSERT INTO book (isbn, publish_date, author_id, title, publisher_id, price) VALUES (?, ?, ?, ?, ?, ?)";
     private static final String SELECT_BOOK_SQL =
             "SELECT * FROM book WHERE book_id = ?";
     private static final String SELECT_ALL_BOOKS_SQL =
@@ -22,7 +22,7 @@ public class BookDaoImpl implements BookDao {
     private static final String DELETE_BOOK_SQL =
             "DELETE FROM book WHERE book_id = ?";
     private static final String UPDATE_BOOK_SQL =
-            "UPDATE book SET isbn = ?, publish_date = ?, author_id = ?, title = ?, publish_id = ?, price = ? WHERE book_id = ?";
+            "UPDATE book SET isbn = ?, publish_date = ?, author_id = ?, title = ?, publisher_id = ?, price = ? WHERE book_id = ?";
 
     private JdbcTemplate jdbcTemplate;
 
@@ -48,7 +48,7 @@ public class BookDaoImpl implements BookDao {
                 book.getPublish_date(),
                 book.getAuthor_id(),
                 book.getTitle(),
-                book.getPublish_date(),
+                book.getPublish_id(),
                 book.getPrice()
         );
 
