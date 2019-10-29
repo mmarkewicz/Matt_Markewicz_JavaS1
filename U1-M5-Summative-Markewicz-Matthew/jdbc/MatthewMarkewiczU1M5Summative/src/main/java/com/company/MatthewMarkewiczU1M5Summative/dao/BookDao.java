@@ -9,7 +9,7 @@ public interface BookDao {
     List<Book> getAllBooks();
     Book addBook(Book book);
     void updateBook(Book book);
-    void deleteBook(Book book);
+    void deleteBook(int id);
 
     // get books by author
     List<Book> getBooksByAuthor(int author_id);

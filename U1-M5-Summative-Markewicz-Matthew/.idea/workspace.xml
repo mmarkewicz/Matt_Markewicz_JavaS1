@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcb6a88e-4ae2-4b93-95f0-d6e7ba5a4f25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/test/java/com/company/MatthewMarkewiczU1M5Summative/dao/AuthorDaoImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/AuthorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/AuthorDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/BookDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/MatthewMarkewiczU1M5Summative/src/main/java/com/company/MatthewMarkewiczU1M5Summative/dao/PublisherDaoImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
