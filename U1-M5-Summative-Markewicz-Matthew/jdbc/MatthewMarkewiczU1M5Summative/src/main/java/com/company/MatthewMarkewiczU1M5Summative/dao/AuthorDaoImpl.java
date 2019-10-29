@@ -58,7 +58,7 @@ public class AuthorDaoImpl implements AuthorDao {
                 author.getEmail()
                 );
 
-        int id = jdbcTemplate.queryForObject("SELECT last_insert_author_id()", Integer.class);
+        int id = jdbcTemplate.queryForObject("SELECT last_insert_id()", Integer.class);
         author.setAuthor_id(id);
         return author;
     }
