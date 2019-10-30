@@ -1,5 +1,7 @@
 package com.company.MatthewMarkewiczU1M5Summative.models;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 import java.util.Date;
 import java.util.Objects;
 
