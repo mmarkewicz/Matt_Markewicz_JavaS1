@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface BookRepository extends JpaRepository<Book, Integer> {
     // custom methods
-    List<Book> findBooksByAuthor_id(Integer author_id);
+//    List<Book> findBooksByAuthor_id(Integer author_id);
 }

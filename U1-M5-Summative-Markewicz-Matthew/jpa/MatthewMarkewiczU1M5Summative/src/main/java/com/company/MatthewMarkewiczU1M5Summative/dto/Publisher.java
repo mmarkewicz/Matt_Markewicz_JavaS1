@@ -11,7 +11,7 @@ import java.util.Objects;
 public class Publisher {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int publisher_id;
     private String name;
     private String street;
