@@ -1,0 +1,366 @@
+openapi: 3.0.0
+info:
+  title: rest-web-service-project  
+  description: Simple REST web service with service layer.
+  version: 0.0.1
+servers: 
+    - url: http://localhost:8080
+      description: Local dev server
+
+paths:
+  /customers:
+    get:
+      summary: returns a random quote and who said the quote
+      description: A simple service that will return a Quote object
+      responses:
+        '200':
+          description: a list of customer view models
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomerViewModel'
+    post:
+      summary: creates a new customer
+      description: use this to create a new customer
+      requestBody:
+        description: customer object
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+      responses:
+        '200':
+          description: a customer view model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomerViewModel'
+  /customers/{id}:
+    get:
+      summary: get a customer
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The customer ID.
+      responses:
+        '200':
+          description: a customer view model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomerViewModel'
+    put:
+      summary: update customer
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The customer ID.
+      description: update a customer
+      requestBody:
+        description: customer object
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+      responses:
+        '200':
+          description: successful update
+    delete:
+      summary: delete a customer
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The customer ID.
+      description: delete a customer
+      responses:
+        '200':
+          description: successful deletion
+  /invoices:
+    get:
+      summary: get all invoices
+      responses:
+        '200':
+          description: a list of invoice view models
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceViewModel'
+    post:
+      summary: create new invoice
+      requestBody:
+        description: invoice object
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Invoice'
+      responses:
+        '200':
+          description: a invoice view models
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceViewModel'
+  /invoice/{id}:
+    get:
+      summary: get an invoice
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The invoice ID.
+      responses:
+        '200':
+          description: a invoice view model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceViewModel'
+    put:
+      summary: update invoice
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The invoice ID.
+      description: update a invoice
+      requestBody:
+        description: invoice object
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Invoice'
+      responses:
+        '200':
+          description: successful update
+    delete:
+      summary: delete a invoice
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The invoice ID.
+      description: delete a invoice
+      responses:
+        '200':
+          description: successful deletion
+  /items:
+    get:
+      summary: get all items
+      responses:
+        '200':
+          description: a item view model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+    post:
+      summary: create a new item
+      requestBody:
+        description: item object
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Item'
+        responses:
+        '200':
+          description: an item object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+  /items/{id}:
+    get:
+      summary: get an item
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The item ID.
+      description: get an item
+      responses:
+        '200':
+          description: an item model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+    put:
+      summary: update an item
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The item ID.
+      description: update an item
+      responses:
+        '200':
+          description: an item object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+    delete:
+      summary: delete an item
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The item ID.
+      description: delete an item
+      responses:
+        '200':
+          description: an item object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'             
+components:
+  schemas:
+    Customer:
+      type: object
+      properties:
+        customer_id:
+          type: integer
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        company:
+          type: string
+        phone:
+          type: string  
+      required: 
+        - first_name
+        - last_name
+        - email
+        - company
+        - phone
+    Item:
+      properties:
+        item_id:
+          type: integer
+        name:
+          type: string
+        description:
+          type: string
+        daily_rate:
+          type: integer  
+      required: 
+        - name
+        - daily_rate
+    Invoice:
+      properties:
+        invoice_id:
+          type: integer
+        customer_id:
+          type: integer
+        pickup_date:
+          type: date
+        order_date:
+          type: date
+        return_date:
+          type: date
+        late_fee:
+          type: integer  
+      required: 
+        - customer_id
+        - order_date
+        - return_date
+        - late_fee
+    Invoice_Item:
+      properties:
+        invoice_item_id:
+          type: integer
+        invoice_id:
+          type: integer
+        item_id:
+          type: integer
+        quantity:
+          type: integer
+        unit_price:
+          type: integer
+        discount:
+          type: integer  
+      required: 
+        - invoice_id
+        - item_id
+        - quantity
+        - unit_price 
+        - discount
+    CustomerViewModel:
+      properties:
+        customer_id:
+          type: integer
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        company:
+          type: string
+        phone:
+          type: string
+        invoice_view_model_list:
+          $ref: '#/components/schemas/InvoiceViewModel'
+      required: 
+        - customer_id
+        - first_name
+        - last_name
+        - email
+        - company
+        - phone 
+    InvoiceViewModel:
+      type: object
+      properties:
+        invoice_id:
+          type: integer
+        Customer:
+          $ref: '#/components/schemas/Customer'
+        item_view_model_list:
+            $ref: '#/components/schemas/InvoiceItemViewModel'
+        order_date:
+          type: date
+        return_date:
+          type: date
+        late_fee:
+          type: integer  
+      required: 
+        - customer_id
+        - order_date
+        - return_date
+        - late_fee
+    InvoiceItemViewModel:
+      type: object
+      properties:
+        invoice_item_id:
+          type: integer
+        Item:
+          $ref: '#/components/schemas/Item'
+        invoice_id:
+          type: integer
+        quantity:
+          type: integer
+        unit_price:
+          type: integer
+        discount:
+          type: integer  
+      required: 
+        - invoice_item_id
+        - Item
+        - invoice_id
+        - quantity
+        - unit_price
+        - discount
+        
+        
