@@ -1,29 +1,67 @@
 package com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.service;
 
-import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dao.ConsoleRepository;
-import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dto.Console;
+import com.company.MatthewMarkewiczU1Capstone.dao.*;
+import com.company.MatthewMarkewiczU1Capstone.dto.Console;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import javax.validation.Valid;
 import java.util.List;
 
+@Service
 public class ConsoleService {
 
+    ConsoleDao consoleDao;
+
     @Autowired
-    ConsoleRepository consoleRepository;
-
-    public Console saveConsole(Console console) {
-        return consoleRepository.save(console);
+    public ConsoleService(ConsoleDao consoleDao) {
+        this.consoleDao = consoleDao;
     }
 
-    public Console getConsole(int id) {
-        return consoleRepository.getOne(id);
+    public @Valid Console saveConsole(@Valid Console console) throws Exception {
+        try {
+            return consoleDao.addConsole(console);
+        } catch (Exception e) {
+            throw new Exception("SQL Error: Make sure your request is formatted properly");
+        }
     }
 
-    public List<Console> getAllConsoles() {
-        return consoleRepository.findAll();
+    public @Valid Console findConsole(int id) throws Exception {
+        try {
+            return consoleDao.getConsole(id);
+        } catch (Exception e) {
+            throw new Exception("There is no console in the database with that ID");
+        }
     }
 
-    public Console updateConsole(Console console) {
-        return consoleRepository.save(console);
+    public List<Console> findConsolesByManufacturer(String manufacturer) throws Exception {
+        try {
+            return consoleDao.getConsolesByManufacturer(manufacturer);
+        } catch (Exception e) {
+            throw new Exception("There is no console in the database from that manufacturer");
+        }
     }
+
+    public List<Console> findAllConsoles() {
+        return consoleDao.getAllConsoles();
+    }
+
+    public void updateConsole(@Valid Console console) throws Exception {
+        try {
+            consoleDao.updateConsole(console);
+        } catch (Exception e) {
+            throw new Exception("Could not update the given entry, make sure that request body is submitting all required information");
+        }
+    }
+
+    @Transactional
+    public void removeConsole(int id) throws Exception {
+        try {
+            consoleDao.deleteConsole(id);
+        } catch (Exception e) {
+            throw new Exception("Cannot find a console with that ID in the database");
+        }
+    }
+
 }
