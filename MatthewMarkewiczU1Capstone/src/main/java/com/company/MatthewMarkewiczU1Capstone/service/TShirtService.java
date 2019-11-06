@@ -17,24 +17,40 @@ public class TShirtService {
         this.tShirtDao = tShirtDao;
     }
 
-    public TShirt saveTShirt(TShirt tShirt) {
-        return tShirtDao.addTShirt(tShirt);
+    public TShirt saveTShirt(TShirt tShirt) throws Exception {
+        try {
+            return tShirtDao.addTShirt(tShirt);
+        } catch (Exception e) {
+            throw new Exception("Couldn't add T-Shirt to database");
+        }
     }
 
     public List<TShirt> findAllTShirts() {
         return tShirtDao.getAllTShirts();
     }
 
-    public TShirt findTShirtById(int id) {
-        return tShirtDao.getTShirt(id);
+    public TShirt findTShirtById(int id) throws Exception {
+        try {
+            return tShirtDao.getTShirt(id);
+        } catch (Exception e) {
+            throw new Exception("No shirts with that ID in the database");
+        }
     }
 
-    public List<TShirt> findTShirtsByColor(String color) {
-        return tShirtDao.getTShirtsByColor(color);
+    public List<TShirt> findTShirtsByColor(String color) throws Exception {
+        if (tShirtDao.getTShirtsByColor(color).size() == 0) {
+            throw new Exception("No shirts with that color in database");
+        } else {
+            return tShirtDao.getTShirtsByColor(color);
+        }
     }
 
-    public List<TShirt> findTShirtsBySize(String size) {
-        return tShirtDao.getTShirtsBySize(size);
+    public List<TShirt> findTShirtsBySize(String size) throws Exception {
+        if (tShirtDao.getTShirtsBySize(size).size() == 0) {
+            throw new Exception("No shirts with that size in database");
+        } else {
+            return tShirtDao.getTShirtsBySize(size);
+        }
     }
 
     public void updateTShirt(TShirt tShirt) {

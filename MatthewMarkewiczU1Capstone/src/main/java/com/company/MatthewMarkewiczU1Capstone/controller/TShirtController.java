@@ -16,31 +16,31 @@ public class TShirtController {
 
     @GetMapping(value = "/tshirts")
     @ResponseStatus(value = HttpStatus.OK)
-    public List<TShirt> getAllTShirts() {
+    public List<TShirt> getAllTShirts() throws Exception {
         return tShirtService.findAllTShirts();
     }
 
     @GetMapping(value = "/tshirts/{id}")
     @ResponseStatus(value = HttpStatus.OK)
-    public TShirt getTShirtById(@PathVariable int id) {
+    public TShirt getTShirtById(@PathVariable int id) throws Exception {
         return tShirtService.findTShirtById(id);
     }
 
     @GetMapping(value = "/tshirts/size/{size}")
     @ResponseStatus(value = HttpStatus.OK)
-    public List<TShirt> getTShirtsBySize(@PathVariable String size) {
+    public List<TShirt> getTShirtsBySize(@PathVariable String size) throws Exception {
         return tShirtService.findTShirtsBySize(size);
     }
 
     @GetMapping(value = "/tshirts/color/{color}")
     @ResponseStatus(value = HttpStatus.OK)
-    public List<TShirt> getTShirtsByColor(@PathVariable String color) {
+    public List<TShirt> getTShirtsByColor(@PathVariable String color) throws Exception {
         return tShirtService.findTShirtsByColor(color);
     }
 
     @PostMapping(value = "/tshirts")
     @ResponseStatus(value = HttpStatus.CREATED)
-    public TShirt postTShirt(@RequestBody TShirt tShirt) {
+    public TShirt postTShirt(@RequestBody TShirt tShirt) throws Exception {
         return tShirtService.saveTShirt(tShirt);
     }
 

@@ -32,7 +32,7 @@ public class GameServiceTest {
     }
 
     @Test
-    public void shouldAddNewGameFromServiceLayer() {
+    public void shouldAddNewGameFromServiceLayer() throws Exception {
         Game gameOne = new Game();
         gameOne.setTitle("Halo");
         gameOne.setStudio("Bungie");
@@ -54,7 +54,7 @@ public class GameServiceTest {
     }
 
     @Test
-    public void shouldGetGameFromServiceLayer() {
+    public void shouldGetGameFromServiceLayer() throws Exception {
         Game gameOneFromDb = new Game();
         gameOneFromDb.setTitle("Halo");
         gameOneFromDb.setStudio("Bungie");
@@ -68,7 +68,7 @@ public class GameServiceTest {
     }
 
     @Test
-    public void shouldGetGameListFromServiceLayer() {
+    public void shouldGetGameListFromServiceLayer() throws Exception {
         Game gameOneFromDb = new Game();
         gameOneFromDb.setTitle("Halo");
         gameOneFromDb.setStudio("Bungie");
@@ -85,7 +85,7 @@ public class GameServiceTest {
     }
 
     @Test
-    public void shouldGetGameListByTitle() {
+    public void shouldGetGameListByTitle() throws Exception {
         Game gameOneFromDb = new Game();
         gameOneFromDb.setTitle("Halo");
         gameOneFromDb.setStudio("Bungie");
@@ -102,7 +102,7 @@ public class GameServiceTest {
     }
 
     @Test
-    public void shouldGetGameListByEsrb() {
+    public void shouldGetGameListByEsrb() throws Exception {
         Game gameOneFromDb = new Game();
         gameOneFromDb.setTitle("Halo");
         gameOneFromDb.setStudio("Bungie");
@@ -119,7 +119,7 @@ public class GameServiceTest {
     }
 
     @Test
-    public void shouldGetGameListByStudio() {
+    public void shouldGetGameListByStudio() throws Exception {
         Game gameOneFromDb = new Game();
         gameOneFromDb.setTitle("Halo");
         gameOneFromDb.setStudio("Bungie");
@@ -136,12 +136,12 @@ public class GameServiceTest {
     }
 
     @Test
-    public void shouldReturnNullWhenSearchingForInvalidId() {
+    public void shouldReturnNullWhenSearchingForInvalidId() throws Exception {
         assertNull(gameService.findGame(1000000));
     }
 
     @Test
-    public void shouldReturnEmptyList() {
+    public void shouldReturnEmptyList() throws Exception {
         List<Game> gameList = new ArrayList<>();
 
         assertEquals(gameList, gameService.findGamesByStudio("Nope"));

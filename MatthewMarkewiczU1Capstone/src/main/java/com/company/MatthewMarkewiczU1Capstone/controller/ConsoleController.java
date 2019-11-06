@@ -22,11 +22,11 @@ public class ConsoleController {
 
     @GetMapping(value = "/consoles/{id}")
     @ResponseStatus(value = HttpStatus.OK)
-    public Console getConsoleById(@PathVariable int id) { return consoleService.findConsole(id); }
+    public Console getConsoleById(@PathVariable int id) throws Exception { return consoleService.findConsole(id); }
 
     @GetMapping(value = "/consoles/manufacturer/{manufacturer}")
     @ResponseStatus(value = HttpStatus.OK)
-    public List<Console> getConsoleByManufacturer(@PathVariable String manufacturer) {
+    public List<Console> getConsoleByManufacturer(@PathVariable String manufacturer) throws Exception {
         return consoleService.findConsolesByManufacturer(manufacturer);
     }
 
@@ -38,13 +38,13 @@ public class ConsoleController {
 
     @PutMapping(value = "/consoles")
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
-    public void updateConsole(@RequestBody Console console) {
+    public void updateConsole(@RequestBody Console console) throws Exception {
         consoleService.updateConsole(console);
     }
 
     @DeleteMapping(value = "/consoles/{id}")
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
-    public void deleteConsole(@PathVariable int id) {
+    public void deleteConsole(@PathVariable int id) throws Exception {
         consoleService.removeConsole(id);
     }
 }

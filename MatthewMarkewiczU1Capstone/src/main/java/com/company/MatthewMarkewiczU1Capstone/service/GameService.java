@@ -17,24 +17,44 @@ public class GameService {
         this.gameDao = gameDao;
     }
 
-    public Game saveGame(Game game) {
-        return gameDao.addGame(game);
+    public Game saveGame(Game game) throws Exception {
+        try {
+            return gameDao.addGame(game);
+        } catch (Exception e) {
+            throw new Exception("Game could not be added");
+        }
     }
 
-    public Game findGame(int id) {
-        return gameDao.getGame(id);
+    public Game findGame(int id) throws Exception {
+        try {
+            return gameDao.getGame(id);
+        } catch (Exception e) {
+            throw new Exception("A game with that ID is not in the database");
+        }
     }
 
-    public List<Game> findGamesByStudio(String studio) {
-        return gameDao.getGamesByStudio(studio);
+    public List<Game> findGamesByStudio(String studio) throws Exception {
+        try {
+            return gameDao.getGamesByStudio(studio);
+        } catch (Exception e) {
+            throw new Exception("No games with that studio");
+        }
     }
 
-    public List<Game> findGamesByEsrbRating(String rating) {
-        return gameDao.getGamesByEsrbRating(rating);
+    public List<Game> findGamesByEsrbRating(String rating) throws Exception {
+        try {
+            return gameDao.getGamesByEsrbRating(rating);
+        } catch (Exception e) {
+            throw new Exception("No games with that rating");
+        }
     }
 
-    public List<Game> findGamesByTitle(String title) {
-        return gameDao.getGamesByTitle(title);
+    public List<Game> findGamesByTitle(String title) throws Exception {
+        try {
+            return gameDao.getGamesByTitle(title);
+        } catch (Exception e) {
+            throw new Exception("No games with that title");
+        }
     }
 
     public List<Game> findAllGames() {

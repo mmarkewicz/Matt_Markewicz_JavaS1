@@ -32,7 +32,7 @@ public class TShirtServiceTest {
     }
 
     @Test
-    public void shouldReturnTShirtFromDbById() {
+    public void shouldReturnTShirtFromDbById() throws Exception {
         TShirt tshirtFromDb = new TShirt();
         tshirtFromDb.setColor("Black");
         tshirtFromDb.setPrice(new BigDecimal(9.99));
@@ -45,7 +45,7 @@ public class TShirtServiceTest {
     }
 
     @Test
-    public void shouldReturnListOfAllTShirts() {
+    public void shouldReturnListOfAllTShirts() throws Exception {
         TShirt tshirtFromDb = new TShirt();
         tshirtFromDb.setColor("Black");
         tshirtFromDb.setPrice(new BigDecimal(9.99));
@@ -61,7 +61,7 @@ public class TShirtServiceTest {
     }
 
     @Test
-    public void shouldReturnListOfTShirtsByColor() {
+    public void shouldReturnListOfTShirtsByColor() throws Exception {
         TShirt tshirtFromDb = new TShirt();
         tshirtFromDb.setColor("Black");
         tshirtFromDb.setPrice(new BigDecimal(9.99));
@@ -77,7 +77,7 @@ public class TShirtServiceTest {
     }
 
     @Test
-    public void shouldReturnListOfTShirtsBySize() {
+    public void shouldReturnListOfTShirtsBySize() throws Exception {
         TShirt tshirtFromDb = new TShirt();
         tshirtFromDb.setColor("Black");
         tshirtFromDb.setPrice(new BigDecimal(9.99));
@@ -93,7 +93,7 @@ public class TShirtServiceTest {
     }
 
     @Test
-    public void shouldAddTShirtFromServiceLayer() {
+    public void shouldAddTShirtFromServiceLayer() throws Exception {
         TShirt tshirt = new TShirt();
         tshirt.setColor("Black");
         tshirt.setPrice(new BigDecimal(9.99));
@@ -113,12 +113,12 @@ public class TShirtServiceTest {
     }
 
     @Test
-    public void shouldReturnNullWhenInvalidId() {
+    public void shouldReturnNullWhenInvalidId() throws Exception {
         assertNull(tShirtService.findTShirtById(100000));
     }
 
     @Test
-    public void shouldReturnEmptyTShirtList() {
+    public void shouldReturnEmptyTShirtList() throws Exception {
         List<TShirt> tShirtList = new ArrayList<>();
         assertEquals(tShirtList, tShirtService.findTShirtsBySize("None"));
         assertEquals(tShirtList, tShirtService.findTShirtsByColor("Eleven"));
@@ -150,10 +150,3 @@ public class TShirtServiceTest {
         doReturn(tshirtFromDb).when(tShirtDao).addTShirt(tshirt);
     }
 }
-
-//         TShirt tshirt = new TShirt();
-//        tshirt.setColor("Black");
-//        tshirt.setPrice(new BigDecimal(9.99));
-//        tshirt.setDescription("A black tee");
-//        tshirt.setQuantity(10);
-//        tshirt.setSize("M");

@@ -22,31 +22,31 @@ public class GameController {
 
     @GetMapping(value = "/games/{id}")
     @ResponseStatus(value = HttpStatus.OK)
-    public Game getGameById(@PathVariable int id) {
+    public Game getGameById(@PathVariable int id) throws Exception {
         return gameService.findGame(id);
     }
 
     @GetMapping(value = "/games/studio/{studio}")
     @ResponseStatus(value = HttpStatus.OK)
-    public List<Game> getGamesByStudio(@PathVariable String studio) {
+    public List<Game> getGamesByStudio(@PathVariable String studio) throws Exception {
         return gameService.findGamesByStudio(studio);
     }
 
     @GetMapping(value = "/games/esrb/{rating}")
     @ResponseStatus(value = HttpStatus.OK)
-    public List<Game> getGamesByEsrbRating(@PathVariable String rating) {
+    public List<Game> getGamesByEsrbRating(@PathVariable String rating) throws Exception {
         return gameService.findGamesByEsrbRating(rating);
     }
 
     @GetMapping(value = "/games/title/{title}")
     @ResponseStatus(value = HttpStatus.OK)
-    public List<Game> getGamesByTitle(@PathVariable String title) {
+    public List<Game> getGamesByTitle(@PathVariable String title) throws Exception {
         return gameService.findGamesByTitle(title);
     }
 
     @PostMapping(value = "/games")
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Game postGame(@RequestBody Game game) {
+    public Game postGame(@RequestBody Game game) throws Exception {
         return gameService.saveGame(game);
     }
 

@@ -72,7 +72,7 @@ public class ConsoleServiceTest {
     }
 
     @Test
-    public void shouldReturnConsoleFromServiceLayer() {
+    public void shouldReturnConsoleFromServiceLayer() throws Exception {
         Console consoleOneFromDb = new Console();
         consoleOneFromDb.setManufacturer("Sony");
         consoleOneFromDb.setPrice(new BigDecimal(299.99));
@@ -139,7 +139,7 @@ public class ConsoleServiceTest {
     }
 
     @Test
-    public void shouldReturnListOfAllConsolesManufacturedBySony() {
+    public void shouldReturnListOfAllConsolesManufacturedBySony() throws Exception {
         Console consoleOneFromDb = new Console();
         consoleOneFromDb.setManufacturer("Sony");
         consoleOneFromDb.setPrice(new BigDecimal(299.99));
@@ -156,12 +156,12 @@ public class ConsoleServiceTest {
     }
 
     @Test
-    public void shouldReturnNullWhenIdIsInvalid() {
+    public void shouldReturnNullWhenIdIsInvalid() throws Exception {
         assertNull(consoleService.findConsole(1000000));
     }
 
     @Test
-    public void shouldReturnEmptyListWhenInvalidManufacturer() {
+    public void shouldReturnEmptyListWhenInvalidManufacturer() throws Exception {
         List<Console> consoleList = new ArrayList<>();
         assertEquals(consoleList, consoleService.findConsolesByManufacturer("Does Not Exist"));
     }
