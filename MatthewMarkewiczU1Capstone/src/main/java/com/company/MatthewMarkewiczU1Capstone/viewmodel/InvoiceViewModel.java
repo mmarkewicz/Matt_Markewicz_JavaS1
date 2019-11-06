@@ -1,15 +1,29 @@
 package com.company.MatthewMarkewiczU1Capstone.viewmodel;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Objects;
 
 public class InvoiceViewModel {
+
+    @NotEmpty(message = "You must enter a valid name")
     private String name;
+    @NotEmpty(message = "You must enter a valid street")
     private String street;
+    @NotEmpty(message = "You must enter a valid city")
     private String city;
+    @NotEmpty(message = "You must enter a valid state")
     private String state;
+    @NotEmpty(message = "Zip code cannot be empty")
+    @Size(min = 5, max = 5, message = "Zip must be 5 numbers long")
     private String zip;
+    @NotEmpty(message = "Must provide a valid item tyoe")
     private String itemType;
+    @Min(value = 1, message = "Item ID must be larger than 0")
     private int itemId;
+    @Min(value = 1, message = "Quantity must be greater than 0")
     private int quantity;
 
     public String getName() {

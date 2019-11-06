@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
+import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
@@ -35,7 +36,7 @@ public class InvoiceService {
         this.processingFeeDao = processingFeeDao;
     }
 
-    public Invoice saveInvoice(InvoiceViewModel invoiceViewModel) {
+    public Invoice saveInvoice(@Valid InvoiceViewModel invoiceViewModel) {
         Invoice invoice = getInvoiceFromInvoiceViewModel(invoiceViewModel);
 
         // set unit price
@@ -113,7 +114,7 @@ public class InvoiceService {
         }
     }
 
-    public InvoiceViewModel findInvoice(int invoiceId) {
+    public @Valid InvoiceViewModel findInvoice(int invoiceId) {
         Invoice invoice = invoiceDao.getInvoice(invoiceId);
         return buildInvoiceViewModel(invoice);
     }

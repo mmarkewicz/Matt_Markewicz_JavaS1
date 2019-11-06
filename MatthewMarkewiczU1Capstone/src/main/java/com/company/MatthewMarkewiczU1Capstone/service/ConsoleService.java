@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.validation.Valid;
+import java.sql.SQLException;
 import java.util.List;
 
 @Service
@@ -18,11 +20,15 @@ public class ConsoleService {
         this.consoleDao = consoleDao;
     }
 
-    public Console saveConsole(Console console) {
-        return consoleDao.addConsole(console);
+    public @Valid Console saveConsole(@Valid Console console) throws Exception{
+        try {
+            return consoleDao.addConsole(console);
+        } catch (Exception e) {
+            throw new Exception("SQL Error: Make sure your request is formatted properly.");
+        }
     }
 
-    public Console findConsole(int id) {
+    public @Valid Console findConsole(int id) {
         return consoleDao.getConsole(id);
     }
 
@@ -34,7 +40,7 @@ public class ConsoleService {
         return consoleDao.getAllConsoles();
     }
 
-    public void updateConsole(Console console) {
+    public void updateConsole(@Valid Console console) {
         consoleDao.updateConsole(console);
     }
 

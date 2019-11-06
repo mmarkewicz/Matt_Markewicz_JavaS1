@@ -32,7 +32,7 @@ public class ConsoleController {
 
     @PostMapping(value = "/consoles")
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Console postConsole(@RequestBody Console console) {
+    public Console postConsole(@RequestBody Console console) throws Exception {
         return consoleService.saveConsole(console);
     }
 

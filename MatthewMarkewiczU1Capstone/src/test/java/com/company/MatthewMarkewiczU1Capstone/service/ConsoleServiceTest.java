@@ -32,7 +32,7 @@ public class ConsoleServiceTest {
     }
 
     @Test
-    public void shouldAddNewConsoleFromServiceLayer() {
+    public void shouldAddNewConsoleFromServiceLayer() throws Exception {
         Console consoleOne = new Console();
         consoleOne.setManufacturer("Sony");
         consoleOne.setPrice(new BigDecimal(299.99));

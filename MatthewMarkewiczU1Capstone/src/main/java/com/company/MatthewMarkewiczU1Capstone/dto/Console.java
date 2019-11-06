@@ -1,15 +1,25 @@
 package com.company.MatthewMarkewiczU1Capstone.dto;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Console {
     private int consoleId;
+    @NotEmpty(message = "Console must have a model")
     private String model;
+    @NotEmpty(message = "Console must have a manufacturer")
     private String manufacturer;
+    @NotEmpty(message = "Console must have a valid memory amount")
     private String memoryAmount;
+    @NotEmpty(message = "Console must have a processor")
     private String processor;
+    @NotNull(message = "Console must have a valid price")
     private BigDecimal price;
+    @NotNull(message = "Console must have a quantity")
+    @Min(value = 0)
     private int quantity;
 
     public int getConsoleId() {
