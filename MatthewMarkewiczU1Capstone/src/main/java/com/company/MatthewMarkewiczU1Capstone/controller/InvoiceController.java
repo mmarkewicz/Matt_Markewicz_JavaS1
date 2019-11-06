@@ -16,13 +16,13 @@ public class InvoiceController {
 
     @GetMapping("/invoice/{id}")
     @ResponseStatus(value = HttpStatus.OK)
-    public InvoiceViewModel getInvoice(@PathVariable int id) {
+    public InvoiceViewModel getInvoice(@PathVariable int id) throws Exception {
         return invoiceService.findInvoice(id);
     }
 
     @PostMapping("/invoice")
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Invoice postInvoice(@RequestBody InvoiceViewModel invoiceViewModel) throws QuantityGreaterThanInventoryException {
+    public Invoice postInvoice(@RequestBody InvoiceViewModel invoiceViewModel) throws Exception {
         return invoiceService.saveInvoice(invoiceViewModel);
     }
 }

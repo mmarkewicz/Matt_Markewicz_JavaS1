@@ -36,7 +36,7 @@ public class InvoiceService {
         this.processingFeeDao = processingFeeDao;
     }
 
-    public Invoice saveInvoice(@Valid InvoiceViewModel invoiceViewModel) {
+    public Invoice saveInvoice(@Valid InvoiceViewModel invoiceViewModel) throws Exception {
         Invoice invoice = getInvoiceFromInvoiceViewModel(invoiceViewModel);
 
         // set unit price
@@ -50,6 +50,8 @@ public class InvoiceService {
             case "console":
                 invoice.setUnitPrice(consoleDao.getConsole(invoice.getItemId()).getPrice());
                 break;
+            default:
+                throw new Exception("There are no items of that type in the inventory");
         }
 
         // set subtotal from quantity and unit price
@@ -104,19 +106,21 @@ public class InvoiceService {
                 }
         }
 
-        // if sales tax rate doesn't exist throw error from DAO
         try {
             invoiceDao.addInvoice(invoice);
             return invoice;
         } catch (Exception e) {
-            System.out.println("INVALID");
-            return null;
+            throw new Exception("That invoice could not be added to the database");
         }
     }
 
-    public @Valid InvoiceViewModel findInvoice(int invoiceId) {
-        Invoice invoice = invoiceDao.getInvoice(invoiceId);
-        return buildInvoiceViewModel(invoice);
+    public @Valid InvoiceViewModel findInvoice(int invoiceId) throws Exception {
+        try {
+            Invoice invoice = invoiceDao.getInvoice(invoiceId);
+            return buildInvoiceViewModel(invoice);
+        } catch (Exception e) {
+            throw new Exception("Could not locate that invoice in the database");
+        }
     }
 
     public Invoice getInvoiceFromInvoiceViewModel(InvoiceViewModel invoiceViewModel) {

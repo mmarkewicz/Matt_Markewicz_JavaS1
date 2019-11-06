@@ -43,7 +43,7 @@ public class InvoiceServiceTest {
     }
 
     @Test
-    public void shouldReturnInvoiceViewModelFromServiceLayer() {
+    public void shouldReturnInvoiceViewModelFromServiceLayer() throws Exception {
         Invoice invoice = new Invoice();
         invoice.setName("John Doe");
         invoice.setStreet("Main St.");
@@ -65,7 +65,7 @@ public class InvoiceServiceTest {
     }
 
     @Test
-    public void shouldReturnInvoiceFromInvoiceViewModel() {
+    public void shouldReturnInvoiceFromInvoiceViewModel() throws Exception {
         Invoice invoice = new Invoice();
         invoice.setInvoiceId(100);
         invoice.setName("John Doe");
