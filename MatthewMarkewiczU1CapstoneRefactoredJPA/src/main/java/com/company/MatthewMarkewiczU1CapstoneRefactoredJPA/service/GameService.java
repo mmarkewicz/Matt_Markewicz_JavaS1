@@ -43,7 +43,7 @@ public class GameService {
 
     public List<Game> findGamesByEsrbRating(String rating) throws Exception {
         try {
-            return gameRepository.findGamesByEsrb_rating(rating);
+            return gameRepository.findGamesByEsrbRating(rating);
         } catch (Exception e) {
             throw new Exception("No games with that rating");
         }
