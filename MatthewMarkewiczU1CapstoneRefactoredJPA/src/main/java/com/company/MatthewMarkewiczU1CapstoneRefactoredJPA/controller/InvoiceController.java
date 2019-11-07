@@ -1,8 +1,8 @@
 package com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.controller;
 
-import com.company.MatthewMarkewiczU1Capstone.dto.Invoice;
-import com.company.MatthewMarkewiczU1Capstone.service.InvoiceService;
-import com.company.MatthewMarkewiczU1Capstone.viewmodel.InvoiceViewModel;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dto.Invoice;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.service.InvoiceService;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.viewmodel.InvoiceViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

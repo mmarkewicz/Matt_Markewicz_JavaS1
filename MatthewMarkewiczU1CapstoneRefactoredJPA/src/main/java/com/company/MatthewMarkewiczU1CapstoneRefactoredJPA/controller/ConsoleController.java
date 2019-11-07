@@ -1,8 +1,8 @@
 
 package com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.controller;
 
-import com.company.MatthewMarkewiczU1Capstone.dto.Console;
-import com.company.MatthewMarkewiczU1Capstone.service.ConsoleService;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dto.Console;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.service.ConsoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

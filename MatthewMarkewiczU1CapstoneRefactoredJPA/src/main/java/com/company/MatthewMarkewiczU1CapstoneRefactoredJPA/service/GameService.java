@@ -1,7 +1,7 @@
 package com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.service;
 
-import com.company.MatthewMarkewiczU1Capstone.dao.GameDao;
-import com.company.MatthewMarkewiczU1Capstone.dto.Game;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dao.GameRepository;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dto.Game;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,16 +10,16 @@ import java.util.List;
 @Service
 public class GameService {
 
-    private GameDao gameDao;
+    private GameRepository gameRepository;
 
     @Autowired
-    public GameService(GameDao gameDao) {
-        this.gameDao = gameDao;
+    public GameService(GameRepository gameRepository) {
+        this.gameRepository = gameRepository;
     }
 
     public Game saveGame(Game game) throws Exception {
         try {
-            return gameDao.addGame(game);
+            return gameRepository.save(game);
         } catch (Exception e) {
             throw new Exception("Game could not be added");
         }
@@ -27,7 +27,7 @@ public class GameService {
 
     public Game findGame(int id) throws Exception {
         try {
-            return gameDao.getGame(id);
+            return gameRepository.getOne(id);
         } catch (Exception e) {
             throw new Exception("A game with that ID is not in the database");
         }
@@ -35,7 +35,7 @@ public class GameService {
 
     public List<Game> findGamesByStudio(String studio) throws Exception {
         try {
-            return gameDao.getGamesByStudio(studio);
+            return gameRepository.findGamesByStudio(studio);
         } catch (Exception e) {
             throw new Exception("No games with that studio");
         }
@@ -43,7 +43,7 @@ public class GameService {
 
     public List<Game> findGamesByEsrbRating(String rating) throws Exception {
         try {
-            return gameDao.getGamesByEsrbRating(rating);
+            return gameRepository.findGamesByEsrb_rating(rating);
         } catch (Exception e) {
             throw new Exception("No games with that rating");
         }
@@ -51,21 +51,21 @@ public class GameService {
 
     public List<Game> findGamesByTitle(String title) throws Exception {
         try {
-            return gameDao.getGamesByTitle(title);
+            return gameRepository.findGamesByTitle(title);
         } catch (Exception e) {
             throw new Exception("No games with that title");
         }
     }
 
     public List<Game> findAllGames() {
-        return gameDao.getAllGames();
+        return gameRepository.findAll();
     }
 
     public void updateGame(Game game) {
-        gameDao.updateGame(game);
+        gameRepository.save(game);
     }
 
     public void deleteGame(int id) {
-        gameDao.deleteGame(id);
+        gameRepository.deleteById(id);
     }
 }

@@ -1,7 +1,7 @@
 package com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.controller;
 
-import com.company.MatthewMarkewiczU1Capstone.dto.TShirt;
-import com.company.MatthewMarkewiczU1Capstone.service.TShirtService;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dto.TShirt;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.service.TShirtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

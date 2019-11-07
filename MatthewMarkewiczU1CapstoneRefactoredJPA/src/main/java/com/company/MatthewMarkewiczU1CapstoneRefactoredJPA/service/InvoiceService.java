@@ -1,13 +1,13 @@
 package com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.service;
 
-import com.company.MatthewMarkewiczU1Capstone.dao.*;
-import com.company.MatthewMarkewiczU1Capstone.dto.Console;
-import com.company.MatthewMarkewiczU1Capstone.dto.Game;
-import com.company.MatthewMarkewiczU1Capstone.dto.Invoice;
-import com.company.MatthewMarkewiczU1Capstone.dto.TShirt;
-import com.company.MatthewMarkewiczU1Capstone.exceptions.InvalidStateCodeException;
-import com.company.MatthewMarkewiczU1Capstone.exceptions.QuantityGreaterThanInventoryException;
-import com.company.MatthewMarkewiczU1Capstone.viewmodel.InvoiceViewModel;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dao.*;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dto.Console;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dto.Game;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dto.Invoice;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dto.TShirt;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.exceptions.InvalidStateCodeException;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.exceptions.QuantityGreaterThanInventoryException;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.viewmodel.InvoiceViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
@@ -19,21 +19,21 @@ import java.math.RoundingMode;
 @Service
 public class InvoiceService {
 
-    private InvoiceDao invoiceDao;
-    private GameDao gameDao;
-    private TShirtDao tShirtDao;
-    private ConsoleDao consoleDao;
-    private SalesTaxRateDao salesTaxRateDao;
-    private ProcessingFeeDao processingFeeDao;
+    private InvoiceRepository invoiceRepository;
+    private GameRepository gameRepository;
+    private TShirtRepository tShirtRepository;
+    private ConsoleRepository consoleRepository;
+    private SalesTaxRateRepository salesTaxRateRepository;
+    private ProcessingFeeRepository processingFeeRepository;
 
     @Autowired
-    InvoiceService(InvoiceDao invoiceDao, GameDao gameDao, TShirtDao tShirtDao, ConsoleDao consoleDao, SalesTaxRateDao salesTaxRateDao, ProcessingFeeDao processingFeeDao) {
-        this.invoiceDao = invoiceDao;
-        this.gameDao = gameDao;
-        this.tShirtDao = tShirtDao;
-        this.consoleDao = consoleDao;
-        this.salesTaxRateDao = salesTaxRateDao;
-        this.processingFeeDao = processingFeeDao;
+    InvoiceService(InvoiceRepository invoiceRepository, GameRepository gameRepository, TShirtRepository tShirtRepository, ConsoleRepository consoleRepository, SalesTaxRateRepository salesTaxRateRepository, ProcessingFeeRepository processingFeeRepository) {
+        this.invoiceRepository = invoiceRepository;
+        this.gameRepository = gameRepository;
+        this.tShirtRepository = tShirtRepository;
+        this.consoleRepository = consoleRepository;
+        this.salesTaxRateRepository = salesTaxRateRepository;
+        this.processingFeeRepository = processingFeeRepository;
     }
 
     public Invoice saveInvoice(@Valid InvoiceViewModel invoiceViewModel) throws Exception {
@@ -42,13 +42,13 @@ public class InvoiceService {
         // set unit price
         switch(invoice.getItemType()) {
             case "t_shirt":
-                invoice.setUnitPrice(tShirtDao.getTShirt(invoice.getItemId()).getPrice());
+                invoice.setUnitPrice(tShirtRepository.getOne(invoice.getItemId()).getPrice());
                 break;
             case "game":
-                invoice.setUnitPrice(gameDao.getGame(invoice.getItemId()).getPrice());
+                invoice.setUnitPrice(gameRepository.getOne(invoice.getItemId()).getPrice());
                 break;
             case "console":
-                invoice.setUnitPrice(consoleDao.getConsole(invoice.getItemId()).getPrice());
+                invoice.setUnitPrice(consoleRepository.getOne(invoice.getItemId()).getPrice());
                 break;
             default:
                 throw new Exception("There are no items of that type in the inventory");
@@ -59,7 +59,7 @@ public class InvoiceService {
 
         // set tax, subtotal * tax rate from state
         try {
-            invoice.setTax(salesTaxRateDao.getSalesTaxRate(invoice.getState()).getRate().multiply(invoice.getSubtotal()).setScale(2, RoundingMode.HALF_EVEN));
+            invoice.setTax(salesTaxRateRepository.findByState(invoice.getState()).getRate().multiply(invoice.getSubtotal()).setScale(2, RoundingMode.HALF_EVEN));
         } catch (EmptyResultDataAccessException e) {
             throw new InvalidStateCodeException();
         }
@@ -67,9 +67,9 @@ public class InvoiceService {
 
         // set processing fee, if more than 10 items ordered, add additional fee
         if (invoice.getQuantity() <= 10) {
-            invoice.setProcessingFee(processingFeeDao.getProcessingFee(invoice.getItemType()).getFee().setScale(2, RoundingMode.HALF_EVEN));
+            invoice.setProcessingFee(processingFeeRepository.findByItemType(invoice.getItemType()).getFee().setScale(2, RoundingMode.HALF_EVEN));
         } else {
-            invoice.setProcessingFee(processingFeeDao.getProcessingFee(invoice.getItemType()).getFee().add(new BigDecimal(15.49)).setScale(2, RoundingMode.HALF_EVEN));
+            invoice.setProcessingFee(processingFeeRepository.findByItemType(invoice.getItemType()).getFee().add(new BigDecimal(15.49)).setScale(2, RoundingMode.HALF_EVEN));
         }
 
         invoice.setTotal(invoice.getSubtotal().add(invoice.getTax()).add(invoice.getProcessingFee()).setScale(2, RoundingMode.HALF_EVEN));
@@ -79,35 +79,35 @@ public class InvoiceService {
         // throw error from DAO?
         switch(invoice.getItemType()) {
             case "t_shirt":
-                if (invoice.getQuantity() > tShirtDao.getTShirt(invoice.getItemId()).getQuantity() || invoice.getQuantity() <= 0) {
+                if (invoice.getQuantity() > tShirtRepository.getOne(invoice.getItemId()).getQuantity() || invoice.getQuantity() <= 0) {
                     throw new QuantityGreaterThanInventoryException();
                 } else {
-                    TShirt currentTShirt = tShirtDao.getTShirt(invoice.getItemId()); // get tshirt from db
+                    TShirt currentTShirt = tShirtRepository.getOne(invoice.getItemId()); // get tshirt from db
                     currentTShirt.setQuantity(currentTShirt.getQuantity() - invoice.getQuantity()); // update tshirt quantity to reflect user order
-                    tShirtDao.updateTShirt(currentTShirt); // push updates to database
+                    tShirtRepository.save(currentTShirt); // push updates to database
                 }
                 break;
             case "game":
-                if (invoice.getQuantity() > gameDao.getGame(invoice.getItemId()).getQuantity() || invoice.getQuantity() <= 0) {
+                if (invoice.getQuantity() > gameRepository.getOne(invoice.getItemId()).getQuantity() || invoice.getQuantity() <= 0) {
                     throw new QuantityGreaterThanInventoryException();
                 } else {
-                    Game currentGame = gameDao.getGame(invoice.getItemId());
+                    Game currentGame = gameRepository.getOne(invoice.getItemId());
                     currentGame.setQuantity(currentGame.getQuantity() - invoice.getQuantity());
-                    gameDao.updateGame(currentGame);
+                    gameRepository.save(currentGame);
                 }
                 break;
             case "console":
-                if (invoice.getQuantity() > invoiceDao.getInvoice(invoice.getItemId()).getQuantity() || invoice.getQuantity() <= 0) {
+                if (invoice.getQuantity() > consoleRepository.getOne(invoice.getItemId()).getQuantity() || invoice.getQuantity() <= 0) {
                     throw new QuantityGreaterThanInventoryException();
                 } else {
-                    Console currentConsole = consoleDao.getConsole(invoice.getItemId());
+                    Console currentConsole = consoleRepository.getOne(invoice.getItemId());
                     currentConsole.setQuantity(currentConsole.getQuantity() - invoice.getQuantity());
-                    consoleDao.updateConsole(currentConsole);
+                    consoleRepository.save(currentConsole);
                 }
         }
 
         try {
-            invoiceDao.addInvoice(invoice);
+            invoiceRepository.save(invoice);
             return invoice;
         } catch (Exception e) {
             throw new Exception("That invoice could not be added to the database");
@@ -116,7 +116,7 @@ public class InvoiceService {
 
     public @Valid InvoiceViewModel findInvoice(int invoiceId) throws Exception {
         try {
-            Invoice invoice = invoiceDao.getInvoice(invoiceId);
+            Invoice invoice = invoiceRepository.getOne(invoiceId);
             return buildInvoiceViewModel(invoice);
         } catch (Exception e) {
             throw new Exception("Could not locate that invoice in the database");

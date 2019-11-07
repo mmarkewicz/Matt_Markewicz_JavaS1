@@ -1,7 +1,7 @@
 package com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.controller;
 
-import com.company.MatthewMarkewiczU1Capstone.dto.Game;
-import com.company.MatthewMarkewiczU1Capstone.service.GameService;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.dto.Game;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

@@ -1,7 +1,7 @@
 package com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.controller;
 
-import com.company.MatthewMarkewiczU1Capstone.exceptions.InvalidStateCodeException;
-import com.company.MatthewMarkewiczU1Capstone.exceptions.QuantityGreaterThanInventoryException;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.exceptions.InvalidStateCodeException;
+import com.company.MatthewMarkewiczU1CapstoneRefactoredJPA.exceptions.QuantityGreaterThanInventoryException;
 import org.springframework.hateoas.mediatype.vnderrors.VndErrors;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
