@@ -97,7 +97,7 @@ public class InvoiceService {
                 }
                 break;
             case "console":
-                if (invoice.getQuantity() > invoiceDao.getInvoice(invoice.getItemId()).getQuantity() || invoice.getQuantity() <= 0) {
+                if (invoice.getQuantity() > consoleDao.getConsole(invoice.getItemId()).getQuantity() || invoice.getQuantity() <= 0) {
                     throw new QuantityGreaterThanInventoryException();
                 } else {
                     Console currentConsole = consoleDao.getConsole(invoice.getItemId());
