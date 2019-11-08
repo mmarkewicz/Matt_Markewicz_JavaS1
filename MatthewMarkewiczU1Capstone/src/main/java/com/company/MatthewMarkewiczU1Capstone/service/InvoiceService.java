@@ -64,7 +64,6 @@ public class InvoiceService {
             throw new InvalidStateCodeException();
         }
 
-
         // set processing fee, if more than 10 items ordered, add additional fee
         if (invoice.getQuantity() <= 10) {
             invoice.setProcessingFee(processingFeeDao.getProcessingFee(invoice.getItemType()).getFee().setScale(2, RoundingMode.HALF_EVEN));
@@ -74,9 +73,6 @@ public class InvoiceService {
 
         invoice.setTotal(invoice.getSubtotal().add(invoice.getTax()).add(invoice.getProcessingFee()).setScale(2, RoundingMode.HALF_EVEN));
 
-        // if there are not enough products throw error
-        // if user tries to submit an order for less than 1 product throw error
-        // throw error from DAO?
         switch(invoice.getItemType()) {
             case "t_shirt":
                 if (invoice.getQuantity() > tShirtDao.getTShirt(invoice.getItemId()).getQuantity() || invoice.getQuantity() <= 0) {
