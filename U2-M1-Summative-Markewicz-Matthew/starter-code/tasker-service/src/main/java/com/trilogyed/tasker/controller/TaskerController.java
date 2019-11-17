@@ -1,11 +1,13 @@
 package com.trilogyed.tasker.controller;
 
+import com.trilogyed.tasker.model.Task;
 import com.trilogyed.tasker.service.TaskerServiceLayer;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
+@RestController
 public class TaskerController {
 
     @Autowired
@@ -15,8 +17,35 @@ public class TaskerController {
         this.service = service;
     }
 
-    @RequestMapping(value = "/tasks{id}", method = RequestMethod.DELETE)
-    public void deleteTask(@PathVariable int id) {
-        service.deleteTask(id);
+    @GetMapping(value = "/tasks")
+    public List<Task> getAllTasks() {
+        return null;
     }
+
+    @GetMapping(value = "/tasks/{id}")
+    public Task getTaskById(@PathVariable int id) {
+        return null;
+    }
+
+    @GetMapping(value = "/tasks/category/{category}")
+    public Task getTaskByCategory(@PathVariable String category) {
+        return null;
+    }
+
+    @PostMapping(value = "/tasks")
+    public Task postTask(@RequestBody Task task) {
+        return null;
+    }
+
+    @PutMapping(value = "/tasks")
+    public void putTask(@RequestBody Task task) {
+        //
+    }
+
+    @DeleteMapping(value = "/tasks/{id}")
+    public void deleteTask(@PathVariable int id) {
+        //
+    }
+
+
 }
