@@ -53,7 +53,7 @@ public class InvoiceService {
             default:
                 throw new Exception("There are no items of that type in the inventory");
         }
-
+        
         // set subtotal from quantity and unit price
         invoice.setSubtotal(new BigDecimal(invoice.getQuantity()).multiply(invoice.getUnitPrice()).setScale(2, RoundingMode.HALF_EVEN));
 
