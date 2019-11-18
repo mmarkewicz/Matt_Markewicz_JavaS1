@@ -29,7 +29,7 @@ public class TaskerServiceLayer {
     }
 
     public List<TaskViewModel> fetchAllTasks() {
-        return null);
+        return null;
     }
 
     public List<TaskViewModel> fetchTasksByCategory(String category) {
@@ -61,6 +61,6 @@ public class TaskerServiceLayer {
     }
 
     public TaskViewModel buildTaskViewModel(Task task) {
-
+        return null;
     }
 }
