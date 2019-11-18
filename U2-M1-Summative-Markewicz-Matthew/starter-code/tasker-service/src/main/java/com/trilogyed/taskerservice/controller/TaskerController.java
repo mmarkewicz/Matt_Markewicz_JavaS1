@@ -17,32 +17,32 @@ public class TaskerController {
     }
 
     @GetMapping(value = "/task/{id}")
-    public TaskViewModel getTask(@PathVariable int id) {
+    public TaskViewModel getTask(@PathVariable int id) throws Exception {
         return service.fetchTask(id);
     }
 
     @GetMapping(value = "/tasks")
-    public List<TaskViewModel> getAllTasks() {
+    public List<TaskViewModel> getAllTasks() throws Exception {
         return service.fetchAllTasks();
     }
 
     @GetMapping(value = "/tasks/category/{category}")
-    public List<TaskViewModel> getTasksByCategory(@PathVariable String category) {
+    public List<TaskViewModel> getTasksByCategory(@PathVariable String category) throws Exception {
         return service.fetchTasksByCategory(category);
     }
 
     @PostMapping(value = "/tasks")
-    public TaskViewModel addTask(@RequestBody TaskViewModel taskViewModel) {
+    public TaskViewModel addTask(@RequestBody TaskViewModel taskViewModel) throws Exception {
         return service.newTask(taskViewModel);
     }
 
     @RequestMapping(value = "/tasks/{id}", method = RequestMethod.DELETE)
-    public void deleteTask(@PathVariable int id) {
+    public void deleteTask(@PathVariable int id) throws Exception {
         service.deleteTask(id);
     }
 
     @PutMapping(value = "/tasks")
-    public void updateTask(@RequestBody TaskViewModel taskViewModel) {
+    public void updateTask(@RequestBody TaskViewModel taskViewModel) throws Exception {
         service.updateTask(taskViewModel);
     }
 }
