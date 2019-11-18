@@ -36,8 +36,13 @@ public class TaskerController {
         return service.newTask(taskViewModel);
     }
 
-    @RequestMapping(value = "/tasks{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/tasks/{id}", method = RequestMethod.DELETE)
     public void deleteTask(@PathVariable int id) {
         service.deleteTask(id);
+    }
+
+    @PutMapping(value = "/tasks")
+    public void updateTask(@RequestBody TaskViewModel taskViewModel) {
+        service.updateTask(taskViewModel);
     }
 }
