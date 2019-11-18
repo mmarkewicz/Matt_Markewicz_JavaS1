@@ -1,11 +1,9 @@
 package com.trilogyed.taskerservice.controller;
 
+import com.trilogyed.taskerservice.model.TaskViewModel;
 import com.trilogyed.taskerservice.service.TaskerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class TaskerController {
@@ -14,6 +12,11 @@ public class TaskerController {
 
     public TaskerController(TaskerService service) {
         this.service = service;
+    }
+
+    @GetMapping(value = "/task/{id}")
+    public TaskViewModel getTask(@PathVariable int id) {
+        return service.fetchTask(id);
     }
 
     @RequestMapping(value = "/tasks{id}", method = RequestMethod.DELETE)

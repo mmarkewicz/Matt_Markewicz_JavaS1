@@ -1,8 +1,10 @@
 package com.trilogyed.taskerservice.service;
 
 import com.trilogyed.taskerservice.dao.TaskerDao;
+import com.trilogyed.taskerservice.fiegn.AdserverFeignClient;
 import com.trilogyed.taskerservice.model.Task;
 import com.trilogyed.taskerservice.model.TaskViewModel;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -11,6 +13,9 @@ import java.util.List;
 public class TaskerService {
 
     TaskerDao dao;
+
+    @Autowired
+    AdserverFeignClient adserverFeignClient;
 
     public TaskViewModel fetchTask(int id) {
 
@@ -24,6 +29,8 @@ public class TaskerService {
         tvm.setCategory(task.getCategory());
 
         // TODO - get ad from Adserver and put in tvm
+        String ad = adserverFeignClient.getAdFromService();
+        tvm.setAdvertisement(ad);
 
         return tvm;
     }
