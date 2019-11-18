@@ -7,13 +7,13 @@ import com.trilogyed.taskerservice.model.TaskViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
 public class TaskerService {
 
+    @Autowired
     TaskerDao dao;
 
     @Autowired
@@ -54,20 +54,19 @@ public class TaskerService {
     }
 
     public TaskViewModel newTask(TaskViewModel taskViewModel) {
-
         Task task = new Task();
         task.setDescription(taskViewModel.getDescription());
         task.setCreateDate(taskViewModel.getCreateDate());
         task.setDueDate(taskViewModel.getDueDate());
         task.setCategory(taskViewModel.getCategory());
         task = dao.createTask(task);
-        taskViewModel.setId(task.getId());
 
         // TODO - get ad from Adserver and put in taskViewModel
         String ad = adserverFeignClient.getAdFromService();
-        taskViewModel.setAdvertisement(ad);
 
-        return taskViewModel;
+        TaskViewModel taskViewModelToBeReturned = buildTaskViewModel(task, ad);
+
+        return taskViewModelToBeReturned;
     }
 
     public void deleteTask(int id) {
