@@ -20,7 +20,7 @@ public class TaskerDaoImpl implements TaskerDao {
     public static final String UPDATE_TASK =
             "update task set task_description = ?, create_date = ?, due_date = ?, category = ? where task_id = ?";
     public static final String DELETE_TASK =
-            "delete from task";
+            "delete from task where task_id = ?";
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
