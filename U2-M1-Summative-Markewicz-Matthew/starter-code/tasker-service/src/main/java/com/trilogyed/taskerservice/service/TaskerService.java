@@ -19,6 +19,13 @@ public class TaskerService {
     @Autowired
     AdserverFeignClient adserverFeignClient;
 
+    public TaskerService(TaskerDao taskerDao, AdserverFeignClient adserverFeignClient) {
+        this.dao = taskerDao;
+        this.adserverFeignClient = adserverFeignClient;
+    }
+
+    public TaskerService() {}
+
     public TaskViewModel fetchTask(int id) throws Exception {
         try {
             Task task = dao.getTask(id);
@@ -108,7 +115,7 @@ public class TaskerService {
         }
     }
 
-    private TaskViewModel buildTaskViewModel(Task task, String ad) {
+    public TaskViewModel buildTaskViewModel(Task task, String ad) {
         TaskViewModel taskViewModel = new TaskViewModel();
         taskViewModel.setId(task.getId());
         taskViewModel.setDescription(task.getDescription());
