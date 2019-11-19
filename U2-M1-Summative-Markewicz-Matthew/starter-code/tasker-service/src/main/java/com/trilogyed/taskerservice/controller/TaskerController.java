@@ -5,10 +5,12 @@ import com.trilogyed.taskerservice.service.TaskerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
 public class TaskerController {
+
     @Autowired
     TaskerService service;
 
@@ -32,7 +34,7 @@ public class TaskerController {
     }
 
     @PostMapping(value = "/tasks")
-    public TaskViewModel addTask(@RequestBody TaskViewModel taskViewModel) throws Exception {
+    public TaskViewModel addTask(@RequestBody @Valid TaskViewModel taskViewModel) throws Exception {
         return service.newTask(taskViewModel);
     }
 
@@ -42,7 +44,7 @@ public class TaskerController {
     }
 
     @PutMapping(value = "/tasks")
-    public void updateTask(@RequestBody TaskViewModel taskViewModel) throws Exception {
+    public void updateTask(@RequestBody @Valid TaskViewModel taskViewModel) throws Exception {
         service.updateTask(taskViewModel);
     }
 }

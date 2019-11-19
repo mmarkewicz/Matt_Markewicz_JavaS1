@@ -1,12 +1,19 @@
 package com.trilogyed.taskerservice.model;
 
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 public class TaskViewModel {
+
+    @NotNull
     private int id;
+    @NotNull
     private String description;
+    @NotNull
     private LocalDate createDate;
+    @NotNull
     private LocalDate dueDate;
+    @NotNull
     private String category;
     private String advertisement;
 
