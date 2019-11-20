@@ -57,7 +57,7 @@ public class TaskerServiceTest {
         assertEquals(taskViewModel.toString(), taskerService.fetchTask(5).toString());
 //        assertEquals(taskViewModel.toString(), taskerService.fetchTasksByCategory("Category").get(0).toString());
     }
-    
+
     public void setUpTaskMocks() {
         Task task = new Task();
         task.setId(5);
