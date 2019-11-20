@@ -47,13 +47,24 @@ public class TaskerServiceTest {
         task.setCreateDate(LocalDate.of(2019, 1, 1));
         task.setDueDate(LocalDate.of(2019, 2, 1));
 
+        Task taskWithoutId = new Task();
+        task.setCategory("Category");
+        task.setDescription("Description");
+        task.setCreateDate(LocalDate.of(2019, 1, 1));
+        task.setDueDate(LocalDate.of(2019, 2, 1));
+
         TaskViewModel taskViewModel = taskerService.buildTaskViewModel(task, "test ad");
         List<TaskViewModel> taskViewModelList = new ArrayList<>();
         taskViewModelList.add(taskViewModel);
 
-        System.out.println(taskViewModelList.toString());
         assertEquals(taskerService.fetchTask(5).toString(), taskViewModel.toString());
+        assertEquals(taskViewModelList.toString(), taskerService.fetchTasksByCategory("Category").toString());
+        assertEquals(taskViewModelList.toString(), taskerService.fetchAllTasks().toString());
+    }
 
+    @Test
+    public void shouldReturnTaskViewModelAfterAddingTask() {
+        //
     }
 
     public void setUpTaskMocks() {
@@ -70,20 +81,16 @@ public class TaskerServiceTest {
         task.setCreateDate(LocalDate.of(2019, 1, 1));
         task.setDueDate(LocalDate.of(2019, 2, 1));
 
-        List<TaskViewModel> taskList = new ArrayList<>();
-        TaskViewModel taskViewModel = new TaskViewModel();
-        taskViewModel.setId(5);
-        taskViewModel.setAdvertisement("test ad");
-        taskViewModel.setCategory("Category");
-        taskViewModel.setDescription("Description");
-        taskViewModel.setCreateDate(LocalDate.of(2019, 1, 1));
-        taskViewModel.setDueDate(LocalDate.of(2019, 2, 1));
-        taskList.add(taskViewModel);
+        List<Task> taskList = new ArrayList<>();
+        taskList.add(task);
+
+        List<TaskViewModel> taskViewModels = new ArrayList<>();
+        TaskViewModel taskViewModel = taskerService.buildTaskViewModel(task, "test ad");
+        taskViewModels.add(taskViewModel);
 
         doReturn("test ad").when(adserverFeignClient).getAdFromService();
         doReturn(task).when(taskerDao).getTask(5);
         doReturn(taskList).when(taskerDao).getTasksByCategory("Category");
         doReturn(taskList).when(taskerDao).getAllTasks();
-        doReturn(task).when(taskerDao).createTask(taskWithoutId);
     }
 }

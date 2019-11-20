@@ -1,3 +1,3 @@
 ### To Dos
-- Service layer tests
-- Swagger Doc
+- Service layer tests (Only for adding task)
+- Swagger Doc 
