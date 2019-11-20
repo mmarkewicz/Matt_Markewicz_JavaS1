@@ -62,11 +62,6 @@ public class TaskerServiceTest {
         assertEquals(taskViewModelList.toString(), taskerService.fetchAllTasks().toString());
     }
 
-    @Test
-    public void shouldReturnTaskViewModelAfterAddingTask() {
-        //
-    }
-
     public void setUpTaskMocks() {
         Task task = new Task();
         task.setId(5);
@@ -92,5 +87,6 @@ public class TaskerServiceTest {
         doReturn(task).when(taskerDao).getTask(5);
         doReturn(taskList).when(taskerDao).getTasksByCategory("Category");
         doReturn(taskList).when(taskerDao).getAllTasks();
+        doReturn(task).when(taskerDao).createTask(taskWithoutId);
     }
 }
