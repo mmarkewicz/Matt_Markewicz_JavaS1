@@ -13,12 +13,10 @@ import java.util.stream.Collectors;
 @Component
 public class TaskerService {
 
-    @Autowired
     TaskerDao dao;
-
-    @Autowired
     AdserverFeignClient adserverFeignClient;
 
+    @Autowired
     public TaskerService(TaskerDao taskerDao, AdserverFeignClient adserverFeignClient) {
         this.dao = taskerDao;
         this.adserverFeignClient = adserverFeignClient;
@@ -45,20 +43,17 @@ public class TaskerService {
         } catch (Exception e) {
             throw new Exception("Could not fetch task");
         }
-
     }
 
     public List<TaskViewModel> fetchAllTasks() throws Exception {
         try {
             List<Task> tasks = dao.getAllTasks();
-            List<TaskViewModel> taskViewModels = tasks.stream()
+            return tasks.stream()
                     .map(task -> buildTaskViewModel(task, adserverFeignClient.getAdFromService()))
                     .collect(Collectors.toList());
-            return taskViewModels;
         } catch (Exception e) {
             throw new Exception("Could not fetch all tasks");
         }
-
     }
 
     public List<TaskViewModel> fetchTasksByCategory(String category) throws Exception {
