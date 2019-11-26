@@ -5,9 +5,9 @@
       <list>
         <option value="$PROJECT_DIR$/comment-service/pom.xml" />
         <option value="$PROJECT_DIR$/post-service/pom.xml" />
-        <option value="$PROJECT_DIR$/stwitter-service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-config-service/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-service-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/stwitter-service/pom.xml" />
       </list>
     </option>
   </component>
