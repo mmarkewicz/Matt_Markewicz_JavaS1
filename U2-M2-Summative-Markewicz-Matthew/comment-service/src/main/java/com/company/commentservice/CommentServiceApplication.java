@@ -1,4 +1,4 @@
-package com.trilogyed.comment;
+package com.company.commentservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
