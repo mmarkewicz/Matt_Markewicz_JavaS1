@@ -1,4 +1,4 @@
-package controller;
+package com.company.postservice.controller;
 
 import com.company.postservice.model.Post;
 import com.company.postservice.service.PostServiceLayer;
@@ -18,12 +18,12 @@ public class PostController {
         return service.getAllPosts();
     }
 
-    @GetMapping("/post/{id}")
+    @GetMapping("/post/id/{id}")
     public Post getPostById(@PathVariable int id) {
         return service.getPostById(id);
     }
 
-    @GetMapping("/post/{posterName}")
+    @GetMapping("/post/name/{posterName}")
     public List<Post> getPostsByPosterName(@PathVariable String posterName) {
         return service.getPostsByPoster(posterName);
     }
@@ -42,4 +42,5 @@ public class PostController {
     public void deletePost(@PathVariable int id) {
         service.deletePost(id);
     }
+
 }

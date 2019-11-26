@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post-service/src/main/java/com/company/postservice/model/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post-service/src/main/java/com/company/postservice/repository/PostServiceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post-service/src/main/java/com/company/postservice/service/PostServiceLayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post-service/src/main/java/controller/PostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/CommentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/CommentServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/PostServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/controller/PostController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/model/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/src/test/java/com/trilogyed/post/PostServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-service/src/main/java/com/company/postservice/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/company/postservice/model/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-service/src/main/java/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/company/postservice/controller/PostController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +27,11 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.company.postservice" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
