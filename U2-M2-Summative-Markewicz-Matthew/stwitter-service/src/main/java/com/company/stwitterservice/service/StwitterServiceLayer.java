@@ -16,9 +16,6 @@ import java.util.stream.Collectors;
 public class StwitterServiceLayer {
 
     @Autowired
-    CommentServiceFeign commentServiceFeign;
-
-    @Autowired
     PostServiceFeign postServiceFeign;
 
     @Autowired

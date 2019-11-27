@@ -6,15 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="comment-service" />
-        <module name="post-service" />
         <module name="stwitter-service" />
         <module name="eureka-service-registry" />
         <module name="cloud-config-service" />
+        <module name="post-service" />
+        <module name="comment-queue-consumer" />
+        <module name="comment-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-config-service" target="1.8" />
+      <module name="comment-queue-consumer" target="1.8" />
       <module name="comment-service" target="1.8" />
       <module name="eureka-service-registry" target="1.8" />
       <module name="post-service" target="1.8" />
@@ -24,6 +26,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud-config-service" options="-parameters" />
+      <module name="comment-queue-consumer" options="-parameters" />
       <module name="comment-service" options="-parameters" />
       <module name="eureka-service-registry" options="-parameters" />
       <module name="post-service" options="-parameters" />
