@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/feign/CommentServiceFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/model/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/MessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/CommentQueueConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/CommentQueueConsumerApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +53,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StwitterServiceApplication">
+  <component name="RunManager" selected="Application.CommentQueueConsumerApplication">
+    <configuration name="CommentQueueConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.commentqueueconsumer.CommentQueueConsumerApplication" />
+      <module name="comment-queue-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.commentqueueconsumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommentServiceApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.commentservice.CommentServiceApplication" />
       <module name="comment-service" />
@@ -112,22 +124,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in eureka-service-registry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="eureka-service-registry" />
-      <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CommentQueueConsumerApplication" />
         <item itemvalue="Application.StwitterServiceApplication" />
-        <item itemvalue="Application.PostServiceApplication" />
         <item itemvalue="Application.CommentServiceApplication (1)" />
+        <item itemvalue="Application.PostServiceApplication" />
         <item itemvalue="Application.EurekaServiceRegistryApplication" />
-        <item itemvalue="JUnit.All in eureka-service-registry" />
       </list>
     </recent_temporary>
   </component>
