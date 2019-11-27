@@ -4,6 +4,8 @@ import com.company.stwitterservice.feign.CommentServiceFeign;
 import com.company.stwitterservice.feign.PostServiceFeign;
 import com.company.stwitterservice.model.Post;
 import com.company.stwitterservice.model.PostViewModel;
+import com.company.stwitterservice.util.message.CommentMessage;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +21,12 @@ public class StwitterServiceLayer {
     @Autowired
     PostServiceFeign postServiceFeign;
 
+    @Autowired
+    RabbitTemplate rabbitTemplate;
+
+    public static final String EXCHANGE = "comment-exchange";
+    public static final String ROUTING_KEY = "comment.create.controller";
+
     // create posts, get posts, get posts by poster
     public Post createPost(PostViewModel postViewModel) {
         Post post = new Post();
@@ -31,10 +39,16 @@ public class StwitterServiceLayer {
 
         // add comments through comment service
         Post finalPost = post;
-        postViewModel.getComments().stream()
+        postViewModel.getComments()
                 .forEach(comment -> {
-                    comment.setPostId(finalPost.getPostID());
-                    commentServiceFeign.postComment(comment);
+                    CommentMessage commentMessage = new CommentMessage();
+                    commentMessage.setCommenterName(comment.getCommenterName());
+                    commentMessage.setComment(comment.getComment());
+                    commentMessage.setCreateDate(comment.getCreateDate());
+                    commentMessage.setPostId(finalPost.getPostID());
+
+                    // send comment to the queue
+                    rabbitTemplate.convertAndSend(EXCHANGE, ROUTING_KEY, commentMessage);
                 });
 
         // set comments to just comment and commenter name

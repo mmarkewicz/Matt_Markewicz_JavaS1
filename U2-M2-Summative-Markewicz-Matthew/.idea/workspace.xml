@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/util/message/CommentMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/StwitterServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/StwitterServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
