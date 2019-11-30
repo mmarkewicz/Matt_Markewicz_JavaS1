@@ -1,5 +1,6 @@
 package com.company.stwitterservice;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
@@ -24,8 +25,9 @@ public class StwitterServiceApplication {
 	}
 
 	@Bean
-	public Jackson2JsonMessageConverter jackson2JsonMessageConverter() {
-		return new Jackson2JsonMessageConverter();
+	Jackson2JsonMessageConverter jackson2JsonMessageConverter() {
+		ObjectMapper objectMapper = new ObjectMapper().findAndRegisterModules();
+		return new Jackson2JsonMessageConverter(objectMapper);
 	}
 
 	public static void main(String[] args) {

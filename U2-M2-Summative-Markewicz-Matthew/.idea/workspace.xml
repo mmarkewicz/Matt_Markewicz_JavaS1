@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-queue-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-queue-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/CommentQueueConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/CommentQueueConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/StwitterServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/StwitterServiceApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,8 +135,8 @@
       <list>
         <item itemvalue="Application.StwitterServiceApplication" />
         <item itemvalue="Application.PostServiceApplication" />
-        <item itemvalue="Application.CommentQueueConsumerApplication" />
         <item itemvalue="Application.CommentServiceApplication" />
+        <item itemvalue="Application.CommentQueueConsumerApplication" />
         <item itemvalue="Application.EurekaServiceRegistryApplication" />
       </list>
     </recent_temporary>
