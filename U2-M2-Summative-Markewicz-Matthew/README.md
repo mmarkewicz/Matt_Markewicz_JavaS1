@@ -1,5 +1,4 @@
 ### TODO:
-- Introduce Caching
 - Test Service Layer & Controller for each service
 - Swagger Doc
 - JSR303 Validation
