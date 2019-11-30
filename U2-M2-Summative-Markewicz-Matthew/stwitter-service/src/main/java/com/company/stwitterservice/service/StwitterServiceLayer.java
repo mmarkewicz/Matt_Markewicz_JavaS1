@@ -22,7 +22,7 @@ public class StwitterServiceLayer {
     RabbitTemplate rabbitTemplate;
 
     public static final String EXCHANGE = "comment-exchange";
-    public static final String ROUTING_KEY = "comment.create.controller";
+    public static final String ROUTING_KEY = "comment.controller.#";
 
     // create posts, get posts, get posts by poster
     public Post createPost(PostViewModel postViewModel) {
