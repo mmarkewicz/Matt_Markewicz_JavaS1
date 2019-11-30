@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/CommentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/CommentServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/model/Comment.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StwitterServiceApplication">
+  <component name="RunManager" selected="Application.CommentServiceApplication">
     <configuration name="CommentQueueConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.commentqueueconsumer.CommentQueueConsumerApplication" />
       <module name="comment-queue-consumer" />
@@ -129,9 +132,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CommentServiceApplication" />
         <item itemvalue="Application.StwitterServiceApplication" />
         <item itemvalue="Application.PostServiceApplication" />
-        <item itemvalue="Application.CommentServiceApplication" />
         <item itemvalue="Application.CommentQueueConsumerApplication" />
         <item itemvalue="Application.EurekaServiceRegistryApplication" />
       </list>
