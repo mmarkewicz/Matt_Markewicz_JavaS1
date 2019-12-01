@@ -3,10 +3,6 @@ package com.company.postservice.controller;
 import com.company.postservice.model.Post;
 import com.company.postservice.service.PostServiceLayer;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheConfig;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
