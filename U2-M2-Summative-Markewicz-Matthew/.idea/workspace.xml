@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/controller/CommentControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/controller/CommentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/controller/CommentControllerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,53 +67,53 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CommentServiceLayerTest.shouldReturnListOfCommentsFromFindAllComments">
-    <configuration name="CommentRepositoryTest.shouldGetAllComments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CommentControllerTest.shouldReturnCommentFromPostComment">
+    <configuration name="CommentControllerTest.shouldReturnCommentFromGetCommentById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="comment-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.commentservice.repository.*" />
+          <option name="PATTERN" value="com.company.commentservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.commentservice.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.company.commentservice.repository.CommentRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldGetAllComments" />
+      <option name="PACKAGE_NAME" value="com.company.commentservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.company.commentservice.controller.CommentControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnCommentFromGetCommentById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommentRepositoryTest.shouldUpdateComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommentControllerTest.shouldReturnCommentFromPostComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="comment-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.commentservice.repository.*" />
+          <option name="PATTERN" value="com.company.commentservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.commentservice.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.company.commentservice.repository.CommentRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldUpdateComment" />
+      <option name="PACKAGE_NAME" value="com.company.commentservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.company.commentservice.controller.CommentControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnCommentFromPostComment" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommentServiceLayerTest.shouldReturnCommentAfterAdding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommentControllerTest.shouldReturnCommentListFromGetAllComments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="comment-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.commentservice.service.*" />
+          <option name="PATTERN" value="com.company.commentservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.commentservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.company.commentservice.service.CommentServiceLayerTest" />
-      <option name="METHOD_NAME" value="shouldReturnCommentAfterAdding" />
+      <option name="PACKAGE_NAME" value="com.company.commentservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.company.commentservice.controller.CommentControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnCommentListFromGetAllComments" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentControllerTest.shouldReturnCommentFromPostComment" />
+        <item itemvalue="JUnit.CommentControllerTest.shouldReturnCommentFromGetCommentById" />
+        <item itemvalue="JUnit.CommentControllerTest.shouldReturnCommentListFromGetAllComments" />
         <item itemvalue="JUnit.CommentServiceLayerTest.shouldReturnListOfCommentsFromFindAllComments" />
         <item itemvalue="JUnit.CommentServiceLayerTest.shouldReturnCommentFromFindById" />
-        <item itemvalue="JUnit.CommentServiceLayerTest.shouldReturnCommentAfterAdding" />
-        <item itemvalue="JUnit.CommentRepositoryTest.shouldUpdateComment" />
-        <item itemvalue="JUnit.CommentRepositoryTest.shouldGetAllComments" />
       </list>
     </recent_temporary>
   </component>
