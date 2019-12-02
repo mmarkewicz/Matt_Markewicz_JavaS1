@@ -13,6 +13,12 @@ public class CommentServiceLayer {
     @Autowired
     CommentRepository commentRepository;
 
+    public CommentServiceLayer(CommentRepository commentRepository) {
+        this.commentRepository = commentRepository;
+    }
+
+    public CommentServiceLayer() {}
+
     public Comment findCommentById(int id) {
         return commentRepository.getOne(id);
     }
