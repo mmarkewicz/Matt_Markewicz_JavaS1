@@ -97,6 +97,7 @@ public class CommentControllerTest {
         when(service.addComment(commentWithoutId)).thenReturn(comment);
 
         String json = mapper.writeValueAsString(commentWithoutId);
+
         this.mockMvc.perform(
                     post("/comments")
                             .content(json)

@@ -13,6 +13,12 @@ public class PostServiceLayer {
     @Autowired
     PostServiceRepository repository;
 
+    public PostServiceLayer(PostServiceRepository repository) {
+        this.repository = repository;
+    }
+
+    public PostServiceLayer() {}
+
     public List<Post> getAllPosts() {
         return repository.findAll();
     }

@@ -68,7 +68,7 @@ public class CommentRepositoryTest {
     }
 
     @Test
-    public  void shouldUpdateComment() {
+    public void shouldUpdateComment() {
         Comment comment = new Comment();
         comment.setCommenterName("Test Commenter Name");
         comment.setComment("Test Comment");
