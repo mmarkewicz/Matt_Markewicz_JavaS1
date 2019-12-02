@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/repository/CommentRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/pom.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +25,12 @@
   </component>
   <component name="ProjectId" id="1U9vwKkvJPU9Cd06ls0E1MyRqOB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/comment-service/src/test/java" />
@@ -47,19 +56,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.CommentServiceApplication">
+  <component name="RunManager" selected="JUnit.CommentRepositoryTest.addGetDeleteComment">
     <configuration name="CommentQueueConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.commentqueueconsumer.CommentQueueConsumerApplication" />
       <module name="comment-queue-consumer" />
@@ -80,20 +77,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.company.commentservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="recording" autostart="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaServiceRegistryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.trilogyed.eurekaserviceregistry.EurekaServiceRegistryApplication" />
-      <module name="eureka-service-registry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.trilogyed.eurekaserviceregistry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,15 +113,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommentRepositoryTest.addGetDeleteComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.commentservice.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="true" />
+      <option name="PACKAGE_NAME" value="com.company.commentservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.company.commentservice.repository.CommentRepositoryTest" />
+      <option name="METHOD_NAME" value="addGetDeleteComment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentRepositoryTest.addGetDeleteComment" />
         <item itemvalue="Application.CommentServiceApplication" />
         <item itemvalue="Application.PostServiceApplication" />
         <item itemvalue="Application.StwitterServiceApplication" />
         <item itemvalue="Application.CommentQueueConsumerApplication" />
-        <item itemvalue="Application.EurekaServiceRegistryApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -165,6 +177,44 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1575297107371">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1575297107371" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1575297107370">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1575297107370" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1575297107369">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1575297107369" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1575297107370">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1575297107370" />
+    <state width="1398" height="266" key="GridCell.Tab.1.bottom" timestamp="1575297107349">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="266" key="GridCell.Tab.1.bottom/0.23.1440.830@0.23.1440.830" timestamp="1575297107349" />
+    <state width="1398" height="266" key="GridCell.Tab.1.center" timestamp="1575297107348">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="266" key="GridCell.Tab.1.center/0.23.1440.830@0.23.1440.830" timestamp="1575297107348" />
+    <state width="1398" height="266" key="GridCell.Tab.1.left" timestamp="1575297107348">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="266" key="GridCell.Tab.1.left/0.23.1440.830@0.23.1440.830" timestamp="1575297107348" />
+    <state width="1398" height="266" key="GridCell.Tab.1.right" timestamp="1575297107349">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1398" height="266" key="GridCell.Tab.1.right/0.23.1440.830@0.23.1440.830" timestamp="1575297107349" />
+    <state x="413" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1575295698932">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="413" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.830@0.23.1440.830" timestamp="1575295698932" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/U2_M2_Summative_Markewicz_Matthew$EurekaServiceRegistryApplication.ic" NAME="EurekaServiceRegistryApplication Coverage Results" MODIFIED="1574792982988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
