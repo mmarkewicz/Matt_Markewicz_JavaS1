@@ -24,10 +24,14 @@ public class CommentRepositoryTest {
 
     @Before
     public void setUp() {
+        List<Comment> commentList = commentRepository.findAll();
+        commentList.forEach(comment -> commentRepository.deleteById(comment.getCommentId()));
     }
 
     @After
     public void tearDown() {
+        List<Comment> commentList = commentRepository.findAll();
+        commentList.forEach(comment -> commentRepository.deleteById(comment.getCommentId()));
     }
 
     @Test
@@ -39,6 +43,42 @@ public class CommentRepositoryTest {
         comment.setPostId(5);
         comment = commentRepository.save(comment);
 
-//        assertEquals(comment.toString(), commentRepository.getOne(comment.getCommentId()));
+        assertEquals(comment.toString(), commentRepository.getOne(comment.getCommentId()).toString());
+        commentRepository.deleteById(comment.getCommentId());
+        assertEquals(0, commentRepository.findAll().size());
+    }
+
+    @Test
+    public void shouldGetAllComments() {
+        Comment comment = new Comment();
+        comment.setCommenterName("Test Commenter Name");
+        comment.setComment("Test Comment");
+        comment.setCreateDate(LocalDate.of(2019, 1, 1));
+        comment.setPostId(5);
+        comment = commentRepository.save(comment);
+
+        Comment comment2 = new Comment();
+        comment2.setCommenterName("Test Commenter Name");
+        comment2.setComment("Test Comment");
+        comment2.setCreateDate(LocalDate.of(2019, 1, 1));
+        comment2.setPostId(5);
+        comment2 = commentRepository.save(comment2);
+
+        assertEquals(2, commentRepository.findAll().size());
+    }
+
+    @Test
+    public  void shouldUpdateComment() {
+        Comment comment = new Comment();
+        comment.setCommenterName("Test Commenter Name");
+        comment.setComment("Test Comment");
+        comment.setCreateDate(LocalDate.of(2019, 1, 1));
+        comment.setPostId(5);
+        comment = commentRepository.save(comment);
+
+        comment.setComment("New Test Comment");
+        comment = commentRepository.save(comment);
+
+        assertEquals("New Test Comment", commentRepository.getOne(comment.getCommentId()).getComment());
     }
 }

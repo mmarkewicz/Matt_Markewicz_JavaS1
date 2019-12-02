@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/repository/CommentRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/service/CommentServiceLayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/CommentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/CommentServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/model/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/respository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/respository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/repository/CommentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/repository/CommentRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/test/java/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/test/java/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/test/resources/bootstrap.properties" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,11 +44,12 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comment-service/src/test" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.company.postservice" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/comment-service/src/test/java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company.commentqueueconsumer.model" />
@@ -52,25 +57,23 @@
       <recent name="com.company.commentqueueconsumer.message" />
       <recent name="com.company.stwitterservice.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comment-service/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CommentRepositoryTest.addGetDeleteComment">
-    <configuration name="CommentQueueConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.commentqueueconsumer.CommentQueueConsumerApplication" />
-      <module name="comment-queue-consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.commentqueueconsumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="recording" autostart="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CommentRepositoryTest.shouldUpdateComment">
     <configuration name="CommentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.commentservice.CommentServiceApplication" />
       <module name="comment-service" />
@@ -99,20 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StwitterServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.StwitterServiceApplication" />
-      <module name="stwitter-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.stwitterservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="recording" autostart="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CommentRepositoryTest.addGetDeleteComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="comment-service" />
       <extension name="coverage">
@@ -130,27 +119,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommentRepositoryTest.shouldGetAllComments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.commentservice.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="true" />
+      <option name="PACKAGE_NAME" value="com.company.commentservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.company.commentservice.repository.CommentRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldGetAllComments" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentRepositoryTest.shouldUpdateComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.commentservice.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="true" />
+      <option name="PACKAGE_NAME" value="com.company.commentservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.company.commentservice.repository.CommentRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldUpdateComment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentRepositoryTest.shouldUpdateComment" />
+        <item itemvalue="JUnit.CommentRepositoryTest.shouldGetAllComments" />
         <item itemvalue="JUnit.CommentRepositoryTest.addGetDeleteComment" />
         <item itemvalue="Application.CommentServiceApplication" />
         <item itemvalue="Application.PostServiceApplication" />
-        <item itemvalue="Application.StwitterServiceApplication" />
-        <item itemvalue="Application.CommentQueueConsumerApplication" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
