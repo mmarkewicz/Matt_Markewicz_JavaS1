@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="220f6e00-8bf4-4b4d-96d1-622bf19e8d7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/20191203.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/crud-service/crud-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/crud-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/crud-service/src/main/java/com/company/crudservice/CrudServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/crud-service/src/main/java/com/company/crudservice/controller/CrudServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/crud-service/src/main/java/com/company/crudservice/model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/crud-service/src/main/java/com/company/crudservice/repository/CrudRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/crud-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/crud-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/edge-service/edge-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/edge-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/edge-service/src/main/java/com.company.edgeservice/EdgeServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/edge-service/src/main/java/com.company.edgeservice/controller/EdgeServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/edge-service/src/main/java/com.company.edgeservice/feign/CrudServiceFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/edge-service/src/main/java/com.company.edgeservice/model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/edge-service/src/main/java/com.company.edgeservice/service/EdgeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/edge-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/edge-service/src/test/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/eureka-service-registry/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/eureka-service-registry/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/eureka-service-registry/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/eureka-service-registry/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/eureka-service-registry/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/eureka-service-registry/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/eureka-service-registry/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/eureka-service-registry/src/main/java/com/trilogyed/eurekaserviceregistry/EurekaServiceRegistryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/eureka-service-registry/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-project/eureka-service-registry/src/test/java/com/trilogyed/eurekaserviceregistry/EurekaServiceRegistryApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M2-Summative-Markewicz-Matthew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M2-Summative-Markewicz-Matthew/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1UTL9Ud4UjRvMRxOLrSYmaJZr10" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hotel-project/edge-service/src/test/resources" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company.edgeservice.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hotel-project/edge-service/src/test/resources" />
+      <recent name="$PROJECT_DIR$/hotel-project" />
+      <recent name="$PROJECT_DIR$/hotel-project/edge-service/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="CrudServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.crudservice.CrudServiceApplication" />
+      <module name="crud-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.crudservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CrudServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="220f6e00-8bf4-4b4d-96d1-622bf19e8d7f" name="Default Changelist" comment="" />
+      <created>1575375487486</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575375487486</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

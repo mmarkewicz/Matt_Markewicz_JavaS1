@@ -2,20 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post-service/src/test/java/com/company/postservice/controller/PostControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post-service/src/test/java/com/company/postservice/repository/PostRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post-service/src/test/java/com/company/postservice/service/PostServiceLayerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post-service/src/test/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post-service/src/test/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/.idea/20191203.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/crud-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/java/com/company/crudservice/CrudServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/java/com/company/crudservice/controller/CrudServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/java/com/company/crudservice/model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/java/com/company/crudservice/repository/CrudRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/edge-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/java/com.company.edgeservice/EdgeServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/java/com.company.edgeservice/controller/EdgeServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/java/com.company.edgeservice/feign/CrudServiceFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/java/com.company.edgeservice/model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/java/com.company.edgeservice/service/EdgeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/src/main/java/com/trilogyed/eurekaserviceregistry/EurekaServiceRegistryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/src/test/java/com/trilogyed/eurekaserviceregistry/EurekaServiceRegistryApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/company/commentservice/model/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/controller/CommentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/controller/CommentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/repository/CommentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/repository/CommentRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/src/main/java/com/company/postservice/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/company/postservice/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-service/src/main/java/com/company/postservice/service/PostServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/company/postservice/service/PostServiceLayer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
