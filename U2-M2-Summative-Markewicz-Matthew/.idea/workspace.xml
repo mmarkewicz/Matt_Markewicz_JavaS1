@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stwitter-service/src/test/java/com/company/stwitterservice/controller/StwitterControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stwitter-service/src/test/java/com/company/stwitterservice/service/StwitterServiceLayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stwitter-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/src/test/java/com/company/stwitterservice/service/StwitterServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/test/java/com/company/stwitterservice/service/StwitterServiceLayerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StwitterServiceLayerTest.shouldReturnPostFromCreatePost">
+  <component name="RunManager" selected="JUnit.StwitterServiceLayerTest.shouldReturnListOfPostsFromGetPostsByPoster">
     <configuration name="PostControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="post-service" />
       <extension name="coverage">
@@ -105,35 +102,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostServiceLayerTest.shouldReturnListOfPostsByPosterName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="post-service" />
+    <configuration name="StwitterServiceLayerTest.shouldReturnListOfPostsFromGetPostsByPoster" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stwitter-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.postservice.service.*" />
+          <option name="PATTERN" value="com.company.stwitterservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.postservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.company.postservice.service.PostServiceLayerTest" />
-      <option name="METHOD_NAME" value="shouldReturnListOfPostsByPosterName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostServiceLayerTest.shouldReturnListOfPostsFromFindAllPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="post-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.postservice.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.postservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.company.postservice.service.PostServiceLayerTest" />
-      <option name="METHOD_NAME" value="shouldReturnListOfPostsFromFindAllPosts" />
+      <option name="PACKAGE_NAME" value="com.company.stwitterservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.service.StwitterServiceLayerTest" />
+      <option name="METHOD_NAME" value="shouldReturnListOfPostsFromGetPostsByPoster" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,13 +136,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StwitterServiceLayerTest.shouldReturnPostFromGetPostById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stwitter-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.stwitterservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="true" />
+      <option name="PACKAGE_NAME" value="com.company.stwitterservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.service.StwitterServiceLayerTest" />
+      <option name="METHOD_NAME" value="shouldReturnPostFromGetPostById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StwitterServiceLayerTest.shouldReturnListOfPostsFromGetPostsByPoster" />
+        <item itemvalue="JUnit.StwitterServiceLayerTest.shouldReturnPostFromGetPostById" />
         <item itemvalue="JUnit.StwitterServiceLayerTest.shouldReturnPostFromCreatePost" />
         <item itemvalue="JUnit.PostControllerTest" />
         <item itemvalue="JUnit.PostControllerTest.shouldReturnPostListFromGetAllPosts" />
-        <item itemvalue="JUnit.PostServiceLayerTest.shouldReturnListOfPostsByPosterName" />
-        <item itemvalue="JUnit.PostServiceLayerTest.shouldReturnListOfPostsFromFindAllPosts" />
       </list>
     </recent_temporary>
   </component>
@@ -229,67 +226,6 @@
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="413" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.830@0.23.1440.830" timestamp="1575295698932" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/test/java/com/company/stwitterservice/service/StwitterServiceLayerTest.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/test/java/com/company/stwitterservice/service/StwitterServiceLayerTest.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/service/StwitterServiceLayer.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/U2_M2_Summative_Markewicz_Matthew$EurekaServiceRegistryApplication.ic" NAME="EurekaServiceRegistryApplication Coverage Results" MODIFIED="1574792982988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

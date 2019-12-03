@@ -67,6 +67,39 @@ public class StwitterServiceLayerTest {
         assertEquals(service.createPost(postViewModel).toString(), post.toString());
     }
 
+    @Test
+    public void shouldReturnPostFromGetPostById() {
+        List<String> commentList = new ArrayList<>();
+        commentList.add("Test Comment by Test Commenter Name");
+
+        Post post = new Post();
+        post.setPosterName("Test Poster Name");
+        post.setPostDate(LocalDate.of(2019, 1, 1));
+        post.setPost("Test Post");
+        post.setPostID(5);
+        post.setComments(commentList);
+
+        assertEquals(post.toString(), service.getPost(5).toString());
+    }
+
+    @Test
+    public void shouldReturnListOfPostsFromGetPostsByPoster() {
+        List<String> commentList = new ArrayList<>();
+        commentList.add("Test Comment by Test Commenter Name");
+
+        Post post = new Post();
+        post.setPosterName("Test Poster Name");
+        post.setPostDate(LocalDate.of(2019, 1, 1));
+        post.setPost("Test Post");
+        post.setPostID(5);
+        post.setComments(commentList);
+
+        List<Post> postList = new ArrayList<>();
+        postList.add(post);
+
+        assertEquals(postList.toString(), service.getPostsByPoster("Test Poster Name").toString());
+    }
+
     private void setUpMocks() {
         Comment commentWithoutId = new Comment();
         commentWithoutId.setComment("Test Comment");
@@ -113,21 +146,9 @@ public class StwitterServiceLayerTest {
         List<Post> postList = new ArrayList<>();
         postList.add(post);
 
-        CommentMessage commentMessage = new CommentMessage();
-        commentMessage.setPostId(5);
-        commentMessage.setCreateDate(LocalDate.of(2019, 1, 1));
-        commentMessage.setComment("Test Comment");
-        commentMessage.setCommenterName("Test Commenter Name");
-//        commentMessage.set
-
         doReturn(post).when(postServiceFeign).getPostById(5);
         doReturn(postPostWithId).when(postServiceFeign).postPost(postPost);
         doReturn(postList).when(postServiceFeign).getPostsByPosterName("Test Poster Name");
         doNothing().when(rabbitTemplate).convertAndSend(anyString(), anyString(), any(CommentMessage.class));
-        // postServiceFeign.postPost() returns Post (With ID)
-        // rabbitTemplate.convertAndSend() returns ""
-        // postServiceFeign.getPostById() returns Post (WithID)
-        // postServiceFeign.getPostsByPosterName() returns List<Post>
-
     }
 }
