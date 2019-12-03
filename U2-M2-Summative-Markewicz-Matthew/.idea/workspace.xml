@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../20191203/.idea/20191203.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/crud-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/java/com/company/crudservice/CrudServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/java/com/company/crudservice/controller/CrudServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/java/com/company/crudservice/model/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/java/com/company/crudservice/repository/CrudRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/crud-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/edge-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/java/com.company.edgeservice/EdgeServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/java/com.company.edgeservice/controller/EdgeServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/java/com.company.edgeservice/feign/CrudServiceFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/java/com.company.edgeservice/model/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/java/com.company.edgeservice/service/EdgeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/edge-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/src/main/java/com/trilogyed/eurekaserviceregistry/EurekaServiceRegistryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20191203/hotel-project/eureka-service-registry/src/test/java/com/trilogyed/eurekaserviceregistry/EurekaServiceRegistryApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/controller/CommentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/company/commentservice/controller/CommentControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-service/src/test/java/com/company/postservice/controller/PostControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/test/java/com/company/postservice/controller/PostControllerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,19 +69,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PostServiceLayerTest.shouldReturnListOfPostsByPosterName">
-    <configuration name="PostRepositoryTest.shouldReturnPostsByPosterName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PostControllerTest">
+    <configuration name="PostControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="post-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.postservice.repository.*" />
+          <option name="PATTERN" value="com.company.postservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.postservice.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.company.postservice.repository.PostRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldReturnPostsByPosterName" />
+      <option name="PACKAGE_NAME" value="com.company.postservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.company.postservice.controller.PostControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostControllerTest.shouldReturnPostListFromGetAllPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="post-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.postservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="true" />
+      <option name="PACKAGE_NAME" value="com.company.postservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.company.postservice.controller.PostControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnPostListFromGetAllPosts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,23 +137,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostServiceLayerTest.shouldReturnPostAfterAdding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="post-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.postservice.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.postservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.company.postservice.service.PostServiceLayerTest" />
-      <option name="METHOD_NAME" value="shouldReturnPostAfterAdding" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PostServiceLayerTest.shouldReturnPostFromFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="post-service" />
       <extension name="coverage">
@@ -182,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PostControllerTest" />
+        <item itemvalue="JUnit.PostControllerTest.shouldReturnPostListFromGetAllPosts" />
         <item itemvalue="JUnit.PostServiceLayerTest.shouldReturnListOfPostsByPosterName" />
         <item itemvalue="JUnit.PostServiceLayerTest.shouldReturnListOfPostsFromFindAllPosts" />
         <item itemvalue="JUnit.PostServiceLayerTest.shouldReturnPostFromFindById" />
-        <item itemvalue="JUnit.PostServiceLayerTest.shouldReturnPostAfterAdding" />
-        <item itemvalue="JUnit.PostRepositoryTest.shouldReturnPostsByPosterName" />
       </list>
     </recent_temporary>
   </component>

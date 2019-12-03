@@ -37,11 +37,6 @@ public class CommentControllerTest {
 
     private ObjectMapper mapper = new ObjectMapper();
 
-    @Before
-    public void setUp() throws Exception {
-
-    }
-
     @Test
     public void shouldReturnCommentListFromGetAllComments() throws Exception {
         Comment comment = new Comment();
@@ -99,12 +94,12 @@ public class CommentControllerTest {
         String json = mapper.writeValueAsString(commentWithoutId);
 
         this.mockMvc.perform(
-                    post("/comments")
-                            .content(json)
-                    .contentType(MediaType.APPLICATION_JSON)
-                    .accept(MediaType.APPLICATION_JSON)
-                            .characterEncoding("utf-8")
-                    )
+                post("/comments")
+                        .content(json)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .characterEncoding("utf-8")
+        )
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("Test Commenter")));
