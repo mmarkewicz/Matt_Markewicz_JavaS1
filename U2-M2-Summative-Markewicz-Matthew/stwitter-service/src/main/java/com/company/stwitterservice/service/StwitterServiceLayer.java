@@ -29,44 +29,56 @@ public class StwitterServiceLayer {
         this.rabbitTemplate = rabbitTemplate;
     }
 
-    public Post createPost(PostViewModel postViewModel) {
-        Post post = new Post();
-        post.setPosterName(postViewModel.getPosterName());
-        post.setPostDate(postViewModel.getPostDate());
-        post.setPost(postViewModel.getPost());
+    public Post createPost(PostViewModel postViewModel) throws Exception {
+        try {
+            Post post = new Post();
+            post.setPosterName(postViewModel.getPosterName());
+            post.setPostDate(postViewModel.getPostDate());
+            post.setPost(postViewModel.getPost());
 
-        // get the id from adding new post via feign and return the completed Post
-        post = postServiceFeign.postPost(post);
-        int postId = post.getPostID();
+            // get the id from adding new post via feign and return the completed Post
+            post = postServiceFeign.postPost(post);
+            int postId = post.getPostID();
 
-        postViewModel.getComments()
-                .forEach(comment -> {
-                    CommentMessage commentMessage = new CommentMessage();
-                    commentMessage.setCommenterName(comment.getCommenterName());
-                    commentMessage.setComment(comment.getComment());
-                    commentMessage.setCreateDate(comment.getCreateDate());
-                    commentMessage.setPostId(postId);
+            postViewModel.getComments()
+                    .forEach(comment -> {
+                        CommentMessage commentMessage = new CommentMessage();
+                        commentMessage.setCommenterName(comment.getCommenterName());
+                        commentMessage.setComment(comment.getComment());
+                        commentMessage.setCreateDate(comment.getCreateDate());
+                        commentMessage.setPostId(postId);
 
-                    // send comment to the queue
-                    rabbitTemplate.convertAndSend(EXCHANGE, ROUTING_KEY, commentMessage);
-                });
+                        // send comment to the queue
+                        rabbitTemplate.convertAndSend(EXCHANGE, ROUTING_KEY, commentMessage);
+                    });
 
-        // set comments to just comment and commenter name
-        post.setComments(
-            postViewModel.getComments().stream()
-                .map(comment -> comment.getComment() + " by " + comment.getCommenterName())
-                .collect(Collectors.toList())
-        );
+            // set comments to just comment and commenter name
+            post.setComments(
+                    postViewModel.getComments().stream()
+                            .map(comment -> comment.getComment() + " by " + comment.getCommenterName())
+                            .collect(Collectors.toList())
+            );
 
 
-        return post;
+            return post;
+        } catch (Exception e) {
+            throw new Exception("Post Not Created");
+        }
     }
 
-    public Post getPost(int id) {
-        return postServiceFeign.getPostById(id);
+    public Post getPost(int id) throws Exception {
+        try {
+            return postServiceFeign.getPostById(id);
+        } catch (Exception e) {
+            throw new Exception("Could Not Get Post");
+        }
     }
 
-    public List<Post> getPostsByPoster(String posterName) {
-        return postServiceFeign.getPostsByPosterName(posterName);
+    public List<Post> getPostsByPoster(String posterName) throws Exception {
+        try {
+            return postServiceFeign.getPostsByPosterName(posterName);
+        } catch (Exception e) {
+            throw new Exception("Could Not Get Posts By Username");
+        }
     }
 }

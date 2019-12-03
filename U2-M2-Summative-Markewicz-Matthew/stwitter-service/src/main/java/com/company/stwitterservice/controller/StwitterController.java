@@ -15,17 +15,17 @@ public class StwitterController {
     StwitterServiceLayer service;
 
     @GetMapping("/posts/{id}")
-    public Post getPost(@PathVariable int id) {
+    public Post getPost(@PathVariable int id) throws Exception {
         return service.getPost(id);
     }
 
     @GetMapping("/posts/user/{posterName}")
-    public List<Post> getPostsByUser(@PathVariable String posterName) {
+    public List<Post> getPostsByUser(@PathVariable String posterName) throws Exception {
         return service.getPostsByPoster(posterName);
     }
 
     @PostMapping("/posts")
-    public Post addPost(@RequestBody PostViewModel postViewModel) {
+    public Post addPost(@RequestBody PostViewModel postViewModel) throws Exception {
         return service.createPost(postViewModel);
     }
 }
