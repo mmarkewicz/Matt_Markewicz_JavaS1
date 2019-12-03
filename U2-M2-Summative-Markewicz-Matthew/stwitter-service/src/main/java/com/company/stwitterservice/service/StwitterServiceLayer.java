@@ -24,7 +24,11 @@ public class StwitterServiceLayer {
     public static final String EXCHANGE = "comment-exchange";
     public static final String ROUTING_KEY = "comment.controller.#";
 
-    // create posts, get posts, get posts by poster
+    public StwitterServiceLayer(PostServiceFeign postServiceFeign, RabbitTemplate rabbitTemplate) {
+        this.postServiceFeign = postServiceFeign;
+        this.rabbitTemplate = rabbitTemplate;
+    }
+
     public Post createPost(PostViewModel postViewModel) {
         Post post = new Post();
         post.setPosterName(postViewModel.getPosterName());
@@ -33,30 +37,29 @@ public class StwitterServiceLayer {
 
         // get the id from adding new post via feign and return the completed Post
         post = postServiceFeign.postPost(post);
+        int postId = post.getPostID();
 
-        // add comments through comment service
-        Post finalPost = post;
         postViewModel.getComments()
                 .forEach(comment -> {
                     CommentMessage commentMessage = new CommentMessage();
                     commentMessage.setCommenterName(comment.getCommenterName());
                     commentMessage.setComment(comment.getComment());
                     commentMessage.setCreateDate(comment.getCreateDate());
-                    commentMessage.setPostId(finalPost.getPostID());
+                    commentMessage.setPostId(postId);
 
                     // send comment to the queue
                     rabbitTemplate.convertAndSend(EXCHANGE, ROUTING_KEY, commentMessage);
                 });
 
         // set comments to just comment and commenter name
-        finalPost.setComments(
+        post.setComments(
             postViewModel.getComments().stream()
                 .map(comment -> comment.getComment() + " by " + comment.getCommenterName())
                 .collect(Collectors.toList())
         );
 
 
-        return finalPost;
+        return post;
     }
 
     public Post getPost(int id) {
