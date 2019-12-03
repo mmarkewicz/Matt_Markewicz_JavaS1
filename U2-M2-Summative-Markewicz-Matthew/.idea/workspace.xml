@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/stwitter-service/src/test/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stwitter-service/src/test/java/com/company/stwitterservice/service/StwitterServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/test/java/com/company/stwitterservice/service/StwitterServiceLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/model/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/model/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/model/PostViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/model/PostViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/src/test/java/com/company/stwitterservice/controller/StwitterControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/test/java/com/company/stwitterservice/controller/StwitterControllerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,19 +35,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/post-service/src/test/resources" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stwitter-service/src/test" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/comment-service/src/test" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.company.postservice" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stwitter-service/src/test" />
+      <recent name="$PROJECT_DIR$/post-service/src/test/resources" />
+      <recent name="$PROJECT_DIR$/comment-service/src/test/java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company.commentqueueconsumer.model" />
@@ -51,9 +56,9 @@
       <recent name="com.company.commentqueueconsumer.message" />
       <recent name="com.company.stwitterservice.model" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/post-service/src/test/resources" />
-      <recent name="$PROJECT_DIR$/comment-service/src/test/java" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comment-service/src/test" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -68,86 +73,86 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StwitterServiceLayerTest.shouldReturnListOfPostsFromGetPostsByPoster">
-    <configuration name="PostControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="post-service" />
+  <component name="RunManager" selected="JUnit.StwitterControllerTest">
+    <configuration name="StwitterControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stwitter-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.postservice.controller.*" />
+          <option name="PATTERN" value="com.company.stwitterservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.postservice.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.company.postservice.controller.PostControllerTest" />
+      <option name="PACKAGE_NAME" value="com.company.stwitterservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.controller.StwitterControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostControllerTest.shouldReturnPostListFromGetAllPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="post-service" />
+    <configuration name="StwitterControllerTest.shouldReturnListOfPostsFromGetAllPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stwitter-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.postservice.controller.*" />
+          <option name="PATTERN" value="com.company.stwitterservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.postservice.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.company.postservice.controller.PostControllerTest" />
-      <option name="METHOD_NAME" value="shouldReturnPostListFromGetAllPosts" />
+      <option name="PACKAGE_NAME" value="com.company.stwitterservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.controller.StwitterControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnListOfPostsFromGetAllPosts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StwitterServiceLayerTest.shouldReturnListOfPostsFromGetPostsByPoster" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StwitterControllerTest.shouldReturnListOfPostsFromGetPostsByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="stwitter-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.stwitterservice.service.*" />
+          <option name="PATTERN" value="com.company.stwitterservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.stwitterservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.service.StwitterServiceLayerTest" />
-      <option name="METHOD_NAME" value="shouldReturnListOfPostsFromGetPostsByPoster" />
+      <option name="PACKAGE_NAME" value="com.company.stwitterservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.controller.StwitterControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnListOfPostsFromGetPostsByUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StwitterServiceLayerTest.shouldReturnPostFromCreatePost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StwitterControllerTest.shouldReturnPostFromAddPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="stwitter-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.stwitterservice.service.*" />
+          <option name="PATTERN" value="com.company.stwitterservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.stwitterservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.service.StwitterServiceLayerTest" />
-      <option name="METHOD_NAME" value="shouldReturnPostFromCreatePost" />
+      <option name="PACKAGE_NAME" value="com.company.stwitterservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.controller.StwitterControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnPostFromAddPost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StwitterServiceLayerTest.shouldReturnPostFromGetPostById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StwitterControllerTest.shouldReturnPostFromGetPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="stwitter-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.stwitterservice.service.*" />
+          <option name="PATTERN" value="com.company.stwitterservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <extension name="recording" autostart="true" />
-      <option name="PACKAGE_NAME" value="com.company.stwitterservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.service.StwitterServiceLayerTest" />
-      <option name="METHOD_NAME" value="shouldReturnPostFromGetPostById" />
+      <option name="PACKAGE_NAME" value="com.company.stwitterservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.company.stwitterservice.controller.StwitterControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnPostFromGetPost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StwitterServiceLayerTest.shouldReturnListOfPostsFromGetPostsByPoster" />
-        <item itemvalue="JUnit.StwitterServiceLayerTest.shouldReturnPostFromGetPostById" />
-        <item itemvalue="JUnit.StwitterServiceLayerTest.shouldReturnPostFromCreatePost" />
-        <item itemvalue="JUnit.PostControllerTest" />
-        <item itemvalue="JUnit.PostControllerTest.shouldReturnPostListFromGetAllPosts" />
+        <item itemvalue="JUnit.StwitterControllerTest" />
+        <item itemvalue="JUnit.StwitterControllerTest.shouldReturnPostFromAddPost" />
+        <item itemvalue="JUnit.StwitterControllerTest.shouldReturnListOfPostsFromGetPostsByUser" />
+        <item itemvalue="JUnit.StwitterControllerTest.shouldReturnListOfPostsFromGetAllPosts" />
+        <item itemvalue="JUnit.StwitterControllerTest.shouldReturnPostFromGetPost" />
       </list>
     </recent_temporary>
   </component>
