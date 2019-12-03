@@ -5,12 +5,10 @@ import com.company.stwitterservice.model.PostViewModel;
 import com.company.stwitterservice.service.StwitterServiceLayer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.List;
 
 @RestController
-@EnableSwagger2
 public class StwitterController {
 
     @Autowired
