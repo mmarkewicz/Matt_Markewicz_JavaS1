@@ -4,8 +4,6 @@
     <list default="true" id="20198b57-5d48-45f1-a3a9-2a21401c79d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../20191203/PivotalMySQLWeb" beforeDir="false" afterPath="$PROJECT_DIR$/../20191203/PivotalMySQLWeb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/model/PostViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/company/stwitterservice/model/PostViewModel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
