@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37180412-66cd-4457-8680-a6952a8facbc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RESTConsumer/src/main/java/com/company/RESTConsumer/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RESTConsumer/src/main/java/com/company/RESTConsumer/GreetingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RESTConsumer/src/main/resources/templates/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RESTProducer/src/main/java/com/company/RESTProducer/controller/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RESTProducer/src/main/java/com/company/RESTProducer/controller/GreetingControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20191203/PivotalMySQLWeb" beforeDir="false" afterPath="$PROJECT_DIR$/../../20191203/PivotalMySQLWeb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-circuit-breaker" beforeDir="false" afterPath="$PROJECT_DIR$/../gs-circuit-breaker" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1UWtM9R4yqywq0p7khKPefQjuGU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.RestConsumerApplication">
+    <configuration name="RestConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.RESTConsumer.RestConsumerApplication" />
+      <module name="RESTConsumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.RESTConsumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestProducerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.RESTProducer.RestProducerApplication" />
+      <module name="RESTProducer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.RESTProducer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RestConsumerApplication" />
+        <item itemvalue="Application.RestProducerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37180412-66cd-4457-8680-a6952a8facbc" name="Default Changelist" comment="" />
+      <created>1575484130775</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575484130775</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
