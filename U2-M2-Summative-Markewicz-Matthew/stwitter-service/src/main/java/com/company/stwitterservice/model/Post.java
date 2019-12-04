@@ -7,11 +7,12 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
 
-public class Post {
+public class Post implements Serializable {
 
     private int postID;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-dd-MM")
