@@ -6,6 +6,7 @@ import com.company.stwitterservice.service.StwitterServiceLayer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -25,7 +26,7 @@ public class StwitterController {
     }
 
     @PostMapping("/posts")
-    public Post addPost(@RequestBody PostViewModel postViewModel) throws Exception {
+    public Post addPost(@RequestBody @Valid PostViewModel postViewModel) throws Exception {
         return service.createPost(postViewModel);
     }
 }

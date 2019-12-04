@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
@@ -16,8 +17,11 @@ public class PostViewModel {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-dd-MM")
     @JsonDeserialize(using = LocalDateDeserializer.class)
     @JsonSerialize(using = LocalDateSerializer.class)
+    @NotNull
     private LocalDate postDate;
+    @NotNull
     private String posterName;
+    @NotNull
     private String post;
     private List<Comment> comments;
 
