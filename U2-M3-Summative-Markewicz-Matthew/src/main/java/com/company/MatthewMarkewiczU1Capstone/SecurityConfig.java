@@ -41,10 +41,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.httpBasic();
 
         // AUTHORIZE ROUTES HERE
+        // ADD SECURITY SCHEMA TO THE EXISTING GAME STORE DATABASE
         httpSecurity.authorizeRequests()
-                .mvcMatchers("/loggedin").authenticated()
-                .mvcMatchers(HttpMethod.GET, "/needsRole").hasAuthority("ROLE_MANAGER")
-                .mvcMatchers(HttpMethod.POST, "/needsRole").hasAuthority("ROLE_ADMIN")
+                .mvcMatchers(HttpMethod.GET, "/login").hasAuthority("ROLE_USER")
+                .mvcMatchers(HttpMethod.PUT,  "/consoles").hasAuthority("ROLE_USER")
+                .mvcMatchers(HttpMethod.PUT, "/games").hasAuthority("ROLE_USER")
+                .mvcMatchers(HttpMethod.PUT, "/tshirts").hasAuthority("ROLE_USER")
+                .mvcMatchers(HttpMethod.POST, "/consoles").hasAuthority("ROLE_MANAGER")
+                .mvcMatchers(HttpMethod.POST, "/games").hasAuthority("ROLE_MANAGER")
+                .mvcMatchers(HttpMethod.POST, "/tshirts").hasAuthority("ROLE_MANAGER")
+                .mvcMatchers(HttpMethod.DELETE, "/consoles/{id}").hasAuthority("ROLE_ADMIN")
+                .mvcMatchers(HttpMethod.DELETE, "/games/{id}").hasAuthority("ROLE_ADMIN")
+                .mvcMatchers(HttpMethod.DELETE, "/tshirts/{id}").hasAuthority("ROLE_ADMIN")
                 .anyRequest().permitAll();
 
         httpSecurity

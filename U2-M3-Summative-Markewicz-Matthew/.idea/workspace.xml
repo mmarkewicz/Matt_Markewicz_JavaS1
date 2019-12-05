@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b136741-43c9-4d01-ad4a-221b76233af1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/MatthewMarkewiczU1Capstone/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/MatthewMarkewiczU1Capstone/util/PasswordUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/MatthewMarkewiczU1Capstone/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../20191203/PivotalMySQLWeb" beforeDir="false" afterPath="$PROJECT_DIR$/../20191203/PivotalMySQLWeb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../20191205/gs-circuit-breaker" beforeDir="false" afterPath="$PROJECT_DIR$/../20191205/gs-circuit-breaker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatthewMarkewiczU1Capstone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MatthewMarkewiczU1Capstone.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MatthewMarkewiczU1Capstone/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MatthewMarkewiczU1Capstone/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
