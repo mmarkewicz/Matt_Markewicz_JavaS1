@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b136741-43c9-4d01-ad4a-221b76233af1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/MatthewMarkewiczU1Capstone/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../20191203/PivotalMySQLWeb" beforeDir="false" afterPath="$PROJECT_DIR$/../20191203/PivotalMySQLWeb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../20191205/gs-circuit-breaker" beforeDir="false" afterPath="$PROJECT_DIR$/../20191205/gs-circuit-breaker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MatthewMarkewiczU1Capstone/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MatthewMarkewiczU1Capstone/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
