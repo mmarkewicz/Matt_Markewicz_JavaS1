@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="authorization-service.main" target="1.8" />
+      <module name="authorization-service.test" target="1.8" />
+      <module name="oauth-greeter.main" target="1.8" />
+      <module name="oauth-greeter.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

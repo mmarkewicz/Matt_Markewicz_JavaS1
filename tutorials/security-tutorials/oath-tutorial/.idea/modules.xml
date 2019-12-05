@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/authorization-service.iml" filepath="$PROJECT_DIR$/.idea/modules/authorization-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/authorization-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/authorization-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/authorization-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/authorization-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/oath-tutorial.iml" filepath="$PROJECT_DIR$/.idea/oath-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oauth-greeter.iml" filepath="$PROJECT_DIR$/.idea/modules/oauth-greeter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oauth-greeter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/oauth-greeter.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oauth-greeter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/oauth-greeter.test.iml" />
+    </modules>
+  </component>
+</project>
