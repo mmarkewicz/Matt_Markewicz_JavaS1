@@ -1,0 +1,4 @@
+- Searching - any user, authenticated or unauthenticated
+- Updates - any staff member can update a product
+- Creates - only managers and above can create new products
+- Deletes - only admin users can delete a product
