@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37180412-66cd-4457-8680-a6952a8facbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RESTConsumer/src/main/java/com/company/RESTConsumer/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESTConsumer/src/main/java/com/company/RESTConsumer/GreetingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESTConsumer/src/main/resources/templates/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESTProducer/src/main/java/com/company/RESTProducer/controller/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESTProducer/src/main/java/com/company/RESTProducer/controller/GreetingControllerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../20191203/PivotalMySQLWeb" beforeDir="false" afterPath="$PROJECT_DIR$/../../20191203/PivotalMySQLWeb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/src/main/java/com/company/RESTConsumer/GreetingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/src/main/java/com/company/RESTConsumer/GreetingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/src/main/java/com/company/RESTConsumer/RestConsumerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/src/main/resources/templates/greeting-view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESTConsumer/src/test/java/com/company/RESTConsumer/RestConsumerApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../gs-circuit-breaker" beforeDir="false" afterPath="$PROJECT_DIR$/../gs-circuit-breaker" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
