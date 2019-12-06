@@ -1,8 +1,8 @@
 applications:
-  - name: RSVP-SERVICE
+  - name: U2M3SUMMATIVE
     memory: 1024M
     instances: 1
     random-route: true
-    path: ./target/rsvp-service-0.0.1-SNAPSHOT.jar
+    path: ./target/U2M3Summative-0.0.1-SNAPSHOT.jar
     services:
       - MYSQL-SERVICE
