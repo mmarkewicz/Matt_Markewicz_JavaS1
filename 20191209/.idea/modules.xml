@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/20191209.iml" filepath="$PROJECT_DIR$/.idea/20191209.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-registry/eureka-service-registry.iml" filepath="$PROJECT_DIR$/eureka-service-registry/eureka-service-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pet-shelter-crud-service.iml" filepath="$PROJECT_DIR$/.idea/modules/pet-shelter-crud-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pet-shelter-crud-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/pet-shelter-crud-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pet-shelter-crud-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/pet-shelter-crud-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pet-shelter-edge-service.iml" filepath="$PROJECT_DIR$/.idea/modules/pet-shelter-edge-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pet-shelter-edge-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/pet-shelter-edge-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pet-shelter-edge-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/pet-shelter-edge-service.test.iml" />
+    </modules>
+  </component>
+</project>
