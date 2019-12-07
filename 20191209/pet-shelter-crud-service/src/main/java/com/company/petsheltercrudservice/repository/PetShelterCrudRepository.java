@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PetShelterCrudServiceRepository extends JpaRepository<Pet, Integer> {
+public interface PetShelterCrudRepository extends JpaRepository<Pet, Integer> {
 }
