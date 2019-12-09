@@ -23,6 +23,9 @@ public class PetShelterCrudController {
         return service.readPetById(id);
     }
 
+    @GetMapping("/pets/{owner}")
+    public List<Pet> getPetsByOwner(@PathVariable String owner) { return service.readPetsByOwner(owner); }
+
     @PostMapping("/pets")
     public Pet postPet(@RequestBody Pet pet) {
         return service.createPet(pet);

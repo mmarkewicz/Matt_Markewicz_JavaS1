@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/eureka-service-registry/eureka-service-registry.iml" filepath="$PROJECT_DIR$/eureka-service-registry/eureka-service-registry.iml" />
       <module fileurl="file://$PROJECT_DIR$/pet-shelter-crud-service/pet-shelter-crud-service.iml" filepath="$PROJECT_DIR$/pet-shelter-crud-service/pet-shelter-crud-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pet-shelter-edge-service/pet-shelter-edge-service.iml" filepath="$PROJECT_DIR$/pet-shelter-edge-service/pet-shelter-edge-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/pet-shelter-maven.iml" filepath="$PROJECT_DIR$/.idea/pet-shelter-maven.iml" />
     </modules>
   </component>

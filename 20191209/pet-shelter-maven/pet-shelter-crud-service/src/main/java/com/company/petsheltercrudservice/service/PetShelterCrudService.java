@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class PetShelterCrudService {
@@ -23,6 +24,10 @@ public class PetShelterCrudService {
 
     public Pet readPetById(int id) {
         return repository.getOne(id);
+    }
+
+    public List<Pet> readPetsByOwner(String owner) {
+        return repository.findAll().stream().filter(pet -> pet.getOwner().equals(owner)).collect(Collectors.toList());
     }
 
     public void updatePet(Pet pet) {
