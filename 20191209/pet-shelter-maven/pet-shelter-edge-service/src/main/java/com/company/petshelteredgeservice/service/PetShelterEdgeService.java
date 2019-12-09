@@ -5,13 +5,15 @@ import com.company.petshelteredgeservice.model.Pet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class PetShelterEdgeService {
 
-    @Autowired
     PetShelterCrudFeign feign;
+
+    @Autowired
+    public PetShelterEdgeService(PetShelterCrudFeign feign) {
+        this.feign = feign;
+    }
 
     public Pet findPetById(int id) {
         return feign.getPetById(id);
