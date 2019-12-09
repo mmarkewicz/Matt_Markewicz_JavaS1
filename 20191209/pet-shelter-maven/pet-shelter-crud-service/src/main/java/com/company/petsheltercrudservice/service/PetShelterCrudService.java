@@ -11,8 +11,13 @@ import java.util.stream.Collectors;
 @Service
 public class PetShelterCrudService {
 
-    @Autowired
     PetShelterCrudRepository repository;
+
+    public PetShelterCrudService(PetShelterCrudRepository repository) {
+        this.repository = repository;
+    }
+
+    public PetShelterCrudService() {}
 
     public Pet createPet(Pet pet) {
         return repository.save(pet);
@@ -27,7 +32,7 @@ public class PetShelterCrudService {
     }
 
     public List<Pet> readPetsByOwner(String owner) {
-        return repository.findAll().stream().filter(pet -> pet.getOwner().equals(owner)).collect(Collectors.toList());
+        return repository.findPetsByOwner(owner);
     }
 
     public void updatePet(Pet pet) {

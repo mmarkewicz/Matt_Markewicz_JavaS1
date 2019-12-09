@@ -68,4 +68,15 @@ public class PetShelterCrudRepositoryTest {
 
         assertEquals("New Test Name", repository.getOne(pet.getId()).getName());
     }
+
+    @Test
+    public void shouldReturnPetsByOwner() {
+        Pet pet = new Pet();
+        pet.setType("Test Type");
+        pet.setOwner("Test Owner");
+        pet.setName("Test Name");
+        pet = repository.save(pet);
+
+        assertEquals(pet.toString(), repository.findPetsByOwner("Test Owner").get(0).toString());
+    }
 }
