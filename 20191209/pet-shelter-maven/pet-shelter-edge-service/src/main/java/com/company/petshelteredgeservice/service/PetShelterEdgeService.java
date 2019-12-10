@@ -19,13 +19,12 @@ public class PetShelterEdgeService {
         return feign.getPetById(id);
     }
 
-    public String updateOwner(Pet pet) {
+    public String updateOwner(Pet pet) throws Exception {
         Pet returnedPet = feign.getPetById(pet.getId());
         returnedPet.setOwner(pet.getOwner());
 
         if (feign.getPetsByOwner(pet.getOwner()).size() > 3) {
-            feign.deletePet(pet.getId());
-            return "Each owner can only have 3 pets, most recent pet has been deleted.";
+            throw new Exception("An owner cannot have more than 3 pets!");
         } else {
             return "Successfully updated pet entry";
         }
